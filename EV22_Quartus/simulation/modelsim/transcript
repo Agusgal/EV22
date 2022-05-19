@@ -1,0 +1,14 @@
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst 
+# Start time: 16:16:36 on May 18,2022
+# ** Error: (vsim-3170) Could not find 'uc1_vlg_vec_tst'.
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/My_Designs/uc1/simulation/modelsim/gate_work
+# Error loading design
+# End time: 16:16:37 on May 18,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

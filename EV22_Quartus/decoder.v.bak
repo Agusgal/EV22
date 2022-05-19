@@ -1,0 +1,20 @@
+module decode
+(
+ input[7:0] opcode,
+ output [7:0] selA,
+ output [7:0] selB,
+ output [4:0] alu, 
+ output save0,
+ output save1,
+ output save2,
+ );
+
+ reg[7:0] q;
+ 
+always @(posedge clk) begin
+	q <= ProgCount + 1;
+end
+
+assign nextPC = q;
+ 
+endmodule

@@ -1,0 +1,639 @@
+Analysis & Synthesis report for uc1
+Thu May 19 18:08:11 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. User-Specified and Inferred Latches
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated
+ 14. Parameter Settings for User Entity Instance: mux8_4:instmux2|lpm_mux:LPM_MUX_component
+ 15. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: mux8_4:instmux1|lpm_mux:LPM_MUX_component
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 19 18:08:10 2022       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; uc1                                         ;
+; Top-level Entity Name              ; uc1                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 98                                          ;
+;     Total combinational functions  ; 74                                          ;
+;     Dedicated logic registers      ; 40                                          ;
+; Total registers                    ; 40                                          ;
+; Total pins                         ; 50                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,048                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; uc1                ; uc1                ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
+; uc1.bdf                          ; yes             ; User Block Diagram/Schematic File     ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/uc1.bdf                       ;         ;
+; rom1.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v                        ;         ;
+; reg8.v                           ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/reg8.v                        ;         ;
+; prog1.hex                        ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/prog1.hex                     ;         ;
+; fetch.v                          ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v                       ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v                         ;         ;
+; mux8_4.v                         ; yes             ; User Wizard-Generated File            ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v                      ;         ;
+; decoder.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v                     ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_hrc.tdf                   ; yes             ; Auto-Generated Megafunction           ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/mux_hrc.tdf                ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_i391.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf        ;         ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 98        ;
+;                                             ;           ;
+; Total combinational functions               ; 74        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 14        ;
+;     -- 3 input functions                    ; 46        ;
+;     -- <=2 input functions                  ; 14        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 60        ;
+;     -- arithmetic mode                      ; 14        ;
+;                                             ;           ;
+; Total registers                             ; 40        ;
+;     -- Dedicated logic registers            ; 40        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 50        ;
+; Total memory bits                           ; 2048      ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 48        ;
+; Total fan-out                               ; 534       ;
+; Average fan-out                             ; 2.41      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
+; |uc1                                      ; 74 (0)              ; 40 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 50   ; 0            ; |uc1                                                                          ; uc1             ; work         ;
+;    |alu:inst5|                            ; 42 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|alu:inst5                                                                ; alu             ; work         ;
+;    |decoder:inst10|                       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst10                                                           ; decoder         ; work         ;
+;    |fetch:inst4|                          ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                              ; fetch           ; work         ;
+;    |mux8_4:instmux2|                      ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux8_4:instmux2                                                          ; mux8_4          ; work         ;
+;       |lpm_mux:LPM_MUX_component|         ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux8_4:instmux2|lpm_mux:LPM_MUX_component                                ; lpm_mux         ; work         ;
+;          |mux_hrc:auto_generated|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux8_4:instmux2|lpm_mux:LPM_MUX_component|mux_hrc:auto_generated         ; mux_hrc         ; work         ;
+;    |reg8:PCreg|                           ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|reg8:PCreg                                                               ; reg8            ; work         ;
+;    |reg8:instREG0|                        ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|reg8:instREG0                                                            ; reg8            ; work         ;
+;    |reg8:instREG1|                        ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|reg8:instREG1                                                            ; reg8            ; work         ;
+;    |reg8:instREG2|                        ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|reg8:instREG2                                                            ; reg8            ; work         ;
+;    |rom1:inst|                            ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst                                                                ; rom1            ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;          |altsyncram_i391:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated ; altsyncram_i391 ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                 ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; Name                                                                                ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF       ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; prog1.hex ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                  ;
++--------+--------------+---------+--------------+--------------+----------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance      ; IP Include File ;
++--------+--------------+---------+--------------+--------------+----------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 21.1    ; N/A          ; N/A          ; |uc1|rom1:inst       ; rom1.v          ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |uc1|mux8_4:instmux1 ; mux8_4.v        ;
+; Altera ; LPM_MUX      ; 21.1    ; N/A          ; N/A          ; |uc1|mux8_4:instmux2 ; mux8_4.v        ;
++--------+--------------+---------+--------------+--------------+----------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++-----------------------------------------------------+------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------+------------------------+
+; alu:inst5|out[7]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[6]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[5]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[4]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[3]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[2]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[1]                                    ; alu:inst5|Mux8         ; yes                    ;
+; alu:inst5|out[0]                                    ; alu:inst5|Mux8         ; yes                    ;
+; decoder:inst10|selA[0]                              ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|alu[0]                               ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|selB[0]                              ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|alu[2]                               ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|alu[1]                               ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|save0                                ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|save1                                ; decoder:inst10|WideOr5 ; yes                    ;
+; decoder:inst10|save2                                ; decoder:inst10|WideOr5 ; yes                    ;
+; Number of user-specified and inferred latches = 16  ;                        ;                        ;
++-----------------------------------------------------+------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 40    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 40    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |uc1|alu:inst5|Mux7        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; No         ; |uc1|alu:inst5|Add0        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |uc1|alu:inst5|Add0        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------+
+; Assignment                      ; Value              ; From ; To                                ;
++---------------------------------+--------------------+------+-----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                 ;
++---------------------------------+--------------------+------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux8_4:instmux2|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 8            ; Signed Integer                                 ;
+; LPM_SIZE               ; 4            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 2            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_hrc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------+
+; Parameter Name                     ; Value                ; Type                       ;
++------------------------------------+----------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                    ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                    ;
+; WIDTH_A                            ; 8                    ; Signed Integer             ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer             ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer             ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                    ;
+; WIDTH_B                            ; 1                    ; Untyped                    ;
+; WIDTHAD_B                          ; 1                    ; Untyped                    ;
+; NUMWORDS_B                         ; 1                    ; Untyped                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; prog1.hex            ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_i391      ; Untyped                    ;
++------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux8_4:instmux1|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                           ;
++------------------------+--------------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 8            ; Signed Integer                                 ;
+; LPM_SIZE               ; 4            ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 2            ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_hrc      ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                        ;
++------------------------+--------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                      ;
++-------------------------------------------+-------------------------------------------+
+; Name                                      ; Value                                     ;
++-------------------------------------------+-------------------------------------------+
+; Number of entity instances                ; 1                                         ;
+; Entity Instance                           ; rom1:inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                       ;
+;     -- WIDTH_A                            ; 8                                         ;
+;     -- NUMWORDS_A                         ; 256                                       ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                    ;
+;     -- WIDTH_B                            ; 1                                         ;
+;     -- NUMWORDS_B                         ; 1                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ;
++-------------------------------------------+-------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 50                          ;
+; cycloneiii_ff         ; 40                          ;
+;     CLR               ; 16                          ;
+;     ENA CLR           ; 24                          ;
+; cycloneiii_lcell_comb ; 74                          ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 9                           ;
+;     normal            ; 60                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 14                          ;
+; cycloneiii_ram_block  ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 5.70                        ;
+; Average LUT depth     ; 3.47                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu May 19 18:08:01 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file uc1.bdf
+    Info (12023): Found entity 1: uc1
+Info (12021): Found 1 design units, including 1 entities, in source file rom1.v
+    Info (12023): Found entity 1: rom1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file reg8.v
+    Info (12023): Found entity 1: reg8 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/reg8.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fetch.v
+    Info (12023): Found entity 1: fetch File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_4.v
+    Info (12023): Found entity 1: mux8_4 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
+    Info (12023): Found entity 1: decoder File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pll1.v
+    Info (12023): Found entity 1: pll1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/pll1.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at decoder.v(25): created implicit net for "nextPC" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 25
+Info (12127): Elaborating entity "uc1" for the top level hierarchy
+Warning (275011): Block or symbol "rom1" of instance "inst" overlaps another block or symbol
+Info (12128): Elaborating entity "alu" for hierarchy "alu:inst5"
+Warning (10230): Verilog HDL assignment warning at alu.v(17): truncated value with size 32 to match size of target (8) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 17
+Warning (10230): Verilog HDL assignment warning at alu.v(18): truncated value with size 32 to match size of target (8) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 18
+Warning (10270): Verilog HDL Case Statement warning at alu.v(12): incomplete case statement has no default case item File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 12
+Warning (10240): Verilog HDL Always Construct warning at alu.v(10): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[0]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[1]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[2]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[3]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[4]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[5]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[6]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (10041): Inferred latch for "out[7]" at alu.v(10) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+Info (12128): Elaborating entity "mux8_4" for hierarchy "mux8_4:instmux2"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux8_4:instmux2|lpm_mux:LPM_MUX_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v Line: 73
+Info (12130): Elaborated megafunction instantiation "mux8_4:instmux2|lpm_mux:LPM_MUX_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v Line: 73
+Info (12133): Instantiated megafunction "mux8_4:instmux2|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v Line: 73
+    Info (12134): Parameter "lpm_size" = "4"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "8"
+    Info (12134): Parameter "lpm_widths" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hrc.tdf
+    Info (12023): Found entity 1: mux_hrc File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/mux_hrc.tdf Line: 23
+Info (12128): Elaborating entity "mux_hrc" for hierarchy "mux8_4:instmux2|lpm_mux:LPM_MUX_component|mux_hrc:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "reg8" for hierarchy "reg8:instREG0"
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst10"
+Warning (10036): Verilog HDL or VHDL warning at decoder.v(25): object "nextPC" assigned a value but never read File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 25
+Warning (10858): Verilog HDL warning at decoder.v(12): object q used but never assigned File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 12
+Warning (10270): Verilog HDL Case Statement warning at decoder.v(16): incomplete case statement has no default case item File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "selA", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "selB", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "alu", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "save0", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "save1", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(14): inferring latch(es) for variable "save2", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (10230): Verilog HDL assignment warning at decoder.v(25): truncated value with size 8 to match size of target (1) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 25
+Info (10041): Inferred latch for "save2" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "save1" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "save0" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "alu[0]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "alu[1]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "alu[2]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "alu[3]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "selB[0]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "selB[1]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "selA[0]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (10041): Inferred latch for "selA[1]" at decoder.v(14) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Info (12128): Elaborating entity "rom1" for hierarchy "rom1:inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
+Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "prog1.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i391.tdf
+    Info (12023): Found entity 1: altsyncram_i391 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_i391" for hierarchy "rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "fetch" for hierarchy "fetch:inst4"
+Warning (10230): Verilog HDL assignment warning at fetch.v(13): truncated value with size 32 to match size of target (8) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v Line: 13
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "decoder:inst10|save1" merged with LATCH primitive "decoder:inst10|selA[0]" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 8
+    Info (13026): Duplicate LATCH primitive "decoder:inst10|alu[1]" merged with LATCH primitive "decoder:inst10|selB[0]" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+    Info (13026): Duplicate LATCH primitive "decoder:inst10|save2" merged with LATCH primitive "decoder:inst10|selB[0]" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 10
+Warning (13012): Latch alu:inst5|out[7] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[6] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[5] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[4] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[3] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[2] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[1] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch alu:inst5|out[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst10|alu[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+Warning (13012): Latch decoder:inst10|selA[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|q_a[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 32
+Warning (13012): Latch decoder:inst10|alu[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|q_a[0] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 32
+Warning (13012): Latch decoder:inst10|selB[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|q_a[4] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 32
+Warning (13012): Latch decoder:inst10|alu[2] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|q_a[4] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 32
+Warning (13012): Latch decoder:inst10|save0 has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 7
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_i391:auto_generated|q_a[0] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_i391.tdf Line: 32
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 164 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 106 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Thu May 19 18:08:11 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
+
+

@@ -1,0 +1,12 @@
+module reg8
+(
+ input wire d[7:0],
+ input wire clk;
+ output reg q[7:0]
+ );
+ 
+always @clk begin
+	q <= d;
+end
+ 
+endmodule

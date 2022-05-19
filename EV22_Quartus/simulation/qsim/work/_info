@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/My_Designs/uc1/simulation/qsim
+vhard_block
+Z0 !s110 1652995810
+!i10b 1
+!s100 SB3B7<I:SJ:adRiWDPmAW0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBJV8iMdoLc]kMo>mmQ^kD2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim
+Z4 w1652995809
+Z5 8uc1.vo
+Z6 Fuc1.vo
+!i122 38
+L0 3360 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1652995810.000000
+Z9 !s107 uc1.vo|
+Z10 !s90 -work|work|uc1.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vuc1
+R0
+!i10b 1
+!s100 K@R[eKR4?[99S?kFK>mdB3
+R1
+I6^bF=kj=MCz;I3MWlkzc11
+R2
+R3
+R4
+R5
+R6
+!i122 38
+L0 32 3327
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vuc1_vlg_vec_tst
+R0
+!i10b 1
+!s100 K=UjcKe;>2g1HcjBomLJ72
+R1
+IjMZg18V1dRDIIbYnYCY`m1
+R2
+R3
+w1652995808
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 39
+L0 30 44
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12

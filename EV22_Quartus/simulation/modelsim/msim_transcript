@@ -1,0 +1,42 @@
+# Reading pref.tcl
+# do uc1_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {uc1.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:07 on May 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." uc1.vo 
+# -- Compiling module uc1
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	uc1
+# End time: 16:00:08 on May 18,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.uc1 -L cycloneive_ver -L altera_mf_ver -L altera_ver
+# vsim -gui -l msim_transcript work.uc1 -L cycloneive_ver -L altera_mf_ver -L altera_ver 
+# Start time: 16:00:46 on May 18,2022
+# Loading work.uc1
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# End time: 16:01:52 on May 18,2022, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 0
