@@ -56,9 +56,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name BDF_FILE uc1.bdf
 set_global_assignment -name QIP_FILE rom1.qip
 set_global_assignment -name VERILOG_FILE reg8.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name HEX_FILE prog1.hex
 set_global_assignment -name VERILOG_FILE fetch.v
 set_global_assignment -name VERILOG_FILE alu.v
@@ -66,6 +63,15 @@ set_global_assignment -name QIP_FILE mux8_4.qip
 set_global_assignment -name VERILOG_FILE decoder.v
 set_global_assignment -name QIP_FILE pll1.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE Inputs.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name QIP_FILE rom2.qip
+set_global_assignment -name HEX_FILE microinstruction_rom.hex
+set_global_assignment -name VERILOG_FILE register_bank.v
+set_global_assignment -name VERILOG_FILE reg16.v
+set_global_assignment -name QIP_FILE mux2.qip
+set_global_assignment -name VERILOG_FILE constant_reg.v
+set_global_assignment -name BDF_FILE testbench.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

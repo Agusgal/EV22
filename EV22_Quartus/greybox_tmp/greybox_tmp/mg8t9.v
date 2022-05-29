@@ -1,11 +1,11 @@
 //lpm_mux CBX_SINGLE_OUTPUT_FILE="ON" LPM_SIZE=2 LPM_TYPE="LPM_MUX" LPM_WIDTH=1 LPM_WIDTHS=1 data result sel
-//VERSION_BEGIN 21.1 cbx_mgl 2021:10:21:11:03:46:SJ cbx_stratixii 2021:10:21:11:03:22:SJ cbx_util_mgl 2021:10:21:11:03:22:SJ  VERSION_END
+//VERSION_BEGIN 20.1 cbx_mgl 2020:06:05:12:11:10:SJ cbx_stratixii 2020:06:05:12:04:51:SJ cbx_util_mgl 2020:06:05:12:04:51:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
 //  Your use of Intel Corporation's design tools, logic functions 
 //  and other software and tools, and any partner logic 
 //  functions, and any output files from any of the foregoing 

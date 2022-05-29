@@ -1,0 +1,13 @@
+module constant_reg ( input [7:0] k_in,
+							 input byte_select,
+							 output reg [15:0] k_out);
+						 
+	always @ (store_lsb) begin
+		if(byte_select)
+			assign k_out = {k_in, k_out[7..0]};
+		else
+			assign k_out = {k_out[15..8], k_in};	
+	end
+	
+endmodule
+	assign k_out 
