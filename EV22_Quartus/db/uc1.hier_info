@@ -1907,3 +1907,13 @@ SH_OUT[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 SH_OUT[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|uc1|carry_block:inst8
+cy_out => cy~reg0.DATAIN
+clk => cy~reg0.CLK
+aluc[0] => Decoder0.IN3
+aluc[1] => Decoder0.IN2
+aluc[2] => Decoder0.IN1
+aluc[3] => Decoder0.IN0
+cy <= cy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

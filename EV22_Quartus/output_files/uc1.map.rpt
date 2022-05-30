@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Mon May 30 15:03:31 2022
+Mon May 30 16:08:25 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 30 15:03:31 2022       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 30 16:08:25 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
@@ -192,6 +192,7 @@ https://fpgasoftware.intel.com/eula.
 ; mux2.v                           ; yes             ; User Wizard-Generated File            ; C:/MyDesigns/EV22/EV22_Quartus/mux2.v                                        ;         ;
 ; constant_reg.v                   ; yes             ; User Verilog HDL File                 ; C:/MyDesigns/EV22/EV22_Quartus/constant_reg.v                                ;         ;
 ; shifter.v                        ; yes             ; User Verilog HDL File                 ; C:/MyDesigns/EV22/EV22_Quartus/shifter.v                                     ;         ;
+; carry_block.v                    ; yes             ; User Verilog HDL File                 ; C:/MyDesigns/EV22/EV22_Quartus/carry_block.v                                 ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
@@ -597,7 +598,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 30 15:03:22 2022
+    Info: Processing started: Mon May 30 16:08:16 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -631,8 +632,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
     Info (12023): Found entity 1: testbench
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
     Info (12023): Found entity 1: shifter File: C:/MyDesigns/EV22/EV22_Quartus/shifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file carry_block.v
+    Info (12023): Found entity 1: carry_block File: C:/MyDesigns/EV22/EV22_Quartus/carry_block.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at decoder.v(25): created implicit net for "nextPC" File: C:/MyDesigns/EV22/EV22_Quartus/decoder.v Line: 25
 Info (12127): Elaborating entity "uc1" for the top level hierarchy
+Warning (275013): Port "clk" of type carry_block and instance "inst8" is missing source signal
 Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst2"
 Warning (10858): Verilog HDL warning at register_bank.v(19): object q3 used but never assigned File: C:/MyDesigns/EV22/EV22_Quartus/register_bank.v Line: 19
 Warning (10235): Verilog HDL Always Construct warning at register_bank.v(35): variable "q0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/MyDesigns/EV22/EV22_Quartus/register_bank.v Line: 35
@@ -746,6 +750,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_vpa1 File: C:/MyDesigns/EV22/EV22_Quartus/db/altsyncram_vpa1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_vpa1" for hierarchy "rom2:inst1|altsyncram:altsyncram_component|altsyncram_vpa1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst7"
+Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "rom2:inst1|altsyncram:altsyncram_component|altsyncram_vpa1:auto_generated|q_a[0]" File: C:/MyDesigns/EV22/EV22_Quartus/db/altsyncram_vpa1.tdf Line: 35
@@ -849,9 +854,9 @@ Info (21057): Implemented 196 device resources after synthesis - the final resou
     Info (21059): Implemented 88 output pins
     Info (21061): Implemented 86 logic cells
     Info (21064): Implemented 20 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 117 warnings
-    Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Mon May 30 15:03:31 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 118 warnings
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Mon May 30 16:08:25 2022
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:21
 
