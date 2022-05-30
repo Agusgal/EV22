@@ -558,6 +558,35 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 176 64))
 	)
 )
+(symbol
+	(rect 744 392 976 472)
+	(text "shifter" (rect 5 0 36 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ALU_OUT[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "ALU_OUT[15..0]" (rect 21 27 102 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SH[1..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "SH[1..0]" (rect 21 43 62 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "SH_OUT[15..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "SH_OUT[15..0]" (rect 148 27 223 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 64))
+	)
+)
 (connector
 	(text "CLK" (rect 80 128 100 145)(font "Intel Clear" ))
 	(pt 128 144)
