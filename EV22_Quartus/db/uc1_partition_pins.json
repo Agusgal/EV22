@@ -4,131 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "A[15]",
+					"name" : "A_posmux[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A[14]",
+					"name" : "A_posmux[14]",
 					"strict" : false
 				},
 				{
-					"name" : "A[13]",
+					"name" : "A_posmux[13]",
 					"strict" : false
 				},
 				{
-					"name" : "A[12]",
+					"name" : "A_posmux[12]",
 					"strict" : false
 				},
 				{
-					"name" : "A[11]",
+					"name" : "A_posmux[11]",
 					"strict" : false
 				},
 				{
-					"name" : "A[10]",
+					"name" : "A_posmux[10]",
 					"strict" : false
 				},
 				{
-					"name" : "A[9]",
+					"name" : "A_posmux[9]",
 					"strict" : false
 				},
 				{
-					"name" : "A[8]",
+					"name" : "A_posmux[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A[7]",
+					"name" : "A_posmux[7]",
 					"strict" : false
 				},
 				{
-					"name" : "A[6]",
+					"name" : "A_posmux[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[5]",
+					"name" : "A_posmux[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "A_posmux[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "A_posmux[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "A_posmux[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "A_posmux[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "C[15]",
-					"strict" : false
-				},
-				{
-					"name" : "C[14]",
-					"strict" : false
-				},
-				{
-					"name" : "C[13]",
-					"strict" : false
-				},
-				{
-					"name" : "C[12]",
-					"strict" : false
-				},
-				{
-					"name" : "C[11]",
-					"strict" : false
-				},
-				{
-					"name" : "C[10]",
-					"strict" : false
-				},
-				{
-					"name" : "C[9]",
-					"strict" : false
-				},
-				{
-					"name" : "C[8]",
-					"strict" : false
-				},
-				{
-					"name" : "C[7]",
-					"strict" : false
-				},
-				{
-					"name" : "C[6]",
-					"strict" : false
-				},
-				{
-					"name" : "C[5]",
-					"strict" : false
-				},
-				{
-					"name" : "C[4]",
-					"strict" : false
-				},
-				{
-					"name" : "C[3]",
-					"strict" : false
-				},
-				{
-					"name" : "C[2]",
-					"strict" : false
-				},
-				{
-					"name" : "C[1]",
-					"strict" : false
-				},
-				{
-					"name" : "C[0]",
+					"name" : "A_posmux[0]",
 					"strict" : false
 				},
 				{
@@ -228,6 +164,78 @@
 					"strict" : false
 				},
 				{
+					"name" : "C[15]",
+					"strict" : false
+				},
+				{
+					"name" : "C[14]",
+					"strict" : false
+				},
+				{
+					"name" : "C[13]",
+					"strict" : false
+				},
+				{
+					"name" : "C[12]",
+					"strict" : false
+				},
+				{
+					"name" : "C[11]",
+					"strict" : false
+				},
+				{
+					"name" : "C[10]",
+					"strict" : false
+				},
+				{
+					"name" : "C[9]",
+					"strict" : false
+				},
+				{
+					"name" : "C[8]",
+					"strict" : false
+				},
+				{
+					"name" : "C[7]",
+					"strict" : false
+				},
+				{
+					"name" : "C[6]",
+					"strict" : false
+				},
+				{
+					"name" : "C[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "aluc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "aluc[0]",
+					"strict" : false
+				},
+				{
 					"name" : "B[15]",
 					"strict" : false
 				},
@@ -292,6 +300,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "Sel_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_A[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Sel_B[5]",
 					"strict" : false
 				},
@@ -321,6 +349,70 @@
 				},
 				{
 					"name" : "Sel_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[14]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_premux[0]",
 					"strict" : false
 				},
 				{
