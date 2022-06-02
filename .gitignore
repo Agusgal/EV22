@@ -1,0 +1,8 @@
+*.db_info
+*.flock
+*.sci
+*.dpi
+*.logdb
+*.dfp
+*.qws
+*.kpt
