@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/29/2022 16:59:16"
+// Generated on "06/01/2022 23:51:38"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -39,6 +39,9 @@ wire [15:0] C;
 wire [15:0] k_out;
 wire [15:0] OPCODE;
 wire [7:0] PC;
+wire [5:0] Sel_B;
+wire [5:0] Sel_C;
+wire [15:0] WR;
 
 // assign statements (if any)                          
 uc1 i1 (
@@ -50,7 +53,10 @@ uc1 i1 (
 	.k_out(k_out),
 	.nRST(nRST),
 	.OPCODE(OPCODE),
-	.PC(PC)
+	.PC(PC),
+	.Sel_B(Sel_B),
+	.Sel_C(Sel_C),
+	.WR(WR)
 );
 initial 
 begin 
@@ -68,8 +74,9 @@ end
 // nRST
 initial
 begin
-	nRST = 1'b0;
-	nRST = #40000 1'b1;
+	nRST = 1'b1;
+	nRST = #20000 1'b0;
+	nRST = #50000 1'b1;
 end 
 endmodule
 

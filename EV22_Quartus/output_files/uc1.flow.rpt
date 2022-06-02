@@ -1,6 +1,6 @@
 Flow report for uc1
-Mon May 30 16:08:25 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Wed Jun 01 23:51:39 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May 30 16:08:25 2022       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Flow Status                        ; Successful - Wed Jun 01 23:51:39 2022       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 86                                          ;
-;     Total combinational functions  ; 78                                          ;
-;     Dedicated logic registers      ; 16                                          ;
-; Total registers                    ; 16                                          ;
-; Total pins                         ; 90                                          ;
+; Total logic elements               ; 712 / 22,320 ( 3 % )                        ;
+;     Total combinational functions  ; 463 / 22,320 ( 2 % )                        ;
+;     Dedicated logic registers      ; 576 / 22,320 ( 3 % )                        ;
+; Total registers                    ; 576                                         ;
+; Total pins                         ; 118 / 154 ( 77 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 5,120                                       ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 4,096 / 608,256 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2022 16:08:16 ;
+; Start date & time ; 06/01/2022 23:50:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uc1                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 168202115960208.165393769606152        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 2499175567181.165413820813148          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -109,8 +109,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4794 MB             ; 00:00:21                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:21                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4844 MB             ; 00:00:24                           ;
+; Fitter               ; 00:00:14     ; 1.1                     ; 6529 MB             ; 00:00:31                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.4                     ; 4937 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,7 +128,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; NAVI             ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OEC6LOD8  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,6 +145,15 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
+quartus_fit --read_settings_files=off --write_settings_files=off uc1 -c uc1
+quartus_asm --read_settings_files=off --write_settings_files=off uc1 -c uc1
+quartus_sta uc1 -c uc1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform.vwf --testbench_file=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform.vwf --testbench_file=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform.vwf --testbench_file=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
 
 
 
