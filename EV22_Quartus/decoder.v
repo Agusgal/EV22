@@ -101,61 +101,45 @@ module decoder
 
 			//b00000100:	//MOK #K_LSB: K_LSB = k
 			8'b00000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; end //MOK #K_LSB
+
 			//b01000100:	//MOK W,#K: K_MSB = k; W = K
 			8'b01000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; end //MOK W,#K
 			
-			//b00000101:	//ANK W,#K: W= W & K
-			8'b00000101:	begin ALUC=4'b0111; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ANK W,#K
+			//b01000101:	//ANK W,#K: W= W & K
+			8'b01000101:	begin ALUC=4'b0111; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ANK W,#K
 
-			
-			//b00000110:	//ORK W,#K: W= W OR K
-			8'b00000110:	begin ALUC=4'b0110; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ORK W,#K
-			
-			
-			//b00000111:	//ADK W,#K: W= W + K + CY
-			8'b00000111:	begin ALUC=4'b0101; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110011; end //ADK W,#K
-			
+			//b01000110:	//ORK W,#K: W= W OR K
+			8'b01000110:	begin ALUC=4'b0110; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ORK W,#K
+						
+			//b01000111:	//ADK W,#K: W= W + K + CY
+			8'b01000111:	begin ALUC=4'b0101; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110011; end //ADK W,#K
 			
 			//b00000010:	//MOV W,Rj: W= Rj
 			8'b00000010:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000110; end //MOV W,Rj
 			
-			
 			//b00000010:	//MOV W,PIj: W= PIj
 			8'b01000000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000110; end //MOV W, PIj
 
-			
 			//b00000010:	//ANR W,Rj: W= W & Rj
 			8'b00000010:	begin ALUC=4'b0111; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000111; end //ANK W, Rj
-			
 			
 			//b00000011:	//ORR W,Rj: W= W OR Rj
 			8'b00000011:	begin ALUC=4'b0110; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000111; end //ORR W, Rj
 			
-			
 			//b01000011:	//ADR W,Rj: W= W + Rj + Cy
 			8'b01000011:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110111; end //ADR W, Rj
-			
-			
 			
 			//b00000000:	//CPL W: W= \W
 			8'b00000000:	begin ALUC=4'b0011; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //CPL W
 			
-			
 			//b00000000:	//CLR CY=0
 			8'b01000000:	begin ALUC=4'b1011; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0100000; end //CLR CY
-			
 			
 			//b00000001:	//SET CY=1
 			8'b00000001:	begin ALUC=4'b1100; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0100000; end //SET CY
 			
-			
 			//b01000001:	//RET PC= Last Restored PC+1
 			8'b01000001:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //RET
-			
-			
-			
-
-
 		endcase 
 	end
 
