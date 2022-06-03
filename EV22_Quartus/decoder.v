@@ -28,7 +28,7 @@ module decoder
 			8'b00100100:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
 			8'b00100101:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
 			8'b00100110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
-			8'b00100110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
+			8'b00100111:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
 
 			//b00101xxx:	//JZE X: IF W=0 THEN PC=X
 			8'b00101000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
@@ -38,7 +38,7 @@ module decoder
 			8'b00101100:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
 			8'b00101101:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
 			8'b00101110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
-			8'b00101110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
+			8'b00101111:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JZE X
 			
 			//b00110xxx:	//JNE X: IF W15=0 THEN PC=X
 			8'b00110000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
@@ -48,7 +48,7 @@ module decoder
 			8'b00110100:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
 			8'b00110101:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
 			8'b00110110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
-			8'b00110110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
+			8'b00110111:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000001; end //JNE X
 			
 			//b00111xxx:	//JCY X: IF CY THEN PC=X
 			8'b00111000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
@@ -58,7 +58,7 @@ module decoder
 			8'b00111100:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
 			8'b00111101:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
 			8'b00111110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
-			8'b00111110:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
+			8'b00111111:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1010000; end //JCY X
 
 			//b000100yy:	//MOM Y,W: M(Y) = W
 			8'b00010000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=1; Sel_B=0; Sel_C=35; Type=7'b0000001; end //MOM Y,W
