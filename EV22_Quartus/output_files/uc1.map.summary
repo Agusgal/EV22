@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jun 02 01:58:51 2022
+Analysis & Synthesis Status : Successful - Thu Jun 02 21:12:56 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : uc1
 Top-level Entity Name : uc1
 Family : Cyclone IV E
-Total logic elements : 1,027
-    Total combinational functions : 507
-    Dedicated logic registers : 576
-Total registers : 576
-Total pins : 127
+Total logic elements : 1,139
+    Total combinational functions : 627
+    Dedicated logic registers : 569
+Total registers : 569
+Total pins : 128
 Total virtual pins : 0
 Total memory bits : 4,096
 Embedded Multiplier 9-bit elements : 0

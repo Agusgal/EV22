@@ -99,8 +99,10 @@ module decoder
 			8'b00001111:	begin ALUC=4'b0001; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C={1'b0,Ri}; Type=7'b0001001; end //MOV Ri,W
 			//b00001111:	//MMOV POi,W: POi = W (es un caso particular del anterior)
 
-			//b00000100:	//MOK W,#K: Ri = W
-			8'b00000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; end //MOK W,#K
+			//b00000100:	//MOK #K_LSB: K_LSB = k
+			8'b00000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; end //MOK #K_LSB
+			//b01000100:	//MOK W,#K: K_MSB = k; W = K
+			8'b01000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; end //MOK W,#K
 			
 			//b00000101:	//ANK W,#K: W= W & K
 			8'b00000101:	begin ALUC=4'b0111; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ANK W,#K

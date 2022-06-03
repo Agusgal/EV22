@@ -2,8 +2,9 @@ module ALU ( input [15:0] b,
 				 input [15:0] a,
 				 input [3:0] aluc,
 				 input cy_in,
-				 output reg cy_out,
-				 output reg [15:0] z);
+				 output reg [15:0] z,
+				 output reg cy_out
+				 );
 	
 	always @ (b, a, aluc, cy_in) begin
 		case(aluc)

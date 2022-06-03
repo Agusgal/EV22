@@ -228,7 +228,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "aluc[3]",
+					"strict" : false
+				},
+				{
 					"name" : "aluc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "aluc[1]",
 					"strict" : false
 				},
 				{
@@ -480,11 +488,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "clk_reg",
 					"strict" : false
 				},
 				{
 					"name" : "nRST",
+					"strict" : false
+				},
+				{
+					"name" : "clk_pc",
 					"strict" : false
 				}
 			]
