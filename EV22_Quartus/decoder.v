@@ -46,7 +46,7 @@ module decoder
 			8'b000111xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //BSR S
 
 			
-			//b000010ii:	//MOV Ri,Rj: Ri = Rj
+			//b000010ii:	//MOV Ri,Rj: Ri = Rj y variaciones con puertos y working register
 			8'b000010xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C={1'b0,Ri}; Type=7'b0001100; end //MOV Ri,Rj
 			//b00001011:	//MOV POi,Rj: POi = Rj (es un caso particular del anterior)
 			//b000010ii:	//MOV POi,PIj: Ri = POj (es un caso particular del anterior)
@@ -58,30 +58,30 @@ module decoder
 			//b00000100:	//MOK #K_LSB: K_LSB = k
 			8'b00000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; end //MOK #K_LSB
 
-			//b01000100:	//MOK W,#K: K_MSB = k; W = K
-			8'b01000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; end //MOK W,#K
+			//b10000100:	//MOK W,#K: K_MSB = k; W = K
+			8'b10000100:	begin ALUC=4'b0000; SH=0; KMux=1; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; end //MOK W,#K
 			
-			//b01000101:	//ANK W,#K: W= W & K
-			8'b01000101:	begin ALUC=4'b0111; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ANK W,#K
+			//b10000101:	//ANK W,#K: W= W & K
+			8'b10000101:	begin ALUC=4'b0111; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ANK W,#K
 
 			//b01000110:	//ORK W,#K: W= W OR K
-			8'b01000110:	begin ALUC=4'b0110; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ORK W,#K
+			8'b10000110:	begin ALUC=4'b0110; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //ORK W,#K
 						
-			//b01000111:	//ADK W,#K: W= W + K + CY
-			8'b01000111:	begin ALUC=4'b0101; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110011; end //ADK W,#K
+			//b10000111:	//ADK W,#K: W= W + K + CY
+			8'b10000111:	begin ALUC=4'b0101; SH=0; KMux=1; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110011; end //ADK W,#K
 			
 			//b00000010:	//MOV W,Rj: W= Rj
 			8'b00000010:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000110; end //MOV W,Rj
 			
-			//b00000010:	//MOV W,PIj: W= PIj
-			8'b01000000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000110; end //MOV W, PIj
+			//b00000010:	//MOV W,PIj: W= PIj - Caso particular del de arriba
+			//8'b01000000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000110; end //MOV W, PIj
 
-			//b00000010:	//ANR W,Rj: W= W & Rj
-			8'b00000010:	begin ALUC=4'b0111; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000111; end //ANK W, Rj
-			
+			//b01000010:	//ANR W,Rj: W= W & Rj
+			8'b01000010:	begin ALUC=4'b0111; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000111; end //ANK W, Rj
+
 			//b00000011:	//ORR W,Rj: W= W OR Rj
 			8'b00000011:	begin ALUC=4'b0110; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000111; end //ORR W, Rj
-			
+	
 			//b01000011:	//ADR W,Rj: W= W + Rj + Cy
 			8'b01000011:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110111; end //ADR W, Rj
 			

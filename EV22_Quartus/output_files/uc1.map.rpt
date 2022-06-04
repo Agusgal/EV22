@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Fri Jun 03 20:36:36 2022
+Sat Jun 04 02:54:13 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 03 20:36:36 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 04 02:54:13 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,145                                       ;
-;     Total combinational functions  ; 633                                         ;
+; Total logic elements               ; 1,142                                       ;
+;     Total combinational functions  ; 630                                         ;
 ;     Dedicated logic registers      ; 569                                         ;
 ; Total registers                    ; 569                                         ;
 ; Total pins                         ; 129                                         ;
@@ -213,16 +213,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 1,145      ;
+; Estimated Total logic elements              ; 1,142      ;
 ;                                             ;            ;
-; Total combinational functions               ; 633        ;
+; Total combinational functions               ; 630        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 424        ;
-;     -- 3 input functions                    ; 183        ;
+;     -- 4 input functions                    ; 423        ;
+;     -- 3 input functions                    ; 181        ;
 ;     -- <=2 input functions                  ; 26         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 595        ;
+;     -- normal mode                          ; 592        ;
 ;     -- arithmetic mode                      ; 38         ;
 ;                                             ;            ;
 ; Total registers                             ; 569        ;
@@ -236,7 +236,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; nRST~input ;
 ; Maximum fan-out                             ; 568        ;
-; Total fan-out                               ; 4953       ;
+; Total fan-out                               ; 4943       ;
 ; Average fan-out                             ; 3.36       ;
 +---------------------------------------------+------------+
 
@@ -246,11 +246,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
-; |uc1                                      ; 633 (0)             ; 569 (0)                   ; 4096        ; 0            ; 0       ; 0         ; 129  ; 0            ; |uc1                                                                          ; uc1             ; work         ;
-;    |ALU:inst5|                            ; 154 (154)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                ; ALU             ; work         ;
+; |uc1                                      ; 630 (0)             ; 569 (0)                   ; 4096        ; 0            ; 0       ; 0         ; 129  ; 0            ; |uc1                                                                          ; uc1             ; work         ;
+;    |ALU:inst5|                            ; 152 (152)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                ; ALU             ; work         ;
 ;    |carry_block:inst8|                    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                        ; carry_block     ; work         ;
 ;    |constant_reg:inst6|                   ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                       ; constant_reg    ; work         ;
-;    |decoder:inst1|                        ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                            ; decoder         ; work         ;
+;    |decoder:inst1|                        ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                            ; decoder         ; work         ;
 ;    |fetch:inst4|                          ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                              ; fetch           ; work         ;
 ;    |mux2:inst3|                           ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3                                                               ; mux2            ; work         ;
 ;       |lpm_mux:LPM_MUX_component|         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component                                     ; lpm_mux         ; work         ;
@@ -484,16 +484,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 528                         ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 634                         ;
+; cycloneiii_lcell_comb ; 631                         ;
 ;     arith             ; 38                          ;
 ;         2 data inputs ; 20                          ;
 ;         3 data inputs ; 18                          ;
-;     normal            ; 596                         ;
+;     normal            ; 593                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 165                         ;
-;         4 data inputs ; 424                         ;
+;         3 data inputs ; 163                         ;
+;         4 data inputs ; 423                         ;
 ; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.50                        ;
@@ -516,7 +516,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 03 20:36:26 2022
+    Info: Processing started: Sat Jun 04 02:54:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -576,24 +576,11 @@ Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/Franco/Docu
 Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst1"
 Warning (10235): Verilog HDL Always Construct warning at decoder.v(20): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 20
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(76): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 76
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(85): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 85
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(86): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 86
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(87): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 87
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(88): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 88
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(93): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 93
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(94): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 94
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(95): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 95
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(96): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 96
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(25): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 25
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(26): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 26
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(27): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 27
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(28): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 28
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(29): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 29
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(30): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 30
-Warning (10935): Verilog HDL Casex/Casez warning at decoder.v(31): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 31
-Warning (10272): Verilog HDL Case Statement warning at decoder.v(121): case item expression covers a value already covered by a previous case item File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 121
-Warning (10763): Verilog HDL warning at decoder.v(22): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 22
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(43): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 43
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(50): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 50
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(55): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 55
+Warning (10272): Verilog HDL Case Statement warning at decoder.v(80): case item expression covers a value already covered by a previous case item File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 80
+Warning (10272): Verilog HDL Case Statement warning at decoder.v(92): case item expression covers a value already covered by a previous case item File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 92
 Warning (10270): Verilog HDL Case Statement warning at decoder.v(22): incomplete case statement has no default case item File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 22
 Warning (10240): Verilog HDL Always Construct warning at decoder.v(17): inferring latch(es) for variable "ALUC", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
 Warning (10240): Verilog HDL Always Construct warning at decoder.v(17): inferring latch(es) for variable "SH", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
@@ -698,7 +685,7 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
 Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 7
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
 Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[8] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
 Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
 Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 17
@@ -760,14 +747,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1306 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1303 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 126 output pins
-    Info (21061): Implemented 1161 logic cells
+    Info (21061): Implemented 1158 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
-    Info: Peak virtual memory: 4787 megabytes
-    Info: Processing ended: Fri Jun 03 20:36:36 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Sat Jun 04 02:54:13 2022
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:21
 
