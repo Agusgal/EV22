@@ -4,67 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "A_posmux[15]",
+					"name" : "CY_OUT",
 					"strict" : false
 				},
 				{
-					"name" : "A_posmux[14]",
+					"name" : "aluc[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A_posmux[13]",
+					"name" : "aluc[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A_posmux[12]",
+					"name" : "aluc[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A_posmux[11]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[10]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[9]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[8]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[7]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[6]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[5]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[4]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[3]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A_posmux[0]",
+					"name" : "aluc[0]",
 					"strict" : false
 				},
 				{
@@ -228,19 +184,55 @@
 					"strict" : false
 				},
 				{
-					"name" : "aluc[3]",
+					"name" : "Sel_A[4]",
 					"strict" : false
 				},
 				{
-					"name" : "aluc[2]",
+					"name" : "Sel_A[3]",
 					"strict" : false
 				},
 				{
-					"name" : "aluc[1]",
+					"name" : "Sel_A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "aluc[0]",
+					"name" : "Sel_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_C[0]",
 					"strict" : false
 				},
 				{
@@ -308,55 +300,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "Sel_A[4]",
+					"name" : "A_posmux[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_A[3]",
+					"name" : "A_posmux[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_A[2]",
+					"name" : "A_posmux[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_A[1]",
+					"name" : "A_posmux[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_A[0]",
+					"name" : "A_posmux[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_B[5]",
+					"name" : "A_posmux[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_B[1]",
+					"name" : "A_posmux[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[5]",
+					"name" : "A_posmux[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[4]",
+					"name" : "A_posmux[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[3]",
+					"name" : "A_posmux[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[2]",
+					"name" : "A_posmux[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[1]",
+					"name" : "A_posmux[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Sel_C[0]",
+					"name" : "A_posmux[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_posmux[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_posmux[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_posmux[0]",
 					"strict" : false
 				},
 				{
@@ -488,7 +492,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_reg",
+					"name" : "clk_pc",
 					"strict" : false
 				},
 				{
@@ -496,7 +500,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_pc",
+					"name" : "clk_reg",
 					"strict" : false
 				}
 			]
