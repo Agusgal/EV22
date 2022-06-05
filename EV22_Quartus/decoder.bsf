@@ -108,6 +108,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "Type[6..0]" (rect 146 155 187 167)(font "Arial" ))
 		(line (pt 208 160)(pt 192 160)(line_width 3))
 	)
+	(port
+		(pt 208 176)
+		(output)
+		(text "Dadd[9..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "Dadd[9..0]" (rect 146 171 187 183)(font "Arial" ))
+		(line (pt 208 176)(pt 192 176)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 192 192)(line_width 1))
 	)

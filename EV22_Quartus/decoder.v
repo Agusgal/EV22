@@ -11,7 +11,8 @@ module decoder
  output reg [4:0] Sel_A,
  output reg [5:0] Sel_B,
  output reg [5:0] Sel_C,
- output reg [6:0] Type
+ output reg [6:0] Type,
+ output reg [9:0] Dadd
  );
 	 
 	always @(OPCODE)
@@ -34,10 +35,10 @@ module decoder
 
 
 			//b000100yy:	//MOM Y,W: M(Y) = W
-			8'b000100xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=1; Sel_B=0; Sel_C=35; Type=7'b0000001; end //MOM Y,W
+			8'b000100xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=1; Sel_B=0; Sel_C=35; Type=7'b0000001; Dadd = {Ri,Rj}; end //MOM Y,W
 
 			//b000101yy:	//MOM W,Y: W = M(Y)
-			8'b000101xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; end //MOM W,Y
+			8'b000101xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; Dadd = {Ri,Rj}; end //MOM W,Y
 
 			//b000110ii:	//ADW Ri,Rj: Ri= W + Rj + CY
 			8'b000110xx:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C={1'b0,Ri}; Type=7'b0111101; end //ADW Ri,Rj

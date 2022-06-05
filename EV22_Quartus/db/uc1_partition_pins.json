@@ -8,22 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "aluc[3]",
-					"strict" : false
-				},
-				{
-					"name" : "aluc[2]",
-					"strict" : false
-				},
-				{
-					"name" : "aluc[1]",
-					"strict" : false
-				},
-				{
-					"name" : "aluc[0]",
-					"strict" : false
-				},
-				{
 					"name" : "OPCODE[15]",
 					"strict" : false
 				},
@@ -88,6 +72,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
 					"name" : "PC[7]",
 					"strict" : false
 				},
@@ -117,6 +113,70 @@
 				},
 				{
 					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[15]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[14]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[13]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[12]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[11]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[10]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[9]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[8]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[7]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[6]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[5]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[4]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[3]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[2]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[1]",
+					"strict" : false
+				},
+				{
+					"name" : "W_BLOCK[0]",
 					"strict" : false
 				},
 				{
@@ -364,131 +424,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[15]",
+					"name" : "Daddy[9]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[14]",
+					"name" : "Daddy[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[13]",
+					"name" : "Daddy[7]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[12]",
+					"name" : "Daddy[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[11]",
+					"name" : "Daddy[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[10]",
+					"name" : "Daddy[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[9]",
+					"name" : "Daddy[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[8]",
+					"name" : "Daddy[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[7]",
+					"name" : "Daddy[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[6]",
+					"name" : "Daddy[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A_premux[5]",
-					"strict" : false
-				},
-				{
-					"name" : "A_premux[4]",
-					"strict" : false
-				},
-				{
-					"name" : "A_premux[3]",
-					"strict" : false
-				},
-				{
-					"name" : "A_premux[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A_premux[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A_premux[0]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[15]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[14]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[13]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[12]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[11]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[10]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[9]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[8]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "k_out[0]",
+					"name" : "clk_reg",
 					"strict" : false
 				},
 				{
@@ -497,10 +473,6 @@
 				},
 				{
 					"name" : "nRST",
-					"strict" : false
-				},
-				{
-					"name" : "clk_reg",
 					"strict" : false
 				}
 			]

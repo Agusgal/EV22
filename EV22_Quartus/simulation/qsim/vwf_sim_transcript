@@ -26,11 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Jun 04 02:54:56 2022
+    Info: Processing started: Sun Jun 05 08:05:34 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Waveform4.vwf --testbench_file=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/Waveform4.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- vector source file when writing test bench files
+B[1]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -57,14 +57,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Jun 04 02:54:57 2022
+    Info: Processing started: Sun Jun 05 08:05:35 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file uc1.vo in folder "C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Sat Jun 04 02:54:57 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Sun Jun 05 08:05:36 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -87,29 +87,30 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:54:58 on Jun 04,2022
+# Start time: 08:05:37 on Jun 05,2022
 # vlog -work work uc1.vo 
+
 # -- Compiling module uc1
 
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	uc1
-# End time: 02:54:58 on Jun 04,2022, Elapsed time: 0:00:00
+# End time: 08:05:37 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:54:58 on Jun 04,2022
+# Start time: 08:05:37 on Jun 05,2022
 # vlog -work work Waveform4.vwf.vt 
 
 # -- Compiling module uc1_vlg_vec_tst
 # 
 # Top level modules:
 # 	uc1_vlg_vec_tst
-# End time: 02:54:58 on Jun 04,2022, Elapsed time: 0:00:00
+# End time: 08:05:37 on Jun 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst 
-# Start time: 02:54:58 on Jun 04,2022
+# Start time: 08:05:37 on Jun 05,2022
 # Loading work.uc1_vlg_vec_tst
 # Loading work.uc1
 # Loading work.hard_block
@@ -119,16 +120,15 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#26
-
-# ** Note: $finish    : Waveform4.vwf.vt(71)
+# ** Note: $finish    : Waveform4.vwf.vt(69)
 #    Time: 1 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
-# End time: 02:54:59 on Jun 04,2022, Elapsed time: 0:00:01
+# End time: 08:05:38 on Jun 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -141,7 +141,39 @@ Reading C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1.m
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1_20220604025459.sim.vwf
+Warning: k_out[15] - signal not found in VCD.
+
+Warning: k_out[14] - signal not found in VCD.
+
+Warning: k_out[13] - signal not found in VCD.
+
+Warning: k_out[12] - signal not found in VCD.
+
+Warning: k_out[11] - signal not found in VCD.
+
+Warning: k_out[10] - signal not found in VCD.
+
+Warning: k_out[9] - signal not found in VCD.
+
+Warning: k_out[8] - signal not found in VCD.
+
+Warning: k_out[7] - signal not found in VCD.
+
+Warning: k_out[6] - signal not found in VCD.
+
+Warning: k_out[5] - signal not found in VCD.
+
+Warning: k_out[4] - signal not found in VCD.
+
+Warning: k_out[3] - signal not found in VCD.
+
+Warning: k_out[2] - signal not found in VCD.
+
+Warning: k_out[1] - signal not found in VCD.
+
+Warning: k_out[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1_20220605080538.sim.vwf
 
 Finished VCD to VWF conversion.
 

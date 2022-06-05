@@ -22,6 +22,7 @@ module ALU ( input [15:0] b,
 			4'b1011 : cy_out = 0;
 			4'b1100 : cy_out = 1;
 			default : {cy_out, z} = 0;
+
 		endcase
 	end		
 				 
