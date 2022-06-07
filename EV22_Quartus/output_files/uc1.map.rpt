@@ -1,6 +1,6 @@
 Analysis & Synthesis report for uc1
-Mon Jun 06 23:47:16 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Tue Jun 07 20:36:38 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -16,19 +16,18 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated
- 15. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated
+ 14. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated
+ 15. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
  16. Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component
- 17. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+ 17. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -55,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 06 23:47:16 2022       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 07 20:36:38 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,143                                       ;
-;     Total combinational functions  ; 679                                         ;
-;     Dedicated logic registers      ; 537                                         ;
-; Total registers                    ; 537                                         ;
-; Total pins                         ; 142                                         ;
+; Total logic elements               ; 1,152                                       ;
+;     Total combinational functions  ; 672                                         ;
+;     Dedicated logic registers      ; 557                                         ;
+; Total registers                    ; 557                                         ;
+; Total pins                         ; 145                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 20,480                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -163,61 +162,56 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-; Maximum used               ; 16          ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
-;     Processors 9-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; uc1.bdf                          ; yes             ; User Block Diagram/Schematic File     ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/uc1.bdf                       ;         ;
-; rom1.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v                        ;         ;
-; prog1.hex                        ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/prog1.hex                     ;         ;
-; fetch.v                          ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v                       ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v                         ;         ;
-; decoder.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v                     ;         ;
-; register_bank.v                  ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/register_bank.v               ;         ;
-; mux2.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux2.v                        ;         ;
-; constant_reg.v                   ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v                ;         ;
-; shifter.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/shifter.v                     ;         ;
-; carry_block.v                    ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/carry_block.v                 ;         ;
-; Block_1.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Block_1.v                     ;         ;
-; DATA.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.v                        ;         ;
-; DATA.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.hex                      ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction           ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/mux_tsc.tdf                ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_1591.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf        ;         ;
-; db/altsyncram_u1i1.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf        ;         ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------+---------+
+; uc1.bdf                          ; yes             ; User Block Diagram/Schematic File     ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/uc1.bdf                ;         ;
+; rom1.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom1.v                 ;         ;
+; prog1.hex                        ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/prog1.hex              ;         ;
+; fetch.v                          ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/fetch.v                ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v                  ;         ;
+; decoder.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v              ;         ;
+; register_bank.v                  ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/register_bank.v        ;         ;
+; mux2.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux2.v                 ;         ;
+; constant_reg.v                   ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/constant_reg.v         ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/shifter.v              ;         ;
+; carry_block.v                    ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/carry_block.v          ;         ;
+; Block_1.v                        ; yes             ; User Verilog HDL File                 ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/Block_1.v              ;         ;
+; DATA.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.v                 ;         ;
+; DATA.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.hex               ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf              ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc       ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                 ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc               ;         ;
+; altrom.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                  ;         ;
+; altram.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                  ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                ;         ;
+; db/altsyncram_1591.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf                 ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc                  ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction           ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf         ;         ;
+; db/altsyncram_u1i1.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf ;         ;
++----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -225,31 +219,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 1,143         ;
+; Estimated Total logic elements              ; 1,152         ;
 ;                                             ;               ;
-; Total combinational functions               ; 679           ;
+; Total combinational functions               ; 672           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 464           ;
-;     -- 3 input functions                    ; 182           ;
-;     -- <=2 input functions                  ; 33            ;
+;     -- 4 input functions                    ; 467           ;
+;     -- 3 input functions                    ; 166           ;
+;     -- <=2 input functions                  ; 39            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 640           ;
-;     -- arithmetic mode                      ; 39            ;
+;     -- normal mode                          ; 630           ;
+;     -- arithmetic mode                      ; 42            ;
 ;                                             ;               ;
-; Total registers                             ; 537           ;
-;     -- Dedicated logic registers            ; 537           ;
+; Total registers                             ; 557           ;
+;     -- Dedicated logic registers            ; 557           ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 142           ;
+; I/O pins                                    ; 145           ;
 ; Total memory bits                           ; 20480         ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; clk_reg~input ;
-; Maximum fan-out                             ; 560           ;
-; Total fan-out                               ; 5231          ;
-; Average fan-out                             ; 3.41          ;
+; Maximum fan-out                             ; 561           ;
+; Total fan-out                               ; 5279          ;
+; Average fan-out                             ; 3.40          ;
 +---------------------------------------------+---------------+
 
 
@@ -258,19 +252,19 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
-; |uc1                                      ; 679 (0)             ; 537 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 142  ; 0            ; |uc1                                                                            ; uc1             ; work         ;
+; |uc1                                      ; 672 (0)             ; 557 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 145  ; 0            ; |uc1                                                                            ; uc1             ; work         ;
 ;    |ALU:inst5|                            ; 152 (152)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU             ; work         ;
 ;    |DATA:inst12|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12                                                                ; DATA            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;          |altsyncram_u1i1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated ; altsyncram_u1i1 ; work         ;
 ;    |carry_block:inst8|                    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block     ; work         ;
-;    |constant_reg:inst6|                   ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg    ; work         ;
-;    |decoder:inst1|                        ; 70 (70)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                              ; decoder         ; work         ;
-;    |fetch:inst4|                          ; 15 (15)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                                ; fetch           ; work         ;
+;    |constant_reg:inst6|                   ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg    ; work         ;
+;    |decoder:inst1|                        ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                              ; decoder         ; work         ;
+;    |fetch:inst4|                          ; 18 (18)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                                ; fetch           ; work         ;
 ;    |mux2:inst3|                           ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3                                                                 ; mux2            ; work         ;
 ;       |lpm_mux:LPM_MUX_component|         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component                                       ; lpm_mux         ; work         ;
 ;          |mux_tsc:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                ; mux_tsc         ; work         ;
-;    |register_bank:inst2|                  ; 408 (408)           ; 528 (528)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|register_bank:inst2                                                        ; register_bank   ; work         ;
+;    |register_bank:inst2|                  ; 409 (409)           ; 529 (529)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|register_bank:inst2                                                        ; register_bank   ; work         ;
 ;    |rom1:inst|                            ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst                                                                  ; rom1            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst|altsyncram:altsyncram_component                                  ; altsyncram      ; work         ;
 ;          |altsyncram_1591:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated   ; altsyncram_1591 ; work         ;
@@ -304,24 +298,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
 +-----------------------------------------------------+------------------------+------------------------+
-; constant_reg:inst6|k_out[15]                        ; decoder:inst1|KMux     ; yes                    ;
+; decoder:inst1|Sel_B[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_B[1]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[4]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[3]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[2]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[1]                              ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Sel_C[0]                              ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|KMux                                  ; decoder:inst1|WideOr0  ; yes                    ;
-; constant_reg:inst6|k_out[14]                        ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[13]                        ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[12]                        ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[11]                        ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[10]                        ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[9]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[8]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[7]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[6]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[5]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[4]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[3]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[2]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[1]                         ; decoder:inst1|KMux     ; yes                    ;
-; constant_reg:inst6|k_out[0]                         ; decoder:inst1|KMux     ; yes                    ;
 ; ALU:inst5|z[15]                                     ; ALU:inst5|Mux16        ; yes                    ;
+; decoder:inst1|MR                                    ; decoder:inst1|WideOr0  ; yes                    ;
 ; ALU:inst5|z[14]                                     ; ALU:inst5|Mux16        ; yes                    ;
 ; ALU:inst5|z[13]                                     ; ALU:inst5|Mux16        ; yes                    ;
 ; ALU:inst5|z[12]                                     ; ALU:inst5|Mux16        ; yes                    ;
@@ -337,45 +324,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ALU:inst5|z[2]                                      ; ALU:inst5|Mux16        ; yes                    ;
 ; ALU:inst5|z[1]                                      ; ALU:inst5|Mux16        ; yes                    ;
 ; ALU:inst5|z[0]                                      ; ALU:inst5|Mux16        ; yes                    ;
-; decoder:inst1|Sel_B[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_B[1]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[4]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[3]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[2]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[1]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Sel_C[0]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Dadd[9]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[8]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[7]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[6]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[5]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[4]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[3]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[2]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[1]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|Dadd[0]                               ; decoder:inst1|WideOr35 ; yes                    ;
-; decoder:inst1|MR                                    ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|Type[6]                               ; decoder:inst1|WideOr0  ; yes                    ;
+; ALU:inst5|cy_out                                    ; ALU:inst5|Mux18        ; yes                    ;
 ; decoder:inst1|ALUC[2]                               ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|ALUC[3]                               ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|ALUC[0]                               ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|ALUC[1]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|Type[6]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; ALU:inst5|cy_out                                    ; ALU:inst5|Mux18        ; yes                    ;
 ; decoder:inst1|MW                                    ; decoder:inst1|WideOr0  ; yes                    ;
-; Number of user-specified and inferred latches = 59  ;                        ;                        ;
+; decoder:inst1|Dadd[0]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[1]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[2]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[3]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[4]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[5]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[6]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[7]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[8]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; decoder:inst1|Dadd[9]                               ; decoder:inst1|WideOr35 ; yes                    ;
+; Number of user-specified and inferred latches = 43  ;                        ;                        ;
 +-----------------------------------------------------+------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; fetch:inst4|PC[8..10]                 ; Lost fanout        ;
-; Total Number of Removed Registers = 3 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -383,12 +351,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 537   ;
+; Total registers                              ; 557   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 24    ;
-; Number of registers using Asynchronous Clear ; 504   ;
+; Number of registers using Synchronous Load   ; 27    ;
+; Number of registers using Asynchronous Clear ; 508   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 528   ;
+; Number of registers using Clock Enable       ; 544   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -398,10 +366,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |uc1|register_bank:inst2|Data_B[9]      ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uc1|register_bank:inst2|Working_Reg[0] ;
-; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; Yes        ; |uc1|register_bank:inst2|Data_A[14]     ;
-; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux10                    ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |uc1|register_bank:inst2|Data_B[6]      ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uc1|register_bank:inst2|Working_Reg[5] ;
+; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; Yes        ; |uc1|register_bank:inst2|Data_A[3]      ;
+; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux15                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
@@ -421,25 +389,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------+--------------------+------+-------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
 +---------------------------------+--------------------+------+-------------------------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component ;
-+------------------------+--------------+-------------------------------------------+
-; Parameter Name         ; Value        ; Type                                      ;
-+------------------------+--------------+-------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                            ;
-; LPM_WIDTH              ; 16           ; Signed Integer                            ;
-; LPM_SIZE               ; 2            ; Signed Integer                            ;
-; LPM_WIDTHS             ; 1            ; Signed Integer                            ;
-; LPM_PIPELINE           ; 0            ; Untyped                                   ;
-; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                   ;
-+------------------------+--------------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------+
@@ -500,6 +449,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                    ;
 ; CBXI_PARAMETER                     ; altsyncram_1591      ; Untyped                    ;
 +------------------------------------+----------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+-------------------------------------------+
+; Parameter Name         ; Value        ; Type                                      ;
++------------------------+--------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                            ;
+; LPM_WIDTH              ; 16           ; Signed Integer                            ;
+; LPM_SIZE               ; 2            ; Signed Integer                            ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                            ;
+; LPM_PIPELINE           ; 0            ; Untyped                                   ;
+; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                   ;
++------------------------+--------------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -600,27 +568,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 142                         ;
-; cycloneiii_ff         ; 537                         ;
-;     CLR SLD           ; 8                           ;
-;     ENA               ; 16                          ;
+; boundary_port         ; 145                         ;
+; cycloneiii_ff         ; 557                         ;
+;     CLR               ; 1                           ;
+;     CLR SLD           ; 11                          ;
+;     ENA               ; 32                          ;
 ;     ENA CLR           ; 496                         ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 680                         ;
-;     arith             ; 39                          ;
-;         2 data inputs ; 22                          ;
+; cycloneiii_lcell_comb ; 673                         ;
+;     arith             ; 42                          ;
+;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 641                         ;
+;     normal            ; 631                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 165                         ;
-;         4 data inputs ; 464                         ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 149                         ;
+;         4 data inputs ; 467                         ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.50                        ;
-; Average LUT depth     ; 4.22                        ;
+; Average LUT depth     ; 4.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -629,7 +598,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -638,120 +607,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 06 23:47:00 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 07 20:36:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uc1.bdf
     Info (12023): Found entity 1: uc1
 Info (12021): Found 1 design units, including 1 entities, in source file rom1.v
-    Info (12023): Found entity 1: rom1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 40
+    Info (12023): Found entity 1: rom1 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file reg8.v
-    Info (12023): Found entity 1: reg8 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/reg8.v Line: 1
+    Info (12023): Found entity 1: reg8 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/reg8.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fetch.v
-    Info (12023): Found entity 1: fetch File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v Line: 1
+    Info (12023): Found entity 1: fetch File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/fetch.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux8_4.v
-    Info (12023): Found entity 1: mux8_4 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux8_4.v Line: 40
+    Info (12023): Found entity 1: mux8_4 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux8_4.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
-    Info (12023): Found entity 1: decoder File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll1.v
-    Info (12023): Found entity 1: pll1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/pll1.v Line: 40
+    Info (12023): Found entity 1: pll1 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/pll1.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom2.v
-    Info (12023): Found entity 1: rom2 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom2.v Line: 40
+    Info (12023): Found entity 1: rom2 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom2.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file register_bank.v
-    Info (12023): Found entity 1: register_bank File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/register_bank.v Line: 1
+    Info (12023): Found entity 1: register_bank File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/register_bank.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file reg16.v
-    Info (12023): Found entity 1: reg16 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/reg16.v Line: 1
+    Info (12023): Found entity 1: reg16 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/reg16.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
-    Info (12023): Found entity 1: mux2 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux2.v Line: 40
+    Info (12023): Found entity 1: mux2 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux2.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file constant_reg.v
-    Info (12023): Found entity 1: constant_reg File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 1
+    Info (12023): Found entity 1: constant_reg File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/constant_reg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.bdf
     Info (12023): Found entity 1: testbench
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file carry_block.v
-    Info (12023): Found entity 1: carry_block File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/carry_block.v Line: 1
+    Info (12023): Found entity 1: carry_block File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/carry_block.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file block_1.v
-    Info (12023): Found entity 1: Block1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Block_1.v Line: 1
+    Info (12023): Found entity 1: Block1 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/Block_1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data.v
-    Info (12023): Found entity 1: DATA File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.v Line: 40
+    Info (12023): Found entity 1: DATA File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.v Line: 40
 Info (12127): Elaborating entity "uc1" for the top level hierarchy
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst3"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux2.v Line: 69
-Info (12130): Elaborated megafunction instantiation "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux2.v Line: 69
-Info (12133): Instantiated megafunction "mux2:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/mux2.v Line: 69
-    Info (12134): Parameter "lpm_size" = "2"
-    Info (12134): Parameter "lpm_type" = "LPM_MUX"
-    Info (12134): Parameter "lpm_width" = "16"
-    Info (12134): Parameter "lpm_widths" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/mux_tsc.tdf Line: 23
-Info (12128): Elaborating entity "mux_tsc" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst1"
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(21): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 21
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(38): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 38
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(38): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 38
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(41): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 41
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(41): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 41
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(44): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 44
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(51): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 51
-Warning (10235): Verilog HDL Always Construct warning at decoder.v(56): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 56
-Warning (10270): Verilog HDL Case Statement warning at decoder.v(23): incomplete case statement has no default case item File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 23
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "ALUC", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "SH", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "KMux", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "MR", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "MW", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Sel_B", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Sel_C", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Type", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Dadd", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[2]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[3]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[4]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[5]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[6]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[7]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[8]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Dadd[9]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[2]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[3]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[4]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[5]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Type[6]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[2]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[3]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[4]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_C[5]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[2]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[3]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[4]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "Sel_B[5]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "MW" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "MR" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "KMux" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "SH[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "SH[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "ALUC[0]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "ALUC[1]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "ALUC[2]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Info (10041): Inferred latch for "ALUC[3]" at decoder.v(18) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
 Info (12128): Elaborating entity "rom1" for hierarchy "rom1:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
-Info (12130): Elaborated megafunction instantiation "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
-Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/rom1.v Line: 82
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom1.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom1:inst|altsyncram:altsyncram_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom1.v Line: 82
+Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/rom1.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -767,39 +668,107 @@ Info (12133): Instantiated megafunction "rom1:inst|altsyncram:altsyncram_compone
     Info (12134): Parameter "width_a" = "16"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1591.tdf
-    Info (12023): Found entity 1: altsyncram_1591 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_1591 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_1591" for hierarchy "rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "fetch" for hierarchy "fetch:inst4"
-Warning (10230): Verilog HDL assignment warning at fetch.v(15): truncated value with size 32 to match size of target (11) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v Line: 15
+Warning (10230): Verilog HDL assignment warning at fetch.v(15): truncated value with size 32 to match size of target (11) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/fetch.v Line: 15
 Info (12128): Elaborating entity "Block1" for hierarchy "Block1:inst10"
-Warning (10240): Verilog HDL Always Construct warning at Block_1.v(9): inferring latch(es) for variable "B1OUT", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Block_1.v Line: 9
-Info (10041): Inferred latch for "B1OUT" at Block_1.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Block_1.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at Block_1.v(9): inferring latch(es) for variable "B1OUT", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
+Info (10041): Inferred latch for "B1OUT" at Block_1.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
-Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "cy_out", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "z", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[0]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[1]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[2]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[3]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[4]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[5]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[6]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[7]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[8]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[9]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[10]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[11]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[12]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[13]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[14]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[15]" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "cy_out", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "z", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[0]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[1]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[2]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[3]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[4]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[5]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[6]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[7]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[8]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[9]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[10]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[11]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[12]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[13]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[14]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[15]" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
 Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst1"
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(21): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(38): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 38
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(38): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 38
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(41): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 41
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(41): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 41
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(44): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 44
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(51): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 51
+Warning (10235): Verilog HDL Always Construct warning at decoder.v(56): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 56
+Warning (10270): Verilog HDL Case Statement warning at decoder.v(23): incomplete case statement has no default case item File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 23
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "ALUC", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "SH", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "KMux", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "MR", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "MW", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Sel_B", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Sel_C", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Type", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at decoder.v(18): inferring latch(es) for variable "Dadd", which holds its previous value in one or more paths through the always construct File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[2]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[3]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[4]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[5]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[6]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[7]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[8]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Dadd[9]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[2]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[3]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[4]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[5]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Type[6]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[2]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[3]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[4]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_C[5]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[2]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[3]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[4]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "Sel_B[5]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "MW" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "MR" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "KMux" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "SH[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "SH[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "ALUC[0]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "ALUC[1]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "ALUC[2]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (10041): Inferred latch for "ALUC[3]" at decoder.v(18) File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst3"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+Info (12130): Elaborated megafunction instantiation "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+Info (12133): Instantiated megafunction "mux2:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "16"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf Line: 23
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst2"
 Info (12128): Elaborating entity "DATA" for hierarchy "DATA:inst12"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA:inst12|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.v Line: 89
-Info (12130): Elaborated megafunction instantiation "DATA:inst12|altsyncram:altsyncram_component" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.v Line: 89
-Info (12133): Instantiated megafunction "DATA:inst12|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/DATA.v Line: 89
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA:inst12|altsyncram:altsyncram_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.v Line: 89
+Info (12130): Elaborated megafunction instantiation "DATA:inst12|altsyncram:altsyncram_component" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.v Line: 89
+Info (12133): Instantiated megafunction "DATA:inst12|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/DATA.v Line: 89
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "DATA.hex"
@@ -816,123 +785,101 @@ Info (12133): Instantiated megafunction "DATA:inst12|altsyncram:altsyncram_compo
     Info (12134): Parameter "width_a" = "16"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u1i1.tdf
-    Info (12023): Found entity 1: altsyncram_u1i1 File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_u1i1 File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u1i1" for hierarchy "DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "constant_reg" for hierarchy "constant_reg:inst6"
-Warning (10235): Verilog HDL Always Construct warning at constant_reg.v(7): variable "k_in" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 7
-Warning (10235): Verilog HDL Always Construct warning at constant_reg.v(7): variable "k_out" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 7
-Warning (10235): Verilog HDL Always Construct warning at constant_reg.v(9): variable "k_out" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at constant_reg.v(9): variable "k_in" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Warning (10240): Verilog HDL Always Construct warning at constant_reg.v(5): inferring latch(es) for variable "k_out", which holds its previous value in one or more paths through the always construct File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 5
-Info (10041): Inferred latch for "k_out[0]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[1]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[2]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[3]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[4]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[5]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[6]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[7]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[8]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[9]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[10]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[11]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[12]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[13]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[14]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
-Info (10041): Inferred latch for "k_out[15]" at constant_reg.v(9) File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/constant_reg.v Line: 9
 Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst7"
-Warning (14026): LATCH primitive "Block1:inst10|B1OUT" is permanently enabled File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Block_1.v Line: 7
+Warning (14026): LATCH primitive "Block1:inst10|B1OUT" is permanently enabled File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/Block_1.v Line: 7
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "decoder:inst1|Sel_B[1]" merged with LATCH primitive "decoder:inst1|Sel_B[5]" File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch decoder:inst1|KMux has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 8
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch ALU:inst5|z[15] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[14] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[13] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[12] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[11] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[10] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[9] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[8] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[7] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[6] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[5] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[4] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[3] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[2] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[1] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch decoder:inst1|Sel_B[5] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[5] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[4] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[9] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[3] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[8] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[2] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[1] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Sel_C[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|MR has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[10] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[13] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[11] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[0] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[11] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch decoder:inst1|Type[6] has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
-Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/alu.v Line: 7
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch decoder:inst1|MW has unsafe behavior File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/decoder.v Line: 10
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[10] File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+    Info (13026): Duplicate LATCH primitive "decoder:inst1|Sel_B[1]" merged with LATCH primitive "decoder:inst1|Sel_B[5]" File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|Sel_B[5] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[5] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[4] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[9] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[3] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[8] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[2] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[1] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Sel_C[0] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|KMux has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch ALU:inst5|z[15] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|MR has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[10] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch ALU:inst5|z[14] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[13] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[12] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[11] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[10] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[9] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[8] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[7] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[6] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[5] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[4] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[3] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[2] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[1] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[0] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|Type[6] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[15] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/alu.v Line: 7
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[13] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[11] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[0] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[14] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[11] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
+Warning (13012): Latch decoder:inst1|MW has unsafe behavior File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/decoder.v Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_1591:auto_generated|q_a[10] File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/db/altsyncram_1591.tdf Line: 32
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Sel_B[4]" is stuck at GND
     Warning (13410): Pin "Sel_B[3]" is stuck at GND
     Warning (13410): Pin "Sel_B[2]" is stuck at GND
     Warning (13410): Pin "Sel_B[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Matias/Source/repos/EV22/EV22_Quartus/output_files/uc1.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1333 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1345 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 107 output pins
-    Info (21061): Implemented 1159 logic cells
+    Info (21059): Implemented 110 output pins
+    Info (21061): Implemented 1168 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Mon Jun 06 23:47:16 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Tue Jun 07 20:36:38 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Matias/Source/repos/EV22/EV22_Quartus/output_files/uc1.map.smsg.
+The suppressed messages can be found in C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/output_files/uc1.map.smsg.
 
 

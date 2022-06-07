@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at register_bank.v(29): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/register_bank.v Line: 29
+Warning (10268): Verilog HDL information at register_bank.v(31): always construct contains both blocking and non-blocking assignments File: C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/register_bank.v Line: 31

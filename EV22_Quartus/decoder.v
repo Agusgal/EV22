@@ -86,8 +86,8 @@ module decoder
 			//b01000011:	//ADR W,Rj: W= W + Rj + Cy
 			8'b01000011:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0110111; end //ADR W, Rj
 			
-			//b00000000:	//CPL W: W= \W
-			8'b00000000:	begin ALUC=4'b0011; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //CPL W
+			//b01000100:	//CPL W: W= \W
+			8'b01000100:	begin ALUC=4'b0011; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C=34; Type=7'b0000011; end //CPL W
 			
 			//b00000000:	//CLR CY=0
 			8'b01000000:	begin ALUC=4'b1011; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0100000; end //CLR CY
@@ -97,6 +97,10 @@ module decoder
 			
 			//b01000001:	//RET PC= Last Restored PC+1
 			8'b01000001:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //RET
+			
+			//b00000000:	//NO OPERATION
+			8'b00000000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000000; end //NOP
+			
 		endcase 
 	end
 
