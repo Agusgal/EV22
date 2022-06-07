@@ -9,16 +9,19 @@ module register_bank
  input MR,
  input MW,
  input[15:0] W_IN,
- output reg[15:0]	W_OUT,
+ input[15:0] Input_Port_0,
+ input[15:0] Input_Port_1,
  output reg[15:0] Data_A,
- output reg[15:0] Data_B
+ output reg[15:0] Data_B,
+ output reg[15:0] Output_Port_0,
+ output reg[15:0] Output_Port_1,
+ output reg[15:0] Working_Reg
  );
 
 	reg[15:0] r0; reg[15:0] r1; reg[15:0] r2; reg[15:0] r3; reg[15:0] r4; reg[15:0] r5; reg[15:0] r6; reg[15:0] r7;
 	reg[15:0] r8; reg[15:0] r9; reg[15:0] r10; reg[15:0] r11; reg[15:0] r12; reg[15:0] r13; reg[15:0] r14; reg[15:0] r15;
 	reg[15:0] r16; reg[15:0] r17; reg[15:0] r18; reg[15:0] r19; reg[15:0] r20; reg[15:0] r21; reg[15:0] r22; reg[15:0] r23;
-	reg[15:0] r24; reg[15:0] r25; reg[15:0] r26; reg[15:0] r27; reg[15:0] r28; reg[15:0] r29; reg[15:0] r30; reg[15:0] r31;
-	reg[15:0] r34;
+	reg[15:0] r24; reg[15:0] r25; reg[15:0] r26; reg[15:0] r27;
 	
 	wire reset;
 	assign reset = ~nreset;
@@ -27,11 +30,11 @@ module register_bank
 		if (reset) begin
 				r0  <= 0;  r1 <= 0;  r2 <= 0;  r3 <= 0;  r4 <= 0;  r5 <= 0;  r6 <= 0;  r7 <= 0;  r8 <= 0;  r9 <= 0;
 				r10 <= 0; r11 <= 0; r12 <= 0; r13 <= 0; r14 <= 0; r15 <= 0; r16 <= 0; r17 <= 0; r18 <= 0; r19 <= 0;
-				r20 <= 0; r21 <= 0; r22 <= 0; r23 <= 0; r24 <= 0; r25 <= 0; r26 <= 0; r27 <= 0; r28 <= 0; r29 <= 0;
-				r30 <= 0; r31 <= 0; r34 <= 0; W_OUT <= 0;
+				r20 <= 0; r21 <= 0; r22 <= 0; r23 <= 0; r24 <= 0; r25 <= 0; r26 <= 0; r27 <= 0;
+				Output_Port_0 <= 0; Output_Port_1 <= 0; Working_Reg <= 0;
 		end
 		else if(MR)
-				W_OUT = W_IN;
+				Working_Reg = W_IN;
 		else if (clk) begin //Si es MW entonces no me interesan ninguno de estos casos, sólo quiero escribir W en memoria.
 			case(Sel_A)
 				0: 		Data_A = r0;
@@ -62,11 +65,11 @@ module register_bank
 				25: 		Data_A = r25;
 				26: 		Data_A = r26;
 				27: 		Data_A = r27;
-				28: 		Data_A = r28;
-				29: 		Data_A = r29;
-				30: 		Data_A = r30;
-				31: 		Data_A = r31;
-				default: Data_A = r0;
+				28: 		Data_A = Input_Port_0;
+				29: 		Data_A = Input_Port_1;
+				30: 		Data_A = Output_Port_0;
+				31: 		Data_A = Output_Port_1;
+				
 			endcase
 			
 			case(Sel_B)
@@ -98,14 +101,14 @@ module register_bank
 				25: 		Data_B = r25;
 				26: 		Data_B = r26;
 				27: 		Data_B = r27;
-				28: 		Data_B = r28;
-				29: 		Data_B = r29;
-				30: 		Data_B = r30;
-				31: 		Data_B = r31;
+				28: 		Data_B = Input_Port_0;
+				29: 		Data_B = Input_Port_1;
+				30: 		Data_B = Output_Port_0;
+				31: 		Data_B = Output_Port_1;
 				
-				34: 		Data_B = W_OUT;
+				34: 		Data_B = Working_Reg;
 				
-				//default: Data_B = W_OUT; Lo comento por las dudas pero no hay bug asociado aun
+				//default: Data_B = Working_Reg; Lo comento por las dudas pero no hay bug asociado aun
 			endcase
 			
 			case(Sel_C)
@@ -137,18 +140,18 @@ module register_bank
 				25: 		r25 = Data_C;
 				26: 		r26 = Data_C;
 				27: 		r27 = Data_C;
-				28: 		r28 = Data_C;
-				29: 		r29 = Data_C;
-				30: 		r30 = Data_C;
-				31: 		r31 = Data_C;
+				//28: No es posible escribir sobre un puerto de entrada
+				//29: No es posible escribir sobre un puerto de entrada
+				30: 		Output_Port_0 = Data_C;
+				31: 		Output_Port_1 = Data_C;
 				
-				34: 		begin r34 = Data_C; W_OUT = Data_C; end //W_DATA <= Data_C; end
+				34: 		Working_Reg = Data_C; //W_DATA <= Data_C; end
 				
-				//default: begin r34 = Data_C;  W_OUT = Data_C; end
+				//default: begin Working_Reg = Data_C;  W_OUT = Data_C; end
 				//Lo comenté por el siguiente bug:
 				//Quería probar JNE X. Para eso, cargaba una cte K en W, la cual pasaba por A y salía por C. Luego, cuando quería actually hacer el salto, el opcode de JNE X...
 				//...ponía a la ALU en 0000, y KMux en 0. Entonces, el registro por defecto que entraba a A valía 0 y luego salía 0 por C ya que Z = A por el aluc = 0000.
-				// Luego, como C = 0 y el código C_BUS del opcode es 35, por defecto el register bank cargaba r34 = DATA_C = 0. Entonces, no lograba hacer saltar al código porque W ya no valía K, si no 0.
+				// Luego, como C = 0 y el código C_BUS del opcode es 35, por defecto el register bank cargaba Working_Reg = DATA_C = 0. Entonces, no lograba hacer saltar al código porque W ya no valía K, si no 0.
 				//Comenté el default y anduvo.
 			endcase
 		end

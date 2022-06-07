@@ -5,7 +5,7 @@ module shifter(input [15:0] ALU_OUT,
 	assign SH_OUT = f(ALU_OUT, SH);
 	
 	
-	function [1:0] f(	input [15:0] ALU_OUT, 
+	function [15:0] f(	input [15:0] ALU_OUT, 
 							input [1:0] SH);
 	case (SH)
 		 2'b00: 		f = ALU_OUT;
