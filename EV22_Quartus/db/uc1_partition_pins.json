@@ -428,15 +428,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_reg",
+					"name" : "clk_pc",
 					"strict" : false
 				},
 				{
 					"name" : "nRST",
-					"strict" : false
-				},
-				{
-					"name" : "clk_pc",
 					"strict" : false
 				},
 				{
@@ -565,6 +561,10 @@
 				},
 				{
 					"name" : "PI0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_reg",
 					"strict" : false
 				}
 			]

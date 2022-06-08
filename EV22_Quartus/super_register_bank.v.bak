@@ -1,0 +1,21 @@
+module super_register_bank(
+									input MR,
+									input MW,
+									input W_MEM_IN, //Desearía que inout funcionase pero es lo que hay.
+									input DATA_C,
+									input SEL_C,
+									input clk,
+									input SEL_A,
+									input SEL_B,
+									output W_MEM_OUT,
+									output DATA_A,
+									output DATA_B,
+									output W
+									)
+									
+				block2 block2(.clk(clk),					
+
+									
+									
+endmodule
+									

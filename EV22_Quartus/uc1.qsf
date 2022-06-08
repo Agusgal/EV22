@@ -85,4 +85,7 @@ set_global_assignment -name VERILOG_FILE Block_1.v
 set_global_assignment -name QIP_FILE DATA.qip
 set_global_assignment -name HEX_FILE DATA.hex
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VERILOG_FILE Block2.v
+set_global_assignment -name VERILOG_FILE Block3.v
+set_global_assignment -name VERILOG_FILE super_register_bank.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
