@@ -4,130 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "opcodek",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_A[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_B[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Sel_C[0]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[15]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[14]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[13]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[12]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[11]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[10]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[9]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[7]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[5]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[4]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[3]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[2]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[1]",
-					"strict" : false
-				},
-				{
-					"name" : "WR[0]",
-					"strict" : false
-				},
-				{
-					"name" : "kmuxk",
-					"strict" : false
-				},
-				{
 					"name" : "Aposmux[15]",
 					"strict" : false
 				},
@@ -192,67 +68,131 @@
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[15]",
+					"name" : "C_OUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[14]",
+					"name" : "C_OUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[13]",
+					"name" : "C_OUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[12]",
+					"name" : "C_OUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[11]",
+					"name" : "C_OUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[10]",
+					"name" : "C_OUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[9]",
+					"name" : "C_OUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[8]",
+					"name" : "C_OUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[7]",
+					"name" : "C_OUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[6]",
+					"name" : "C_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[5]",
+					"name" : "C_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[4]",
+					"name" : "C_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[3]",
+					"name" : "C_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[2]",
+					"name" : "C_OUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[1]",
+					"name" : "C_OUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Boutput[0]",
+					"name" : "C_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[0]",
 					"strict" : false
 				},
 				{
@@ -384,175 +324,95 @@
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[10]",
+					"name" : "SEL_REG[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[9]",
+					"name" : "SEL_REG[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[8]",
+					"name" : "SEL_REG[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[7]",
+					"name" : "SEL_REG[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[6]",
+					"name" : "SEL_REG[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[5]",
+					"name" : "SEL_REG[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[4]",
+					"name" : "WR_out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[3]",
+					"name" : "WR_out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[2]",
+					"name" : "WR_out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[1]",
+					"name" : "WR_out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "ProgramOut[0]",
+					"name" : "WR_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "clk_pc",
+					"name" : "WR_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "nRST",
+					"name" : "WR_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PI1[15]",
+					"name" : "WR_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "PI0[15]",
+					"name" : "WR_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "PI1[14]",
+					"name" : "WR_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PI0[14]",
+					"name" : "WR_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PI1[13]",
+					"name" : "WR_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PI0[13]",
+					"name" : "WR_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PI1[12]",
+					"name" : "WR_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PI0[12]",
+					"name" : "WR_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PI1[11]",
+					"name" : "WR_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PI0[11]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[10]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[8]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[7]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[2]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PI0[1]",
+					"name" : "clk_k",
 					"strict" : false
 				},
 				{
@@ -565,6 +425,14 @@
 				},
 				{
 					"name" : "clk_reg",
+					"strict" : false
+				},
+				{
+					"name" : "clk_pc",
+					"strict" : false
+				},
+				{
+					"name" : "nRST",
 					"strict" : false
 				}
 			]
