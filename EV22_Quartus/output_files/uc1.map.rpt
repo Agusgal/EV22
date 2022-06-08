@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Wed Jun 08 06:41:15 2022
+Wed Jun 08 17:24:00 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,21 +16,20 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated
- 15. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated
- 16. Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component
- 17. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "super_register_bank:inst2|Block3:block3"
- 21. Port Connectivity Checks: "super_register_bank:inst2|Block2:block2"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
- 25. Analysis & Synthesis Suppressed Messages
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated
+ 14. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated
+ 15. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "super_register_bank:inst2|Block3:block3"
+ 20. Port Connectivity Checks: "super_register_bank:inst2|Block2:block2"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -57,16 +56,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 08 06:41:15 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 08 17:24:00 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 448                                         ;
-;     Total combinational functions  ; 432                                         ;
-;     Dedicated logic registers      ; 48                                          ;
-; Total registers                    ; 48                                          ;
-; Total pins                         ; 138                                         ;
+; Total logic elements               ; 447                                         ;
+;     Total combinational functions  ; 431                                         ;
+;     Dedicated logic registers      ; 51                                          ;
+; Total registers                    ; 51                                          ;
+; Total pins                         ; 128                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 20,480                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -199,22 +198,22 @@ https://fpgasoftware.intel.com/eula.
 ; Block2.v                         ; yes             ; User Verilog HDL File                 ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block2.v                  ;         ;
 ; Block3.v                         ; yes             ; User Verilog HDL File                 ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v                  ;         ;
 ; super_register_bank.v            ; yes             ; User Verilog HDL File                 ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/super_register_bank.v     ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction           ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf            ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
 ; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_mr91.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf    ;         ;
 ; db/altsyncram_u1i1.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf    ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction           ; C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf            ;         ;
 +----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -223,31 +222,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 448        ;
+; Estimated Total logic elements              ; 447        ;
 ;                                             ;            ;
-; Total combinational functions               ; 432        ;
+; Total combinational functions               ; 431        ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 213        ;
-;     -- 3 input functions                    ; 171        ;
-;     -- <=2 input functions                  ; 48         ;
+;     -- 3 input functions                    ; 167        ;
+;     -- <=2 input functions                  ; 51         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 393        ;
-;     -- arithmetic mode                      ; 39         ;
+;     -- normal mode                          ; 389        ;
+;     -- arithmetic mode                      ; 42         ;
 ;                                             ;            ;
-; Total registers                             ; 48         ;
-;     -- Dedicated logic registers            ; 48         ;
+; Total registers                             ; 51         ;
+;     -- Dedicated logic registers            ; 51         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 138        ;
+; I/O pins                                    ; 128        ;
 ; Total memory bits                           ; 20480      ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; nRST~input ;
-; Maximum fan-out                             ; 67         ;
-; Total fan-out                               ; 2215       ;
-; Average fan-out                             ; 2.81       ;
+; Maximum fan-out                             ; 70         ;
+; Total fan-out                               ; 2204       ;
+; Average fan-out                             ; 2.86       ;
 +---------------------------------------------+------------+
 
 
@@ -256,15 +255,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
-; |uc1                                      ; 432 (1)             ; 48 (0)                    ; 20480       ; 0            ; 0       ; 0         ; 138  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
-;    |ALU:inst5|                            ; 165 (165)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
+; |uc1                                      ; 431 (1)             ; 51 (0)                    ; 20480       ; 0            ; 0       ; 0         ; 128  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
+;    |ALU:inst5|                            ; 161 (161)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
 ;    |DATA:inst12|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12                                                                ; DATA                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_u1i1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated ; altsyncram_u1i1     ; work         ;
 ;    |carry_block:inst8|                    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block         ; work         ;
 ;    |constant_reg:inst6|                   ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg        ; work         ;
 ;    |decoder:inst1|                        ; 72 (72)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                              ; decoder             ; work         ;
-;    |fetch:inst4|                          ; 15 (15)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                                ; fetch               ; work         ;
+;    |fetch:inst4|                          ; 18 (18)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                                ; fetch               ; work         ;
 ;    |mux2:inst3|                           ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3                                                                 ; mux2                ; work         ;
 ;       |lpm_mux:LPM_MUX_component|         ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component                                       ; lpm_mux             ; work         ;
 ;          |mux_tsc:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                ; mux_tsc             ; work         ;
@@ -304,24 +303,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+-----------------------------------------------+------------------------+
 ; Latch Name                                           ; Latch Enable Signal                           ; Free of Timing Hazards ;
 +------------------------------------------------------+-----------------------------------------------+------------------------+
+; ALU:inst5|cy_out                                     ; ALU:inst5|Mux18                               ; yes                    ;
 ; decoder:inst1|KMux                                   ; decoder:inst1|WideOr0                         ; yes                    ;
 ; super_register_bank:inst2|Block3:block3|Data_A[0]    ; super_register_bank:inst2|Block3:block3|Mux33 ; yes                    ;
-; ALU:inst5|z[15]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[14]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[13]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[12]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[11]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[10]                                      ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[9]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[8]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[7]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[6]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[5]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[4]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[3]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[2]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[1]                                       ; ALU:inst5|Mux16                               ; yes                    ;
-; ALU:inst5|z[0]                                       ; ALU:inst5|Mux16                               ; yes                    ;
 ; super_register_bank:inst2|Working_register[15]       ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|Working_register[14]       ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|Working_register[13]       ; super_register_bank:inst2|Decoder0            ; yes                    ;
@@ -338,6 +322,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; super_register_bank:inst2|Working_register[2]        ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|Working_register[1]        ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|Working_register[0]        ; super_register_bank:inst2|Decoder0            ; yes                    ;
+; decoder:inst1|ALUC[1]                                ; decoder:inst1|WideOr0                         ; yes                    ;
+; decoder:inst1|ALUC[0]                                ; decoder:inst1|WideOr0                         ; yes                    ;
+; decoder:inst1|ALUC[3]                                ; decoder:inst1|WideOr0                         ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[15]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[14]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[13]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[12]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[11]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[10]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[9]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[8]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[7]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[6]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[5]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[4]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[3]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[2]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[1]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; super_register_bank:inst2|Block3:block3|Data_B[0]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; decoder:inst1|ALUC[2]                                ; decoder:inst1|WideOr0                         ; yes                    ;
+; decoder:inst1|Type[6]                                ; decoder:inst1|WideOr0                         ; yes                    ;
 ; super_register_bank:inst2|r6[0]                      ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r10[0]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r2[0]                      ; super_register_bank:inst2|Decoder0            ; yes                    ;
@@ -366,26 +371,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; super_register_bank:inst2|r18[0]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r16[0]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r19[0]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
-; decoder:inst1|ALUC[2]                                ; decoder:inst1|WideOr0                         ; yes                    ;
-; decoder:inst1|ALUC[3]                                ; decoder:inst1|WideOr0                         ; yes                    ;
-; decoder:inst1|ALUC[0]                                ; decoder:inst1|WideOr0                         ; yes                    ;
-; decoder:inst1|ALUC[1]                                ; decoder:inst1|WideOr0                         ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[15]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[14]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[13]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[12]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[11]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[10]   ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[9]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[8]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[7]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[6]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[5]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[4]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[3]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[2]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[1]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
-; super_register_bank:inst2|Block3:block3|Data_B[0]    ; super_register_bank:inst2|Block3:block3|Mux16 ; yes                    ;
+; ALU:inst5|z[15]                                      ; ALU:inst5|Mux16                               ; yes                    ;
 ; decoder:inst1|MR                                     ; decoder:inst1|WideOr0                         ; yes                    ;
 ; decoder:inst1|MW                                     ; decoder:inst1|WideOr0                         ; yes                    ;
 ; decoder:inst1|Sel_C[0]                               ; decoder:inst1|WideOr0                         ; yes                    ;
@@ -394,6 +380,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; decoder:inst1|Sel_C[3]                               ; decoder:inst1|WideOr0                         ; yes                    ;
 ; decoder:inst1|Sel_C[4]                               ; decoder:inst1|WideOr0                         ; yes                    ;
 ; decoder:inst1|Sel_C[5]                               ; decoder:inst1|WideOr0                         ; yes                    ;
+; ALU:inst5|z[14]                                      ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[13]                                      ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[12]                                      ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[11]                                      ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[10]                                      ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[9]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[8]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[7]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[6]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[5]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[4]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[3]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[2]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[1]                                       ; ALU:inst5|Mux16                               ; yes                    ;
+; ALU:inst5|z[0]                                       ; ALU:inst5|Mux16                               ; yes                    ;
 ; super_register_bank:inst2|r0[15]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r2[15]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; decoder:inst1|Sel_B[1]                               ; decoder:inst1|WideOr0                         ; yes                    ;
@@ -402,21 +403,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; super_register_bank:inst2|r2[14]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r0[13]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; super_register_bank:inst2|r2[13]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
-; super_register_bank:inst2|r0[12]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
-; super_register_bank:inst2|r2[12]                     ; super_register_bank:inst2|Decoder0            ; yes                    ;
 ; Number of user-specified and inferred latches = 134  ;                                               ;                        ;
 +------------------------------------------------------+-----------------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; fetch:inst4|PC[8..10]                 ; Lost fanout        ;
-; Total Number of Removed Registers = 3 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -424,10 +413,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Synchronous Load   ; 11    ;
+; Number of registers using Asynchronous Clear ; 11    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
@@ -439,10 +428,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |uc1|super_register_bank:inst2|Block2:block2|SEL_REG[5] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uc1|super_register_bank:inst2|Block2:block2|DATA[5]    ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux2       ;
-; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux15                                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |uc1|super_register_bank:inst2|Block2:block2|SEL_REG[0] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uc1|super_register_bank:inst2|Block2:block2|DATA[12]   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux9       ;
+; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux11                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
@@ -462,25 +451,6 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +---------------------------------+--------------------+------+-------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
 +---------------------------------+--------------------+------+-------------------------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component ;
-+------------------------+--------------+-------------------------------------------+
-; Parameter Name         ; Value        ; Type                                      ;
-+------------------------+--------------+-------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                            ;
-; LPM_WIDTH              ; 16           ; Signed Integer                            ;
-; LPM_SIZE               ; 2            ; Signed Integer                            ;
-; LPM_WIDTHS             ; 1            ; Signed Integer                            ;
-; LPM_PIPELINE           ; 0            ; Untyped                                   ;
-; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                   ;
-+------------------------+--------------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------+
@@ -605,6 +575,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+-------------------------------------------+
+; Parameter Name         ; Value        ; Type                                      ;
++------------------------+--------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                            ;
+; LPM_WIDTH              ; 16           ; Signed Integer                            ;
+; LPM_SIZE               ; 2            ; Signed Integer                            ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                            ;
+; LPM_PIPELINE           ; 0            ; Untyped                                   ;
+; CBXI_PARAMETER         ; mux_tsc      ; Untyped                                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                   ;
++------------------------+--------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                        ;
 +-------------------------------------------+---------------------------------------------+
@@ -659,25 +648,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 138                         ;
-; cycloneiii_ff         ; 48                          ;
-;     CLR SLD           ; 8                           ;
+; boundary_port         ; 128                         ;
+; cycloneiii_ff         ; 51                          ;
+;     CLR SLD           ; 11                          ;
 ;     ENA               ; 32                          ;
 ;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 432                         ;
-;     arith             ; 39                          ;
-;         2 data inputs ; 22                          ;
+; cycloneiii_lcell_comb ; 431                         ;
+;     arith             ; 42                          ;
+;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 393                         ;
+;     normal            ; 389                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 22                          ;
-;         3 data inputs ; 154                         ;
+;         3 data inputs ; 150                         ;
 ;         4 data inputs ; 213                         ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.50                        ;
-; Average LUT depth     ; 4.43                        ;
+; Average LUT depth     ; 4.39                        ;
 +-----------------------+-----------------------------+
 
 
@@ -696,7 +685,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 08 06:41:03 2022
+    Info: Processing started: Wed Jun 08 17:23:50 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -744,18 +733,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file super_r
     Info (12023): Found entity 1: super_register_bank File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/super_register_bank.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at super_register_bank.v(43): created implicit net for "Data_A_net" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/super_register_bank.v Line: 43
 Info (12127): Elaborating entity "uc1" for the top level hierarchy
-Warning (275012): Pin "Koutput[15..0]" overlaps another pin, block, or symbol
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst3"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
-Info (12130): Elaborated megafunction instantiation "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
-Info (12133): Instantiated megafunction "mux2:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
-    Info (12134): Parameter "lpm_size" = "2"
-    Info (12134): Parameter "lpm_type" = "LPM_MUX"
-    Info (12134): Parameter "lpm_width" = "16"
-    Info (12134): Parameter "lpm_widths" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf Line: 23
-Info (12128): Elaborating entity "mux_tsc" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
+Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "cy_out", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "z", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[0]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[1]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[2]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[3]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[4]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[5]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[6]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[7]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[8]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[9]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[10]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[11]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[12]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[13]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[14]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "z[15]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst1"
 Warning (10235): Verilog HDL Always Construct warning at decoder.v(21): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (10235): Verilog HDL Always Construct warning at decoder.v(38): variable "Ri" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 38
@@ -839,27 +837,6 @@ Warning (10230): Verilog HDL assignment warning at fetch.v(15): truncated value 
 Info (12128): Elaborating entity "Block1" for hierarchy "Block1:inst10"
 Warning (10240): Verilog HDL Always Construct warning at Block_1.v(9): inferring latch(es) for variable "B1OUT", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
 Info (10041): Inferred latch for "B1OUT" at Block_1.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
-Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "cy_out", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "z", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[0]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[1]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[2]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[3]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[4]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[5]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[6]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[7]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[8]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[9]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[10]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[11]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[12]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[13]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[14]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "z[15]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Info (12128): Elaborating entity "super_register_bank" for hierarchy "super_register_bank:inst2"
 Warning (10235): Verilog HDL Always Construct warning at super_register_bank.v(49): variable "W_MEM_OUT_net" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/super_register_bank.v Line: 49
 Warning (10235): Verilog HDL Always Construct warning at super_register_bank.v(51): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/super_register_bank.v Line: 51
@@ -1545,55 +1522,34 @@ Info (12133): Instantiated megafunction "DATA:inst12|altsyncram:altsyncram_compo
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u1i1.tdf
     Info (12023): Found entity 1: altsyncram_u1i1 File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_u1i1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u1i1" for hierarchy "DATA:inst12|altsyncram:altsyncram_component|altsyncram_u1i1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst3"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+Info (12130): Elaborated megafunction instantiation "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+Info (12133): Instantiated megafunction "mux2:inst3|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "16"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/mux_tsc.tdf Line: 23
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "constant_reg" for hierarchy "constant_reg:inst6"
 Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst7"
 Warning (14026): LATCH primitive "Block1:inst10|B1OUT" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block_1.v Line: 7
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
     Info (13026): Duplicate LATCH primitive "decoder:inst1|Sel_B[5]" merged with LATCH primitive "decoder:inst1|Sel_B[1]" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 7
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
 Warning (13012): Latch decoder:inst1|KMux has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 8
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch super_register_bank:inst2|Block3:block3|Data_A[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[4] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch ALU:inst5|z[15] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[14] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[13] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[12] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[11] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[10] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[9] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[8] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[7] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[6] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[5] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[4] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch ALU:inst5|z[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[13] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|ALUC[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[13] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch super_register_bank:inst2|Block3:block3|Data_B[15] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|Sel_B[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
@@ -1627,6 +1583,12 @@ Warning (13012): Latch super_register_bank:inst2|Block3:block3|Data_B[1] has uns
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|Sel_B[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
 Warning (13012): Latch super_register_bank:inst2|Block3:block3|Data_B[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|Sel_B[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|Type[6] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch ALU:inst5|z[15] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
 Warning (13012): Latch decoder:inst1|MR has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[10] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|MW has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 10
@@ -1643,12 +1605,38 @@ Warning (13012): Latch decoder:inst1|Sel_C[4] has unsafe behavior File: C:/Users
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[9] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|Sel_C[5] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch ALU:inst5|z[14] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[13] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[12] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[11] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[10] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[9] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[8] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[7] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[6] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[5] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[4] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
+Warning (13012): Latch ALU:inst5|z[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
 Warning (13012): Latch decoder:inst1|Sel_B[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 7
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-Warning (13012): Latch decoder:inst1|Type[6] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 18
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B[15]" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
 Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B[14]" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
 Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B[13]" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
@@ -1666,7 +1654,6 @@ Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B
 Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B[1]" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
 Warning (14026): LATCH primitive "super_register_bank:inst2|Block3:block3|Data_B[0]" is permanently enabled File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block3.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -1701,16 +1688,16 @@ Warning (21074): Design contains 30 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "PI1[3]"
     Warning (15610): No output dependent on input pin "PI1[2]"
     Warning (15610): No output dependent on input pin "PI1[1]"
-Info (21057): Implemented 618 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 607 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 36 input pins
-    Info (21059): Implemented 102 output pins
-    Info (21061): Implemented 448 logic cells
+    Info (21059): Implemented 92 output pins
+    Info (21061): Implemented 447 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 304 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Wed Jun 08 06:41:15 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 303 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Wed Jun 08 17:24:00 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+

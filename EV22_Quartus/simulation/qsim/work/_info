@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/My_Designs/uc1/simulation/qsim
 vhard_block
-Z0 !s110 1654681301
+Z0 !s110 1654719949
 !i10b 1
-!s100 4fOA;O@E]:hjT4Hz[;Pz91
+!s100 dk3:79@Z?U]MS@V[24T[<2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKQ^<]3z^TIY18l3z8lEfP0
+IUKG=D1UE;Gf3jCPJZ8AaZ0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim
-Z4 w1654681300
+Z4 w1654719948
 Z5 8uc1.vo
 Z6 Fuc1.vo
-!i122 647
-L0 11418 34
+!i122 683
+L0 11277 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1654681301.000000
+Z8 !s108 1654719949.000000
 Z9 !s107 uc1.vo|
 Z10 !s90 -work|work|uc1.vo|
 !i113 1
@@ -81,16 +81,16 @@ R12
 vuc1
 R0
 !i10b 1
-!s100 @>PL8IA5?:[C3FW5F@3G[1
+!s100 9j:?`IN?5jP_b?JEbSMT31
 R1
-IgfEcm8R_Y6eEVWCF=4f;33
+Iz=d2lYB;_emeozo8kAK]b1
 R2
 R3
 R4
 R5
 R6
-!i122 647
-L0 32 11385
+!i122 683
+L0 32 11244
 R7
 r1
 !s85 0
@@ -104,15 +104,15 @@ R12
 vuc1_vlg_vec_tst
 R0
 !i10b 1
-!s100 XT^`UbNF:M?lJ=`45^LZ03
+!s100 lWJC0DeR6[`3<YA^XEhFT3
 R1
-IKUWV190dLQU9MHijPgWm12
+IiC5n;^6[`=CA<B=mS99<d0
 R2
 R3
-w1654681299
+w1654719947
 8Waveform4.vwf.vt
 FWaveform4.vwf.vt
-!i122 648
+!i122 684
 L0 30 94
 R7
 r1

@@ -4,6 +4,54 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "C_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Aposmux[15]",
 					"strict" : false
 				},
@@ -65,70 +113,6 @@
 				},
 				{
 					"name" : "Aposmux[0]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[14]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[13]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[12]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[11]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[10]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[9]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[8]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[7]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "C_OUT[0]",
 					"strict" : false
 				},
 				{
@@ -324,30 +308,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_REG[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_REG[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_REG[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_REG[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_REG[0]",
-					"strict" : false
-				},
-				{
 					"name" : "WR_out[15]",
 					"strict" : false
 				},
@@ -412,6 +372,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk_pc",
+					"strict" : false
+				},
+				{
+					"name" : "nRST",
+					"strict" : false
+				},
+				{
 					"name" : "clk_k",
 					"strict" : false
 				},
@@ -425,14 +393,6 @@
 				},
 				{
 					"name" : "clk_reg",
-					"strict" : false
-				},
-				{
-					"name" : "clk_pc",
-					"strict" : false
-				},
-				{
-					"name" : "nRST",
 					"strict" : false
 				}
 			]
