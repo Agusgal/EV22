@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/09/2022 07:41:57"
+// Generated on "06/09/2022 18:02:23"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -35,36 +35,34 @@ reg clk_mem;
 reg clk_pc;
 reg clk_reg;
 reg nRST;
-reg [15:0] PI0;
-reg [15:0] PI1;
 // wires                                               
-wire C_OUT;
+wire [15:0] APOSMUX;
+wire [15:0] Bout;
 wire [15:0] COUT;
 wire [15:0] DataOut;
+wire [15:0] Kout;
 wire MRout;
 wire MWout;
 wire [15:0] OPCODE_out;
-wire [10:0] PC;
 wire [5:0] SEL_REG_out;
 wire [15:0] WR_out;
 
 // assign statements (if any)                          
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
-	.C_OUT(C_OUT),
+	.APOSMUX(APOSMUX),
+	.Bout(Bout),
 	.clk_k(clk_k),
 	.clk_mem(clk_mem),
 	.clk_pc(clk_pc),
 	.clk_reg(clk_reg),
 	.COUT(COUT),
 	.DataOut(DataOut),
+	.Kout(Kout),
 	.MRout(MRout),
 	.MWout(MWout),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
-	.PC(PC),
-	.PI0(PI0),
-	.PI1(PI1),
 	.SEL_REG_out(SEL_REG_out),
 	.WR_out(WR_out)
 );

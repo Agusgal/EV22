@@ -43,7 +43,7 @@ module decoder
 			8'b000100xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=1; Sel_B=0; Sel_C=35; Type=7'b0000001; Dadd = {Ri,Rj}; end //MOM Y,W
 
 			//b000101yy:	//MOM W,Y: W = M(Y)
-			8'b000101xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000010; Dadd = {Ri,Rj}; end //MOM W,Y
+			8'b000101xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=34; Type=7'b0000010; Dadd = {Ri,Rj}; end //MOM W,Y //Ojo que aca es 35 pero puse 34 a proposito
 
 			//b000110ii:	//ADW Ri,Rj: Ri= W + Rj + CY
 			8'b000110xx:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C={1'b0,Ri}; Type=7'b0111101; end //ADW Ri,Rj
