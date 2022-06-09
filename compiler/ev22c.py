@@ -30,8 +30,8 @@ def calc_checksum(hex_data):
 def getBinOpcode(opcode):
     # May thow an exception if argument count is wrong
 
-    if opcode[0] == 'RET':      # Special case
-        keyword = 'RET'
+    if opcode[0] in ['RET', 'NOP']:      # Special cases
+        keyword = opcode[0]
     else:
         keyword = opcode[0] + ' ' + opcode[1]
 
@@ -74,13 +74,15 @@ def getBinOpcode(opcode):
     elif keyword == 'ADR W,Rj':
         return '01000011000' + str_hex2bin(opcode[2], 5)
     elif keyword == 'CPL W':
-        return '0000000000000000'
+        return '0100010000000000'
     elif keyword == 'CLR CY':
         return '0100000000000000'
     elif keyword == 'SET CY':
         return '0000000100000000'
     elif keyword == 'RET':
         return '0100000100000000'
+    elif keyword == 'NOP':
+        return '0000000000000000'
     else:
         raise ValueError('Invalid Opcode') 
 
@@ -97,12 +99,13 @@ if not path.exists(source_path):
     exit()
 
 MEM_SIZE = 256
-memory = ['FFFF' for _ in range(MEM_SIZE)]
+memory = ['0000' for _ in range(MEM_SIZE)]
+memory_index = 0
 
 with open(source_path, 'r+') as source:
     error_list = []
     file_rows = source.readlines()
-    for index, line in enumerate(file_rows):
+    for line_index, line in enumerate(file_rows):
         opcode = line.rstrip('\r\n').split(' ')
         opcode = list(filter(None, opcode))             # Remove empty strings
         if len(opcode) == 0:
@@ -111,11 +114,12 @@ with open(source_path, 'r+') as source:
             continue
 
         try:
-            memory[index] = str_bin2hex( getBinOpcode(opcode), 4 )
+            memory[memory_index] = str_bin2hex( getBinOpcode(opcode), 4 )
+            memory_index += 1
         except IndexError:
-            error_list.append(index)
+            error_list.append(line_index)
         except ValueError:
-            error_list.append(index)
+            error_list.append(line_index)
     
     if len(error_list) == 0:
         print('Compilation errors: 0')
