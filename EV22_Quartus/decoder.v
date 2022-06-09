@@ -1,8 +1,9 @@
 module decoder
 (
- input[7:0] OPCODE,
- input[4:0] Ri,
- input[4:0] Rj,
+ //input[7:0] OPCODE,
+ input[15:0] OPCODE,
+ //input[4:0] Ri,
+ //input[4:0] Rj,
  output reg [3:0] ALUC,
  output reg [1:0] SH,
  output reg KMux,
@@ -14,13 +15,17 @@ module decoder
  output reg [6:0] Type,
  output reg [9:0] Dadd
  );
+	 reg[4:0] Ri;
+	 reg[4:0] Rj;
 	 
-	always @(OPCODE)
+	always @ (OPCODE) //Si solo ponemos opcode[15:8], hay un bug cuando llamamos a dos instrucciones con mismo opcodes pero diferentes registros (como mandar registros al working register)
 	begin
-		
+		//Hay un bug rarísimo que arruina MOM Y,W y un uso consecutivo de MOV W,j 
 		Sel_A = Rj;
+		Ri = OPCODE[9:5];
+		Rj = OPCODE[4:0];
 		
-		casex (OPCODE)
+		casex (OPCODE[15:8])
 			//b00100xxx:	//JMP X: PC = X
 			8'b00100xxx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //JMP X
 

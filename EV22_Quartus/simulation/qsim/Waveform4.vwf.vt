@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/08/2022 17:25:47"
+// Generated on "06/09/2022 07:41:57"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -31,40 +31,46 @@ module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk_k;
+reg clk_mem;
 reg clk_pc;
 reg clk_reg;
 reg nRST;
 reg [15:0] PI0;
 reg [15:0] PI1;
 // wires                                               
-wire [15:0] Aposmux;
 wire C_OUT;
-wire [15:0] DATA;
-wire [15:0] Koutput;
+wire [15:0] COUT;
+wire [15:0] DataOut;
+wire MRout;
+wire MWout;
 wire [15:0] OPCODE_out;
 wire [10:0] PC;
+wire [5:0] SEL_REG_out;
 wire [15:0] WR_out;
 
 // assign statements (if any)                          
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
-	.Aposmux(Aposmux),
 	.C_OUT(C_OUT),
 	.clk_k(clk_k),
+	.clk_mem(clk_mem),
 	.clk_pc(clk_pc),
 	.clk_reg(clk_reg),
-	.DATA(DATA),
-	.Koutput(Koutput),
+	.COUT(COUT),
+	.DataOut(DataOut),
+	.MRout(MRout),
+	.MWout(MWout),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
 	.PC(PC),
 	.PI0(PI0),
 	.PI1(PI1),
+	.SEL_REG_out(SEL_REG_out),
 	.WR_out(WR_out)
 );
 initial 
 begin 
-#1000000 $finish;
+#2000000 $finish;
 end 
 
 // nRST
@@ -72,53 +78,68 @@ initial
 begin
 	nRST = 1'b1;
 	nRST = #20000 1'b0;
-	nRST = #60000 1'b1;
+	nRST = #40000 1'b1;
 end 
 
 // clk_pc
 initial
 begin
-	clk_pc = 1'b1;
+	clk_pc = 1'b0;
+	clk_pc = #50000 1'b1;
 	clk_pc = #50000 1'b0;
+	clk_pc = #50000 1'b1;
 	# 50000;
-	repeat(8)
+	repeat(18)
 	begin
-		clk_pc = 1'b1;
-		clk_pc = #50000 1'b0;
+		clk_pc = 1'b0;
+		clk_pc = #50000 1'b1;
 		# 50000;
 	end
-	clk_pc = 1'b1;
-	clk_pc = #50000 1'b0;
+end 
+
+// clk_mem
+initial
+begin
+	clk_mem = 1'b1;
+	# 20000;
+	repeat(19)
+	begin
+		clk_mem = 1'b0;
+		clk_mem = #50000 1'b1;
+		# 50000;
+	end
+	clk_mem = 1'b0;
+	clk_mem = #50000 1'b1;
 end 
 
 // clk_k
 initial
 begin
-	clk_k = 1'b0;
-	# 5000;
-	repeat(9)
+	clk_k = 1'b1;
+	# 25000;
+	repeat(19)
 	begin
-		clk_k = 1'b1;
-		clk_k = #50000 1'b0;
+		clk_k = 1'b0;
+		clk_k = #50000 1'b1;
 		# 50000;
 	end
-	clk_k = 1'b1;
-	clk_k = #50000 1'b0;
+	clk_k = 1'b0;
+	clk_k = #50000 1'b1;
 end 
 
 // clk_reg
 initial
 begin
-	clk_reg = 1'b0;
-	# 20000;
-	repeat(9)
+	clk_reg = 1'b1;
+	# 30000;
+	repeat(19)
 	begin
-		clk_reg = 1'b1;
-		clk_reg = #50000 1'b0;
+		clk_reg = 1'b0;
+		clk_reg = #50000 1'b1;
 		# 50000;
 	end
-	clk_reg = 1'b1;
-	clk_reg = #50000 1'b0;
+	clk_reg = 1'b0;
+	clk_reg = #50000 1'b1;
 end 
 endmodule
 
