@@ -3,255 +3,339 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'decoder:inst1|ALUC[0]'
-Slack : -11.755
-TNS   : -160.111
-
-Type  : Slow 1200mV 85C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -5.975
-TNS   : -150.350
-
-Type  : Slow 1200mV 85C Model Setup 'clk_pc'
-Slack : -5.318
-TNS   : -44.662
+Slack : -12.007
+TNS   : -171.315
 
 Type  : Slow 1200mV 85C Model Setup 'clk_reg'
-Slack : -5.201
-TNS   : -80.550
+Slack : -8.594
+TNS   : -3521.907
 
 Type  : Slow 1200mV 85C Model Setup 'clk_k'
-Slack : -5.122
-TNS   : -76.966
+Slack : -6.746
+TNS   : -101.041
 
-Type  : Slow 1200mV 85C Model Setup 'clk_mem'
-Slack : -4.164
-TNS   : -22.827
+Type  : Slow 1200mV 85C Model Setup 'clk_ram'
+Slack : -6.096
+TNS   : -31.727
 
-Type  : Slow 1200mV 85C Model Setup 'decoder:inst1|Sel_C[0]'
-Slack : -2.166
-TNS   : -286.054
+Type  : Slow 1200mV 85C Model Setup 'clk_pc'
+Slack : -5.854
+TNS   : -68.370
 
-Type  : Slow 1200mV 85C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -1.955
-TNS   : -26.490
+Type  : Slow 1200mV 85C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -5.804
+TNS   : -67.917
 
-Type  : Slow 1200mV 85C Model Hold 'decoder:inst1|Sel_C[0]'
-Slack : -0.405
-TNS   : -3.508
+Type  : Slow 1200mV 85C Model Setup 'nRST'
+Slack : -2.049
+TNS   : -2.049
+
+Type  : Slow 1200mV 85C Model Setup 'clk_rom'
+Slack : -1.803
+TNS   : -7.512
+
+Type  : Slow 1200mV 85C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -2.200
+TNS   : -19.279
 
 Type  : Slow 1200mV 85C Model Hold 'decoder:inst1|ALUC[0]'
-Slack : 0.011
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk_mem'
-Slack : 0.300
-TNS   : 0.000
+Slack : -0.824
+TNS   : -1.741
 
 Type  : Slow 1200mV 85C Model Hold 'clk_pc'
 Slack : 0.358
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_reg'
-Slack : 1.076
+Type  : Slow 1200mV 85C Model Hold 'clk_ram'
+Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk_k'
-Slack : 1.410
+Slack : 0.748
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_mem'
+Type  : Slow 1200mV 85C Model Hold 'clk_rom'
+Slack : 0.865
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_reg'
+Slack : 1.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'nRST'
+Slack : 1.478
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_pc'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_reg'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk_reg'
+Slack : -0.110
+TNS   : -49.163
+
+Type  : Slow 1200mV 85C Model Removal 'clk_pc'
+Slack : -0.089
+TNS   : -0.973
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_reg'
 Slack : -3.000
-TNS   : -24.740
+TNS   : -467.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_ram'
+Slack : -3.000
+TNS   : -20.392
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_k'
 Slack : -3.000
 TNS   : -19.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_reg'
-Slack : -3.000
-TNS   : -19.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_pc'
 Slack : -3.000
-TNS   : -12.000
+TNS   : -15.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.781
-TNS   : -68.977
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_rom'
+Slack : -3.000
+TNS   : -12.722
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'decoder:inst1|Sel_C[0]'
-Slack : 0.251
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'nRST'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -0.104
+TNS   : -4.198
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'decoder:inst1|ALUC[0]'
-Slack : 0.403
+Slack : 0.414
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'decoder:inst1|ALUC[0]'
-Slack : -10.555
-TNS   : -142.310
-
-Type  : Slow 1200mV 0C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -5.417
-TNS   : -133.310
-
-Type  : Slow 1200mV 0C Model Setup 'clk_pc'
-Slack : -4.657
-TNS   : -39.321
+Slack : -10.700
+TNS   : -151.460
 
 Type  : Slow 1200mV 0C Model Setup 'clk_reg'
-Slack : -4.570
-TNS   : -70.848
+Slack : -7.643
+TNS   : -3117.795
 
 Type  : Slow 1200mV 0C Model Setup 'clk_k'
-Slack : -4.540
-TNS   : -68.008
+Slack : -5.951
+TNS   : -89.074
 
-Type  : Slow 1200mV 0C Model Setup 'clk_mem'
-Slack : -3.676
-TNS   : -19.851
+Type  : Slow 1200mV 0C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -5.410
+TNS   : -61.875
 
-Type  : Slow 1200mV 0C Model Setup 'decoder:inst1|Sel_C[0]'
-Slack : -1.868
-TNS   : -234.909
+Type  : Slow 1200mV 0C Model Setup 'clk_ram'
+Slack : -5.400
+TNS   : -27.883
 
-Type  : Slow 1200mV 0C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -1.763
-TNS   : -23.813
+Type  : Slow 1200mV 0C Model Setup 'clk_pc'
+Slack : -5.135
+TNS   : -60.030
 
-Type  : Slow 1200mV 0C Model Hold 'decoder:inst1|Sel_C[0]'
-Slack : -0.288
-TNS   : -1.053
+Type  : Slow 1200mV 0C Model Setup 'nRST'
+Slack : -1.901
+TNS   : -1.901
+
+Type  : Slow 1200mV 0C Model Setup 'clk_rom'
+Slack : -1.618
+TNS   : -6.665
+
+Type  : Slow 1200mV 0C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -1.907
+TNS   : -17.105
 
 Type  : Slow 1200mV 0C Model Hold 'decoder:inst1|ALUC[0]'
-Slack : 0.053
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'clk_mem'
-Slack : 0.271
-TNS   : 0.000
+Slack : -0.704
+TNS   : -1.453
 
 Type  : Slow 1200mV 0C Model Hold 'clk_pc'
-Slack : 0.313
+Slack : 0.312
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk_reg'
-Slack : 0.961
+Type  : Slow 1200mV 0C Model Hold 'clk_ram'
+Slack : 0.423
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk_k'
-Slack : 1.279
+Slack : 0.680
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_mem'
+Type  : Slow 1200mV 0C Model Hold 'clk_rom'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_reg'
+Slack : 1.276
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'nRST'
+Slack : 1.379
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_pc'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_reg'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk_reg'
+Slack : -0.108
+TNS   : -47.565
+
+Type  : Slow 1200mV 0C Model Removal 'clk_pc'
+Slack : -0.087
+TNS   : -0.957
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_reg'
 Slack : -3.000
-TNS   : -24.740
+TNS   : -467.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_ram'
+Slack : -3.000
+TNS   : -20.392
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_k'
 Slack : -3.000
 TNS   : -19.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_reg'
-Slack : -3.000
-TNS   : -19.000
-
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_pc'
 Slack : -3.000
-TNS   : -12.000
+TNS   : -15.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.598
-TNS   : -56.147
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_rom'
+Slack : -3.000
+TNS   : -12.696
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'decoder:inst1|Sel_C[0]'
-Slack : 0.356
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'nRST'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -0.002
+TNS   : -0.002
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'decoder:inst1|ALUC[0]'
-Slack : 0.444
+Slack : 0.459
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'decoder:inst1|ALUC[0]'
-Slack : -6.285
-TNS   : -84.029
-
-Type  : Fast 1200mV 0C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -3.345
-TNS   : -76.798
+Slack : -6.411
+TNS   : -90.933
 
 Type  : Fast 1200mV 0C Model Setup 'clk_reg'
-Slack : -2.641
-TNS   : -40.523
-
-Type  : Fast 1200mV 0C Model Setup 'clk_pc'
-Slack : -2.633
-TNS   : -21.633
+Slack : -4.574
+TNS   : -1850.466
 
 Type  : Fast 1200mV 0C Model Setup 'clk_k'
-Slack : -2.511
-TNS   : -37.165
+Slack : -3.518
+TNS   : -52.301
 
-Type  : Fast 1200mV 0C Model Setup 'clk_mem'
-Slack : -2.011
-TNS   : -9.367
+Type  : Fast 1200mV 0C Model Setup 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -3.263
+TNS   : -35.693
 
-Type  : Fast 1200mV 0C Model Setup 'decoder:inst1|Sel_C[0]'
-Slack : -0.902
-TNS   : -25.054
+Type  : Fast 1200mV 0C Model Setup 'clk_ram'
+Slack : -3.150
+TNS   : -15.623
 
-Type  : Fast 1200mV 0C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -1.232
-TNS   : -17.795
+Type  : Fast 1200mV 0C Model Setup 'clk_pc'
+Slack : -2.996
+TNS   : -34.804
 
-Type  : Fast 1200mV 0C Model Hold 'decoder:inst1|Sel_C[0]'
-Slack : -0.375
-TNS   : -4.222
+Type  : Fast 1200mV 0C Model Setup 'nRST'
+Slack : -1.246
+TNS   : -1.246
+
+Type  : Fast 1200mV 0C Model Setup 'clk_rom'
+Slack : -1.138
+TNS   : -4.463
+
+Type  : Fast 1200mV 0C Model Hold 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : -1.440
+TNS   : -12.909
 
 Type  : Fast 1200mV 0C Model Hold 'decoder:inst1|ALUC[0]'
-Slack : -0.094
-TNS   : -0.115
+Slack : -0.555
+TNS   : -1.609
 
-Type  : Fast 1200mV 0C Model Hold 'clk_mem'
-Slack : 0.113
+Type  : Fast 1200mV 0C Model Hold 'clk_k'
+Slack : 0.130
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_pc'
-Slack : 0.187
+Slack : 0.186
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk_k'
-Slack : 0.497
+Type  : Fast 1200mV 0C Model Hold 'clk_ram'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_rom'
+Slack : 0.565
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_reg'
-Slack : 0.612
+Slack : 0.831
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_k'
-Slack : -3.000
-TNS   : -19.954
+Type  : Fast 1200mV 0C Model Hold 'nRST'
+Slack : 0.999
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_pc'
+Slack : -0.091
+TNS   : -1.001
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_reg'
+Slack : -0.082
+TNS   : -36.649
+
+Type  : Fast 1200mV 0C Model Removal 'clk_reg'
+Slack : -0.090
+TNS   : -39.987
+
+Type  : Fast 1200mV 0C Model Removal 'clk_pc'
+Slack : -0.074
+TNS   : -0.811
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_reg'
 Slack : -3.000
-TNS   : -19.935
+TNS   : -493.484
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_mem'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_k'
 Slack : -3.000
-TNS   : -14.160
+TNS   : -20.100
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_pc'
 Slack : -3.000
-TNS   : -12.487
+TNS   : -15.652
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.351
-TNS   : -13.699
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_ram'
+Slack : -3.000
+TNS   : -11.964
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'decoder:inst1|Sel_C[0]'
-Slack : 0.190
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_rom'
+Slack : -3.000
+TNS   : -8.548
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'nRST'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rom1:inst|altsyncram:altsyncram_component|altsyncram_vfa1:auto_generated|ram_block1a0~porta_re_reg'
+Slack : 0.009
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'decoder:inst1|ALUC[0]'
-Slack : 0.327
+Slack : 0.317
 TNS   : 0.000
 
 ------------------------------------------------------------

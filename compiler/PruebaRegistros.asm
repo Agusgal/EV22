@@ -1,0 +1,11 @@
+LSK #K 07
+MOK W,#K 70
+MOV Ri,W 2
+
+LSK #K 10
+MOK W,#K 01
+MOV Ri,W 5
+
+MOV W,Rj 2
+MOV W,Rj 5
+

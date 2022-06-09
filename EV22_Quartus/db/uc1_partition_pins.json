@@ -204,70 +204,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "DataOut[15]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[14]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[13]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[12]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[11]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[10]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[9]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[8]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[7]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[6]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[5]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[4]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[2]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[1]",
-					"strict" : false
-				},
-				{
-					"name" : "DataOut[0]",
-					"strict" : false
-				},
-				{
 					"name" : "Kout[15]",
 					"strict" : false
 				},
@@ -396,27 +332,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[5]",
+					"name" : "PC_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[4]",
+					"name" : "PC_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[3]",
+					"name" : "PC_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[2]",
+					"name" : "PC_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[1]",
+					"name" : "PC_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_REG_out[0]",
+					"name" : "PC_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_out[0]",
 					"strict" : false
 				},
 				{
@@ -484,11 +440,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_k",
+					"name" : "nRST",
 					"strict" : false
 				},
 				{
-					"name" : "nRST",
+					"name" : "clk_pc",
+					"strict" : false
+				},
+				{
+					"name" : "clk_k",
 					"strict" : false
 				},
 				{
@@ -496,11 +456,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_mem",
+					"name" : "clk_rom",
 					"strict" : false
 				},
 				{
-					"name" : "clk_pc",
+					"name" : "clk_ram",
 					"strict" : false
 				}
 			]

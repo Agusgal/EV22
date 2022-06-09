@@ -1,4 +1,4 @@
-module Block2(
+/* module Block2(
 					input clk,
 					input[15:0] W_IN,
 					input[15:0] W_MEM_IN,
@@ -23,7 +23,7 @@ module Block2(
 //			SEL_REG = Sel_C;
 			//end
 		end
-	
-		updateFlag = ~updateFlag;
+
+//		updateFlag = ~updateFlag;
 	end		
-endmodule				
+endmodule				*/
