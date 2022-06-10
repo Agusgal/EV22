@@ -10,117 +10,117 @@ z2
 cModel Technology
 dC:/My_Designs/uc1/simulation/qsim
 vhard_block
-Z0 !s110 1654837208
+!s110 1654837208
 !i10b 1
 !s100 _gk^O5>LfV9Qbbno`dB5@2
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Id;]1;1@>oPiPSAjQ7ggKH0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim
-Z4 w1654837206
-Z5 8uc1.vo
-Z6 Fuc1.vo
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim
+w1654837206
+Z3 8uc1.vo
+Z4 Fuc1.vo
 !i122 977
 L0 30994 34
-Z7 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1654837207.000000
-Z9 !s107 uc1.vo|
-Z10 !s90 -work|work|uc1.vo|
+!s108 1654837207.000000
+Z6 !s107 uc1.vo|
+Z7 !s90 -work|work|uc1.vo|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z8 o-work work
+Z9 tCvgOpt 0
 vtestbench
-Z13 !s110 1653853708
+Z10 !s110 1653853708
 !i10b 1
 !s100 hXj[Q<X0@OzT@MonE`zTZ2
-R1
+R0
 IhEj?l91b_j^Qb^g5:X20M0
+R1
 R2
-R3
 w1653853707
-R5
-R6
+R3
+R4
 !i122 46
 L0 32 697
-R7
+R5
 r1
 !s85 0
 31
-Z14 !s108 1653853708.000000
-R9
-R10
+Z11 !s108 1653853708.000000
+R6
+R7
 !i113 1
-R11
-R12
+R8
+R9
 vtestbench_vlg_vec_tst
-R13
+R10
 !i10b 1
 !s100 WS:TR?90TcJOHCjlEooaH2
-R1
+R0
 IXHXGim<:E<^ecHSOjA<MA1
+R1
 R2
-R3
 w1653853706
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
 !i122 47
 L0 30 82
-R7
+R5
 r1
 !s85 0
 31
-R14
+R11
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
-R11
-R12
-vuc1
-R0
-!i10b 1
-!s100 nMb2FQK[@[eUdNo6`<To70
-R1
-IEj=Sd`GkG7Dh>NVBoSUka3
-R2
-R3
-R4
-R5
-R6
-!i122 977
-L0 32 30961
-R7
-r1
-!s85 0
-31
 R8
 R9
-R10
-!i113 1
-R11
-R12
-vuc1_vlg_vec_tst
-R0
+vuc1
+Z12 !s110 1654841123
 !i10b 1
-!s100 dMl=JlaEUO78NHK;DfaH81
+!s100 68llNMYJ>>zo?Dh@b;;NT2
+R0
+IFCHE43>OM9JUinL_<kmJQ0
 R1
-I1VEm:_@7fUA?kkgP5k6N81
 R2
+w1654841122
 R3
-w1654837205
-8Waveform4.vwf.vt
-FWaveform4.vwf.vt
-!i122 978
-L0 30 124
-R7
+R4
+!i122 991
+L0 32 30536
+R5
 r1
 !s85 0
 31
-!s108 1654837208.000000
+Z13 !s108 1654841123.000000
+R6
+R7
+!i113 1
+R8
+R9
+vuc1_vlg_vec_tst
+R12
+!i10b 1
+!s100 Q4gmKLSHo6FRT@EfQ7ne@1
+R0
+Ij[6[>m@eKR3?Cn7z?H5kb0
+R1
+R2
+w1654841121
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+!i122 992
+L0 30 88
+R5
+r1
+!s85 0
+31
+R13
 !s107 Waveform4.vwf.vt|
 !s90 -work|work|Waveform4.vwf.vt|
 !i113 1
-R11
-R12
+R8
+R9

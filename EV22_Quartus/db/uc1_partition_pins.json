@@ -404,22 +404,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_pc",
-					"strict" : false
-				},
-				{
-					"name" : "clk_ram",
-					"strict" : false
-				},
-				{
-					"name" : "clk_k",
-					"strict" : false
-				},
-				{
-					"name" : "clk_reg",
-					"strict" : false
-				},
-				{
 					"name" : "clk_rom",
 					"strict" : false
 				}
