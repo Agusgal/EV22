@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/09/2022 20:16:16"
+// Generated on "06/10/2022 00:28:58"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -37,10 +37,11 @@ reg clk_reg;
 reg clk_rom;
 reg nRST;
 // wires                                               
+wire [3:0] ALUC;
 wire [15:0] APOSMUX;
 wire [15:0] Bout;
-wire [15:0] COUT;
-wire [15:0] DataOut;
+wire COUT;
+wire COUT2;
 wire [15:0] Kout;
 wire MRout;
 wire MWout;
@@ -51,6 +52,7 @@ wire [15:0] WR_out;
 // assign statements (if any)                          
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
+	.ALUC(ALUC),
 	.APOSMUX(APOSMUX),
 	.Bout(Bout),
 	.clk_k(clk_k),
@@ -59,7 +61,7 @@ uc1 i1 (
 	.clk_reg(clk_reg),
 	.clk_rom(clk_rom),
 	.COUT(COUT),
-	.DataOut(DataOut),
+	.COUT2(COUT2),
 	.Kout(Kout),
 	.MRout(MRout),
 	.MWout(MWout),
@@ -77,10 +79,8 @@ end
 initial
 begin
 	nRST = 1'b1;
-	nRST = #20000 1'b0;
-	nRST = #150000 1'b1;
-	nRST = #790000 1'b0;
-	nRST = #250000 1'b1;
+	nRST = #40000 1'b0;
+	nRST = #180000 1'b1;
 end 
 
 // clk_pc
@@ -103,7 +103,7 @@ end
 initial
 begin
 	clk_rom = 1'b1;
-	# 15000;
+	# 20000;
 	repeat(19)
 	begin
 		clk_rom = 1'b0;
@@ -118,7 +118,7 @@ end
 initial
 begin
 	clk_ram = 1'b1;
-	# 25000;
+	# 40000;
 	repeat(19)
 	begin
 		clk_ram = 1'b0;
@@ -132,8 +132,9 @@ end
 // clk_k
 initial
 begin
-	clk_k = 1'b1;
-	# 35000;
+	clk_k = 1'b0;
+	clk_k = #10000 1'b1;
+	# 50000;
 	repeat(19)
 	begin
 		clk_k = 1'b0;
@@ -141,14 +142,14 @@ begin
 		# 50000;
 	end
 	clk_k = 1'b0;
-	clk_k = #50000 1'b1;
 end 
 
 // clk_reg
 initial
 begin
-	clk_reg = 1'b1;
-	# 45000;
+	clk_reg = 1'b0;
+	clk_reg = #30000 1'b1;
+	# 50000;
 	repeat(19)
 	begin
 		clk_reg = 1'b0;
@@ -156,7 +157,6 @@ begin
 		# 50000;
 	end
 	clk_reg = 1'b0;
-	clk_reg = #50000 1'b1;
 end 
 endmodule
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Thu Jun 09 20:15:37 2022
+Fri Jun 10 00:27:59 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -54,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 09 20:15:37 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 10 00:27:59 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,096                                       ;
-;     Total combinational functions  ; 648                                         ;
+; Total logic elements               ; 1,095                                       ;
+;     Total combinational functions  ; 647                                         ;
 ;     Dedicated logic registers      ; 492                                         ;
 ; Total registers                    ; 492                                         ;
-; Total pins                         ; 131                                         ;
+; Total pins                         ; 105                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 20,480                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -170,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -220,31 +220,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 1,096      ;
+; Estimated Total logic elements              ; 1,095      ;
 ;                                             ;            ;
-; Total combinational functions               ; 648        ;
+; Total combinational functions               ; 647        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 453        ;
-;     -- 3 input functions                    ; 160        ;
-;     -- <=2 input functions                  ; 35         ;
+;     -- 4 input functions                    ; 452        ;
+;     -- 3 input functions                    ; 159        ;
+;     -- <=2 input functions                  ; 36         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 606        ;
+;     -- normal mode                          ; 605        ;
 ;     -- arithmetic mode                      ; 42         ;
 ;                                             ;            ;
 ; Total registers                             ; 492        ;
 ;     -- Dedicated logic registers            ; 492        ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 131        ;
+; I/O pins                                    ; 105        ;
 ; Total memory bits                           ; 20480      ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; nRST~input ;
 ; Maximum fan-out                             ; 503        ;
-; Total fan-out                               ; 4921       ;
-; Average fan-out                             ; 3.43       ;
+; Total fan-out                               ; 4880       ;
+; Average fan-out                             ; 3.53       ;
 +---------------------------------------------+------------+
 
 
@@ -253,12 +253,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
-; |uc1                                      ; 648 (0)             ; 492 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 131  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
+; |uc1                                      ; 647 (0)             ; 492 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 105  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
 ;    |ALU:inst5|                            ; 154 (154)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
 ;    |DATA:inst12|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12                                                                ; DATA                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_joi1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated ; altsyncram_joi1     ; work         ;
-;    |carry_block:inst8|                    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block         ; work         ;
+;    |carry_block:inst8|                    ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block         ; work         ;
 ;    |constant_reg:inst6|                   ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg        ; work         ;
 ;    |decoder:inst1|                        ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                              ; decoder             ; work         ;
 ;    |fetch:inst4|                          ; 41 (41)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|fetch:inst4                                                                ; fetch               ; work         ;
@@ -301,7 +301,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
 +-----------------------------------------------------+------------------------+------------------------+
 ; decoder:inst1|MW                                    ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|ALUC[3]                               ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|ALUC[2]                               ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|ALUC[1]                               ; decoder:inst1|WideOr0  ; yes                    ;
+; decoder:inst1|ALUC[0]                               ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|MR                                    ; decoder:inst1|WideOr0  ; yes                    ;
+; ALU:inst5|cy_out                                    ; ALU:inst5|Mux18        ; yes                    ;
 ; decoder:inst1|KMux                                  ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|Sel_B[1]                              ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|Sel_B[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
@@ -327,12 +332,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; decoder:inst1|Sel_C[3]                              ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|Sel_C[4]                              ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|Sel_C[5]                              ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|ALUC[2]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|ALUC[3]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|ALUC[0]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; decoder:inst1|ALUC[1]                               ; decoder:inst1|WideOr0  ; yes                    ;
 ; decoder:inst1|Type[6]                               ; decoder:inst1|WideOr0  ; yes                    ;
-; ALU:inst5|cy_out                                    ; ALU:inst5|Mux18        ; yes                    ;
 ; decoder:inst1|Dadd[0]                               ; decoder:inst1|WideOr35 ; yes                    ;
 ; decoder:inst1|Dadd[1]                               ; decoder:inst1|WideOr35 ; yes                    ;
 ; decoder:inst1|Dadd[2]                               ; decoder:inst1|WideOr35 ; yes                    ;
@@ -368,8 +368,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux18                              ;
-; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux15                                                            ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux31                              ;
+; 11:1               ; 16 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |uc1|ALU:inst5|Mux5                                                             ;
 ; 33:1               ; 16 bits   ; 352 LEs       ; 304 LEs              ; 48 LEs                 ; No         ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated|result_node[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------+
 
@@ -569,25 +569,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 131                         ;
+; boundary_port         ; 105                         ;
 ; cycloneiii_ff         ; 492                         ;
 ;     CLR               ; 11                          ;
 ;     ENA CLR           ; 480                         ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 649                         ;
+; cycloneiii_lcell_comb ; 647                         ;
 ;     arith             ; 42                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 607                         ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 605                         ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 143                         ;
-;         4 data inputs ; 453                         ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 142                         ;
+;         4 data inputs ; 452                         ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.50                       ;
-; Average LUT depth     ; 9.37                        ;
+; Average LUT depth     ; 9.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -606,7 +606,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 09 20:15:27 2022
+    Info: Processing started: Fri Jun 10 00:27:49 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -729,7 +729,9 @@ Warning (10230): Verilog HDL assignment warning at fetch.v(17): truncated value 
 Info (12128): Elaborating entity "Block1" for hierarchy "Block1:inst10"
 Warning (10240): Verilog HDL Always Construct warning at Block_1.v(9): inferring latch(es) for variable "B1OUT", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
 Info (10041): Inferred latch for "B1OUT" at Block_1.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Block_1.v Line: 9
+Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst5"
+Warning (10270): Verilog HDL Case Statement warning at alu.v(10): incomplete case statement has no default case item File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 10
 Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "cy_out", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
 Warning (10240): Verilog HDL Always Construct warning at alu.v(9): inferring latch(es) for variable "z", which holds its previous value in one or more paths through the always construct File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
 Info (10041): Inferred latch for "z[0]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
@@ -749,7 +751,6 @@ Info (10041): Inferred latch for "z[13]" at alu.v(9) File: C:/Users/Franco/Docum
 Info (10041): Inferred latch for "z[14]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
 Info (10041): Inferred latch for "z[15]" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
 Info (10041): Inferred latch for "cy_out" at alu.v(9) File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-Info (12128): Elaborating entity "carry_block" for hierarchy "carry_block:inst8"
 Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst3"
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
 Info (12130): Elaborated megafunction instantiation "mux2:inst3|lpm_mux:LPM_MUX_component" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/mux2.v Line: 69
@@ -805,14 +806,24 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
     Info (13026): Duplicate LATCH primitive "decoder:inst1|Sel_B[5]" merged with LATCH primitive "decoder:inst1|Sel_B[1]" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch decoder:inst1|MW has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 11
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[10] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[13] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch decoder:inst1|ALUC[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|MR has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 10
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[10] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
+Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 7
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[0] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch decoder:inst1|KMux has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|Sel_B[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch ALU:inst5|z[15] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch ALU:inst5|z[14] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch ALU:inst5|z[13] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
@@ -842,7 +853,7 @@ Warning (13012): Latch ALU:inst5|z[2] has unsafe behavior File: C:/Users/Franco/
 Warning (13012): Latch ALU:inst5|z[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch ALU:inst5|z[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 9
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[2] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[3] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13012): Latch decoder:inst1|Sel_C[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|Sel_C[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
@@ -855,18 +866,8 @@ Warning (13012): Latch decoder:inst1|Sel_C[4] has unsafe behavior File: C:/Users
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[9] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|Sel_C[5] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[2] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[13] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[3] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[0] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[14] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch decoder:inst1|ALUC[1] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[11] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
 Warning (13012): Latch decoder:inst1|Type[6] has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated|q_a[15] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/db/altsyncram_mr91.tdf Line: 32
-Warning (13012): Latch ALU:inst5|cy_out has unsafe behavior File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/alu.v Line: 7
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal decoder:inst1|ALUC[1] File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/decoder.v Line: 21
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "fetch:inst4|PC[10]" is converted into an equivalent circuit using register "fetch:inst4|PC[10]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/fetch.v Line: 14
     Warning (13310): Register "fetch:inst4|PC[9]" is converted into an equivalent circuit using register "fetch:inst4|PC[9]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/fetch.v Line: 14
@@ -879,37 +880,20 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "fetch:inst4|PC[2]" is converted into an equivalent circuit using register "fetch:inst4|PC[2]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/fetch.v Line: 14
     Warning (13310): Register "fetch:inst4|PC[1]" is converted into an equivalent circuit using register "fetch:inst4|PC[1]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/fetch.v Line: 14
     Warning (13310): Register "fetch:inst4|PC[0]" is converted into an equivalent circuit using register "fetch:inst4|PC[0]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/fetch.v Line: 14
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DataOut[15]" is stuck at GND
-    Warning (13410): Pin "DataOut[14]" is stuck at GND
-    Warning (13410): Pin "DataOut[13]" is stuck at GND
-    Warning (13410): Pin "DataOut[12]" is stuck at GND
-    Warning (13410): Pin "DataOut[11]" is stuck at GND
-    Warning (13410): Pin "DataOut[10]" is stuck at GND
-    Warning (13410): Pin "DataOut[9]" is stuck at GND
-    Warning (13410): Pin "DataOut[8]" is stuck at GND
-    Warning (13410): Pin "DataOut[7]" is stuck at GND
-    Warning (13410): Pin "DataOut[6]" is stuck at GND
-    Warning (13410): Pin "DataOut[5]" is stuck at GND
-    Warning (13410): Pin "DataOut[4]" is stuck at GND
-    Warning (13410): Pin "DataOut[3]" is stuck at GND
-    Warning (13410): Pin "DataOut[2]" is stuck at GND
-    Warning (13410): Pin "DataOut[1]" is stuck at GND
-    Warning (13410): Pin "DataOut[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1275 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1248 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 125 output pins
-    Info (21061): Implemented 1112 logic cells
+    Info (21059): Implemented 99 output pins
+    Info (21061): Implemented 1111 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Thu Jun 09 20:15:37 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 108 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Fri Jun 10 00:27:59 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+

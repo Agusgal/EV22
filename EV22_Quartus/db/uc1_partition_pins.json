@@ -8,7 +8,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "ALUC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC[0]",
+					"strict" : false
+				},
+				{
 					"name" : "MRout",
+					"strict" : false
+				},
+				{
+					"name" : "COUT",
+					"strict" : false
+				},
+				{
+					"name" : "COUT2",
 					"strict" : false
 				},
 				{
@@ -137,70 +161,6 @@
 				},
 				{
 					"name" : "Bout[0]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[14]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[13]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[12]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[11]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[10]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[9]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[8]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[7]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "COUT[0]",
 					"strict" : false
 				},
 				{
@@ -448,6 +408,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk_ram",
+					"strict" : false
+				},
+				{
 					"name" : "clk_k",
 					"strict" : false
 				},
@@ -457,10 +421,6 @@
 				},
 				{
 					"name" : "clk_rom",
-					"strict" : false
-				},
-				{
-					"name" : "clk_ram",
 					"strict" : false
 				}
 			]
