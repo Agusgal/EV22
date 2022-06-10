@@ -60,6 +60,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "SR_IN" (rect 0 0 29 12)(font "Arial" ))
+		(text "SR_IN" (rect 21 107 50 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
 		(pt 200 32)
 		(output)
 		(text "PC[10..0]" (rect 0 0 36 12)(font "Arial" ))

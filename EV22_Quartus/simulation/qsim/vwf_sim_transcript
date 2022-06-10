@@ -1,17 +1,17 @@
 Determining the location of the ModelSim executable...
 
-Using: c:/intelfpga_lite/20.1/modelsim_ase/win32aloem/
+Using: C:\intelFPGA\20.1\modelsim_ase\win32aloem
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source="C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Waveform4.vwf" --testbench_file="C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/Waveform4.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source="C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform4.vwf" --testbench_file="C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/Waveform4.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -26,9 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Jun 10 00:28:58 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Waveform4.vwf --testbench_file=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/Waveform4.vwf.vt
+    Info: Processing started: Fri Jun 10 02:00:05 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform4.vwf --testbench_file=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/Waveform4.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+tor source file when writing test bench files
 
 Completed successfully. 
 
@@ -36,11 +38,11 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/" uc1 -c uc1
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/" uc1 -c uc1
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -55,13 +57,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Jun 10 00:28:59 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
+    Info: Processing started: Fri Jun 10 02:00:06 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file uc1.vo in folder "C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1.vo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Fri Jun 10 00:28:59 2022
+    Info: Peak virtual memory: 4645 megabytes
+    Info: Processing ended: Fri Jun 10 02:00:06 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -69,13 +71,13 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1.do generated.
+C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/uc1.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do uc1.do
+C:/intelFPGA/20.1/modelsim_ase/win32aloem/vsim -c -do uc1.do
 
 Reading pref.tcl
 
@@ -85,7 +87,7 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:29:00 on Jun 10,2022
+# Start time: 02:00:07 on Jun 10,2022
 # vlog -work work uc1.vo 
 
 # -- Compiling module uc1
@@ -94,22 +96,22 @@ Reading pref.tcl
 # 
 # Top level modules:
 # 	uc1
-# End time: 00:29:00 on Jun 10,2022, Elapsed time: 0:00:00
+# End time: 02:00:08 on Jun 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:29:00 on Jun 10,2022
+# Start time: 02:00:08 on Jun 10,2022
 # vlog -work work Waveform4.vwf.vt 
 
 # -- Compiling module uc1_vlg_vec_tst
 # 
 # Top level modules:
 # 	uc1_vlg_vec_tst
-# End time: 00:29:01 on Jun 10,2022, Elapsed time: 0:00:01
+# End time: 02:00:08 on Jun 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst 
-# Start time: 00:29:01 on Jun 10,2022
+# Start time: 02:00:08 on Jun 10,2022
 # Loading work.uc1_vlg_vec_tst
 # Loading work.uc1
 # Loading work.hard_block
@@ -125,18 +127,19 @@ Reading pref.tcl
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#26
+
 # ** Note: $finish    : Waveform4.vwf.vt(75)
-#    Time: 2 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
-# End time: 00:29:01 on Jun 10,2022, Elapsed time: 0:00:00
+#    Time: 3 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
+# End time: 02:00:09 on Jun 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/Waveform4.vwf...
+Reading C:/Users/Matias/Source/repos/EV22/EV22_Quartus/Waveform4.vwf...
 
-Reading C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1.msim.vcd...
+Reading C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/uc1.msim.vcd...
 
 Processing channel transitions... 
 
@@ -172,7 +175,7 @@ Warning: C[1] - signal not found in VCD.
 
 Warning: C[0] - signal not found in VCD.
 
-Writing the resulting VWF to C:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim/uc1_20220610002901.sim.vwf
+Writing the resulting VWF to C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/uc1_20220610020009.sim.vwf
 
 Finished VCD to VWF conversion.
 

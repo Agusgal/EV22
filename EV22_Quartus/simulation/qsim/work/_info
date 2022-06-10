@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/My_Designs/uc1/simulation/qsim
 vhard_block
-Z0 !s110 1654831740
+Z0 !s110 1654837208
 !i10b 1
-!s100 `F^hSkA;EkfLU3O3CaHWn2
+!s100 _gk^O5>LfV9Qbbno`dB5@2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IJKo8ozAc@MdR<C8j48bHD0
+Id;]1;1@>oPiPSAjQ7ggKH0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/Franco/Documents/GitHub/EV22/EV22_Quartus/simulation/qsim
-Z4 w1654831739
+Z3 dC:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim
+Z4 w1654837206
 Z5 8uc1.vo
 Z6 Fuc1.vo
-!i122 959
-L0 26919 34
+!i122 977
+L0 30994 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1654831740.000000
+Z8 !s108 1654837207.000000
 Z9 !s107 uc1.vo|
 Z10 !s90 -work|work|uc1.vo|
 !i113 1
@@ -39,7 +39,7 @@ Z13 !s110 1653853708
 R1
 IhEj?l91b_j^Qb^g5:X20M0
 R2
-Z14 dC:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim
+R3
 w1653853707
 R5
 R6
@@ -49,7 +49,7 @@ R7
 r1
 !s85 0
 31
-Z15 !s108 1653853708.000000
+Z14 !s108 1653853708.000000
 R9
 R10
 !i113 1
@@ -62,7 +62,7 @@ R13
 R1
 IXHXGim<:E<^ecHSOjA<MA1
 R2
-R14
+R3
 w1653853706
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
@@ -72,7 +72,7 @@ R7
 r1
 !s85 0
 31
-R15
+R14
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
@@ -81,16 +81,16 @@ R12
 vuc1
 R0
 !i10b 1
-!s100 2KTzHLCmHc?RiOG;IFWNk1
+!s100 nMb2FQK[@[eUdNo6`<To70
 R1
-IRVZE`0=dc;TidFe^YUFk[1
+IEj=Sd`GkG7Dh>NVBoSUka3
 R2
 R3
 R4
 R5
 R6
-!i122 959
-L0 32 26886
+!i122 977
+L0 32 30961
 R7
 r1
 !s85 0
@@ -102,23 +102,23 @@ R10
 R11
 R12
 vuc1_vlg_vec_tst
-!s110 1654831741
+R0
 !i10b 1
-!s100 l=Ih:DAob]HaLD>]Kf>4B0
+!s100 dMl=JlaEUO78NHK;DfaH81
 R1
-IZcV]`b^niQKo<iAP0kF_B0
+I1VEm:_@7fUA?kkgP5k6N81
 R2
 R3
-w1654831738
+w1654837205
 8Waveform4.vwf.vt
 FWaveform4.vwf.vt
-!i122 960
-L0 30 132
+!i122 978
+L0 30 124
 R7
 r1
 !s85 0
 31
-R8
+!s108 1654837208.000000
 !s107 Waveform4.vwf.vt|
 !s90 -work|work|Waveform4.vwf.vt|
 !i113 1

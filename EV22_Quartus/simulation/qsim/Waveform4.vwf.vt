@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/10/2022 00:28:58"
+// Generated on "06/10/2022 02:00:05"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -72,7 +72,7 @@ uc1 i1 (
 );
 initial 
 begin 
-#2000000 $finish;
+#3000000 $finish;
 end 
 
 // nRST
@@ -84,27 +84,19 @@ begin
 end 
 
 // clk_pc
-initial
+always
 begin
 	clk_pc = 1'b0;
 	clk_pc = #50000 1'b1;
-	clk_pc = #50000 1'b0;
-	clk_pc = #50000 1'b1;
-	# 50000;
-	repeat(18)
-	begin
-		clk_pc = 1'b0;
-		clk_pc = #50000 1'b1;
-		# 50000;
-	end
+	#50000;
 end 
 
 // clk_rom
 initial
 begin
 	clk_rom = 1'b1;
-	# 20000;
-	repeat(19)
+	# 10000;
+	repeat(29)
 	begin
 		clk_rom = 1'b0;
 		clk_rom = #50000 1'b1;
@@ -118,8 +110,8 @@ end
 initial
 begin
 	clk_ram = 1'b1;
-	# 40000;
-	repeat(19)
+	# 20000;
+	repeat(29)
 	begin
 		clk_ram = 1'b0;
 		clk_ram = #50000 1'b1;
@@ -132,31 +124,31 @@ end
 // clk_k
 initial
 begin
-	clk_k = 1'b0;
-	clk_k = #10000 1'b1;
-	# 50000;
-	repeat(19)
+	clk_k = 1'b1;
+	# 30000;
+	repeat(29)
 	begin
 		clk_k = 1'b0;
 		clk_k = #50000 1'b1;
 		# 50000;
 	end
 	clk_k = 1'b0;
+	clk_k = #50000 1'b1;
 end 
 
 // clk_reg
 initial
 begin
-	clk_reg = 1'b0;
-	clk_reg = #30000 1'b1;
-	# 50000;
-	repeat(19)
+	clk_reg = 1'b1;
+	# 40000;
+	repeat(29)
 	begin
 		clk_reg = 1'b0;
 		clk_reg = #50000 1'b1;
 		# 50000;
 	end
 	clk_reg = 1'b0;
+	clk_reg = #50000 1'b1;
 end 
 endmodule
 

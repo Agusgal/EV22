@@ -49,7 +49,7 @@ module decoder
 			8'b000110xx:	begin ALUC=4'b0101; SH=0; KMux=0; MR=0; MW=0; Sel_B=34; Sel_C={1'b0,Ri}; Type=7'b0111101; end //ADW Ri,Rj
 
 			//b000111ss:	//BSR S: Save PC; PC= PC + S
-			8'b000111xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=1; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //BSR S
+			8'b000111xx:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b1000000; end //BSR S
 
 			
 			//b000010ii:	//MOV Ri,Rj: Ri = Rj y variaciones con puertos y working register
