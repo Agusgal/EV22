@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/07/2022 15:00:07"
+// Generated on "06/15/2022 16:11:40"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -30,63 +30,151 @@
 module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clk_pc;
-reg clk_reg;
+reg de0_clk;
 reg nRST;
-reg [15:0] PI0;
 reg [15:0] PI1;
 // wires                                               
-wire [9:0] Daddy;
-wire [15:0] OPCODE;
-wire [10:0] PC;
-wire [4:0] Sel_A;
-wire [5:0] Sel_B;
-wire [5:0] Sel_C;
-wire [15:0] WR;
+wire [3:0] ALUC;
+wire [15:0] APOSMUX;
+wire [15:0] Bout;
+wire clk_k;
+wire clk_pc;
+wire clk_ram;
+wire clk_reg;
+wire clk_rom;
+wire COUT;
+wire COUT2;
+wire [15:0] KOUT;
+wire MRout;
+wire MWout;
+wire [15:0] OPCODE_out;
+wire [10:0] PC_out;
+wire [15:0] WR_out;
+wire [15:0] z;
 
 // assign statements (if any)                          
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
+	.ALUC(ALUC),
+	.APOSMUX(APOSMUX),
+	.Bout(Bout),
+	.clk_k(clk_k),
 	.clk_pc(clk_pc),
+	.clk_ram(clk_ram),
 	.clk_reg(clk_reg),
-	.Daddy(Daddy),
+	.clk_rom(clk_rom),
+	.COUT(COUT),
+	.COUT2(COUT2),
+	.de0_clk(de0_clk),
+	.KOUT(KOUT),
+	.MRout(MRout),
+	.MWout(MWout),
 	.nRST(nRST),
-	.OPCODE(OPCODE),
-	.PC(PC),
-	.PI0(PI0),
+	.OPCODE_out(OPCODE_out),
+	.PC_out(PC_out),
 	.PI1(PI1),
-	.Sel_A(Sel_A),
-	.Sel_B(Sel_B),
-	.Sel_C(Sel_C),
-	.WR(WR)
+	.WR_out(WR_out),
+	.z(z)
 );
 initial 
 begin 
-#1000000 $stop;
+#1000000 $finish;
+end 
+
+// de0_clk
+always
+begin
+	de0_clk = 1'b0;
+	de0_clk = #10000 1'b1;
+	#10000;
 end 
 
 // nRST
 initial
 begin
-	nRST = 1'b0;
-	nRST = #10000 1'b1;
-	nRST = #110000 1'b0;
+	nRST = 1'b1;
+	nRST = #370000 1'b0;
+	nRST = #40000 1'b1;
 end 
-
-// clk_pc
-always
+// PI1[ 15 ]
+initial
 begin
-	clk_pc = 1'b0;
-	clk_pc = #50000 1'b1;
-	#50000;
+	PI1[15] = 1'b0;
 end 
-
-// clk_reg
-always
+// PI1[ 14 ]
+initial
 begin
-	clk_reg = 1'b0;
-	clk_reg = #25000 1'b1;
-	#25000;
+	PI1[14] = 1'b0;
+end 
+// PI1[ 13 ]
+initial
+begin
+	PI1[13] = 1'b0;
+end 
+// PI1[ 12 ]
+initial
+begin
+	PI1[12] = 1'b0;
+end 
+// PI1[ 11 ]
+initial
+begin
+	PI1[11] = 1'b0;
+end 
+// PI1[ 10 ]
+initial
+begin
+	PI1[10] = 1'b0;
+end 
+// PI1[ 9 ]
+initial
+begin
+	PI1[9] = 1'b0;
+end 
+// PI1[ 8 ]
+initial
+begin
+	PI1[8] = 1'b0;
+end 
+// PI1[ 7 ]
+initial
+begin
+	PI1[7] = 1'b0;
+end 
+// PI1[ 6 ]
+initial
+begin
+	PI1[6] = 1'b0;
+end 
+// PI1[ 5 ]
+initial
+begin
+	PI1[5] = 1'b0;
+end 
+// PI1[ 4 ]
+initial
+begin
+	PI1[4] = 1'b0;
+end 
+// PI1[ 3 ]
+initial
+begin
+	PI1[3] = 1'b0;
+end 
+// PI1[ 2 ]
+initial
+begin
+	PI1[2] = 1'b0;
+end 
+// PI1[ 1 ]
+initial
+begin
+	PI1[1] = 1'b0;
+end 
+// PI1[ 0 ]
+initial
+begin
+	PI1[0] = 1'b0;
 end 
 endmodule
 

@@ -71,105 +71,105 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
 PI1[1]                       : A2        : input  : 2.5 V             :         : 8         : N              
-KOUT[13]                     : A3        : output : 2.5 V             :         : 8         : N              
-APOSMUX[6]                   : A4        : output : 2.5 V             :         : 8         : N              
-APOSMUX[7]                   : A5        : output : 2.5 V             :         : 8         : N              
-z[6]                         : A6        : output : 2.5 V             :         : 8         : N              
-z[0]                         : A7        : output : 2.5 V             :         : 8         : N              
+PI1[9]                       : A3        : input  : 2.5 V             :         : 8         : N              
+PI1[11]                      : A4        : input  : 2.5 V             :         : 8         : N              
+PI1[0]                       : A5        : input  : 2.5 V             :         : 8         : N              
+z[3]                         : A6        : output : 2.5 V             :         : 8         : N              
+z[10]                        : A7        : output : 2.5 V             :         : 8         : N              
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
-z[2]                         : A10       : output : 2.5 V             :         : 7         : N              
-PI1[12]                      : A11       : input  : 2.5 V             :         : 7         : N              
-OPCODE_out[8]                : A12       : output : 2.5 V             :         : 7         : N              
-KOUT[2]                      : A13       : output : 2.5 V             :         : 7         : N              
-KOUT[5]                      : A14       : output : 2.5 V             :         : 7         : N              
-z[9]                         : A15       : output : 2.5 V             :         : 7         : N              
+PI1[7]                       : A10       : input  : 2.5 V             :         : 7         : N              
+APOSMUX[12]                  : A11       : output : 2.5 V             :         : 7         : N              
+WR_out[15]                   : A12       : output : 2.5 V             :         : 7         : N              
+Bout[0]                      : A13       : output : 2.5 V             :         : 7         : N              
+Bout[2]                      : A14       : output : 2.5 V             :         : 7         : N              
+PI1[4]                       : A15       : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-KOUT[11]                     : B1        : output : 2.5 V             :         : 1         : N              
+APOSMUX[1]                   : B1        : output : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-KOUT[10]                     : B3        : output : 2.5 V             :         : 8         : N              
-PI1[5]                       : B4        : input  : 2.5 V             :         : 8         : N              
-Bout[12]                     : B5        : output : 2.5 V             :         : 8         : N              
-z[12]                        : B6        : output : 2.5 V             :         : 8         : N              
-KOUT[6]                      : B7        : output : 2.5 V             :         : 8         : N              
+clk_k                        : B3        : output : 2.5 V             :         : 8         : N              
+KOUT[4]                      : B4        : output : 2.5 V             :         : 8         : N              
+z[14]                        : B5        : output : 2.5 V             :         : 8         : N              
+PI1[8]                       : B6        : input  : 2.5 V             :         : 8         : N              
+z[7]                         : B7        : output : 2.5 V             :         : 8         : N              
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
-z[15]                        : B10       : output : 2.5 V             :         : 7         : N              
-z[1]                         : B11       : output : 2.5 V             :         : 7         : N              
-KOUT[4]                      : B12       : output : 2.5 V             :         : 7         : N              
-KOUT[3]                      : B13       : output : 2.5 V             :         : 7         : N              
-OPCODE_out[9]                : B14       : output : 2.5 V             :         : 7         : N              
+KOUT[1]                      : B10       : output : 2.5 V             :         : 7         : N              
+Bout[6]                      : B11       : output : 2.5 V             :         : 7         : N              
+APOSMUX[2]                   : B12       : output : 2.5 V             :         : 7         : N              
+APOSMUX[0]                   : B13       : output : 2.5 V             :         : 7         : N              
+WR_out[8]                    : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-ALUC[2]                      : B16       : output : 2.5 V             :         : 6         : N              
+APOSMUX[11]                  : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-PI1[11]                      : C2        : input  : 2.5 V             :         : 1         : N              
-KOUT[8]                      : C3        : output : 2.5 V             :         : 8         : N              
+APOSMUX[3]                   : C2        : output : 2.5 V             :         : 1         : N              
+APOSMUX[7]                   : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-PI1[0]                       : C6        : input  : 2.5 V             :         : 8         : N              
+z[1]                         : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-z[4]                         : C8        : output : 2.5 V             :         : 8         : N              
-z[5]                         : C9        : output : 2.5 V             :         : 7         : N              
+PI1[3]                       : C8        : input  : 2.5 V             :         : 8         : N              
+z[8]                         : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-ALUC[0]                      : C11       : output : 2.5 V             :         : 7         : N              
+PI1[6]                       : C11       : input  : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-clk_k                        : C14       : output : 2.5 V             :         : 7         : N              
-APOSMUX[2]                   : C15       : output : 2.5 V             :         : 6         : N              
-APOSMUX[9]                   : C16       : output : 2.5 V             :         : 6         : N              
-z[3]                         : D1        : output : 2.5 V             :         : 1         : N              
+clk_ram                      : C14       : output : 2.5 V             :         : 7         : N              
+APOSMUX[5]                   : C15       : output : 2.5 V             :         : 6         : N              
+APOSMUX[15]                  : C16       : output : 2.5 V             :         : 6         : N              
+PI1[10]                      : D1        : input  : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-APOSMUX[1]                   : D3        : output : 2.5 V             :         : 8         : N              
+Bout[3]                      : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-Bout[9]                      : D5        : output : 2.5 V             :         : 8         : N              
-KOUT[14]                     : D6        : output : 2.5 V             :         : 8         : N              
+WR_out[1]                    : D5        : output : 2.5 V             :         : 8         : N              
+z[4]                         : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-z[10]                        : D8        : output : 2.5 V             :         : 8         : N              
-ALUC[1]                      : D9        : output : 2.5 V             :         : 7         : N              
+PI1[13]                      : D8        : input  : 2.5 V             :         : 8         : N              
+KOUT[3]                      : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-KOUT[15]                     : D11       : output : 2.5 V             :         : 7         : N              
-PI1[6]                       : D12       : input  : 2.5 V             :         : 7         : N              
+Bout[15]                     : D11       : output : 2.5 V             :         : 7         : N              
+KOUT[7]                      : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-PI1[2]                       : D14       : input  : 2.5 V             :         : 7         : N              
-APOSMUX[13]                  : D15       : output : 2.5 V             :         : 6         : N              
-OPCODE_out[7]                : D16       : output : 2.5 V             :         : 6         : N              
+KOUT[11]                     : D14       : output : 2.5 V             :         : 7         : N              
+APOSMUX[10]                  : D15       : output : 2.5 V             :         : 6         : N              
+PI1[12]                      : D16       : input  : 2.5 V             :         : 6         : N              
 de0_clk                      : E1        : input  : 2.5 V             :         : 1         : N              
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-Bout[1]                      : E6        : output : 2.5 V             :         : 8         : N              
-APOSMUX[14]                  : E7        : output : 2.5 V             :         : 8         : N              
-z[14]                        : E8        : output : 2.5 V             :         : 8         : N              
-PI1[3]                       : E9        : input  : 2.5 V             :         : 7         : N              
-COUT                         : E10       : output : 2.5 V             :         : 7         : N              
-OPCODE_out[11]               : E11       : output : 2.5 V             :         : 7         : N              
+z[9]                         : E6        : output : 2.5 V             :         : 8         : N              
+z[12]                        : E7        : output : 2.5 V             :         : 8         : N              
+z[15]                        : E8        : output : 2.5 V             :         : 8         : N              
+KOUT[0]                      : E9        : output : 2.5 V             :         : 7         : N              
+KOUT[5]                      : E10       : output : 2.5 V             :         : 7         : N              
+Bout[11]                     : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 PI1[14]                      : E15       : input  : 2.5 V             :         : 6         : N              
 PI1[15]                      : E16       : input  : 2.5 V             :         : 6         : N              
-z[11]                        : F1        : output : 2.5 V             :         : 1         : N              
-OPCODE_out[4]                : F2        : output : 2.5 V             :         : 1         : N              
-APOSMUX[8]                   : F3        : output : 2.5 V             :         : 1         : N              
+z[5]                         : F1        : output : 2.5 V             :         : 1         : N              
+ALUC[1]                      : F2        : output : 2.5 V             :         : 1         : N              
+KOUT[10]                     : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-z[7]                         : F8        : output : 2.5 V             :         : 8         : N              
-z[8]                         : F9        : output : 2.5 V             :         : 7         : N              
+KOUT[2]                      : F8        : output : 2.5 V             :         : 8         : N              
+KOUT[9]                      : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-OPCODE_out[3]                : F13       : output : 2.5 V             :         : 6         : N              
-ALUC[3]                      : F14       : output : 2.5 V             :         : 6         : N              
-OPCODE_out[14]               : F15       : output : 2.5 V             :         : 6         : N              
+Bout[14]                     : F13       : output : 2.5 V             :         : 6         : N              
+ALUC[2]                      : F14       : output : 2.5 V             :         : 6         : N              
+OPCODE_out[2]                : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
 z[13]                        : G1        : output : 2.5 V             :         : 1         : N              
-OPCODE_out[2]                : G2        : output : 2.5 V             :         : 1         : N              
+z[6]                         : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-Bout[13]                     : G5        : output : 2.5 V             :         : 1         : N              
+APOSMUX[8]                   : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -179,8 +179,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-OPCODE_out[15]               : G15       : output : 2.5 V             :         : 6         : N              
-APOSMUX[5]                   : G16       : output : 2.5 V             :         : 6         : N              
+Bout[10]                     : G15       : output : 2.5 V             :         : 6         : N              
+z[0]                         : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -197,8 +197,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-Bout[2]                      : J1        : output : 2.5 V             :         : 2         : N              
-Bout[6]                      : J2        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[15]               : J1        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[1]                : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -209,15 +209,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-MRout                        : J13       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[1]                : J14       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[5]                : J15       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[0]                : J16       : output : 2.5 V             :         : 5         : N              
-APOSMUX[12]                  : K1        : output : 2.5 V             :         : 2         : N              
-WR_out[11]                   : K2        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[0]                : J13       : output : 2.5 V             :         : 5         : N              
+ALUC[3]                      : J14       : output : 2.5 V             :         : 5         : N              
+OPCODE_out[3]                : J15       : output : 2.5 V             :         : 5         : N              
+OPCODE_out[4]                : J16       : output : 2.5 V             :         : 5         : N              
+OPCODE_out[7]                : K1        : output : 2.5 V             :         : 2         : N              
+PC_out[8]                    : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-PI1[9]                       : K5        : input  : 2.5 V             :         : 2         : N              
+Bout[13]                     : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -227,101 +227,101 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-OPCODE_out[12]               : K15       : output : 2.5 V             :         : 5         : N              
-PC_out[6]                    : K16       : output : 2.5 V             :         : 5         : N              
-Bout[5]                      : L1        : output : 2.5 V             :         : 2         : N              
-WR_out[8]                    : L2        : output : 2.5 V             :         : 2         : N              
-KOUT[12]                     : L3        : output : 2.5 V             :         : 2         : N              
-clk_rom                      : L4        : output : 2.5 V             :         : 2         : N              
+APOSMUX[13]                  : K15       : output : 2.5 V             :         : 5         : N              
+APOSMUX[4]                   : K16       : output : 2.5 V             :         : 5         : N              
+PC_out[4]                    : L1        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[9]                : L2        : output : 2.5 V             :         : 2         : N              
+PC_out[7]                    : L3        : output : 2.5 V             :         : 2         : N              
+KOUT[14]                     : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-Bout[14]                     : L7        : output : 2.5 V             :         : 3         : N              
-KOUT[9]                      : L8        : output : 2.5 V             :         : 3         : N              
+PC_out[2]                    : L7        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[10]               : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-MWout                        : L13       : output : 2.5 V             :         : 5         : N              
-Bout[7]                      : L14       : output : 2.5 V             :         : 5         : N              
-WR_out[13]                   : L15       : output : 2.5 V             :         : 5         : N              
-PC_out[7]                    : L16       : output : 2.5 V             :         : 5         : N              
+WR_out[13]                   : L13       : output : 2.5 V             :         : 5         : N              
+COUT                         : L14       : output : 2.5 V             :         : 5         : N              
+WR_out[14]                   : L15       : output : 2.5 V             :         : 5         : N              
+Bout[12]                     : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-WR_out[4]                    : M6        : output : 2.5 V             :         : 3         : N              
-PC_out[10]                   : M7        : output : 2.5 V             :         : 3         : N              
-Bout[3]                      : M8        : output : 2.5 V             :         : 3         : N              
+ALUC[0]                      : M6        : output : 2.5 V             :         : 3         : N              
+PC_out[9]                    : M7        : output : 2.5 V             :         : 3         : N              
+PC_out[5]                    : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-WR_out[9]                    : M10       : output : 2.5 V             :         : 4         : N              
+KOUT[13]                     : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-WR_out[0]                    : N1        : output : 2.5 V             :         : 2         : N              
-PC_out[9]                    : N2        : output : 2.5 V             :         : 2         : N              
-APOSMUX[3]                   : N3        : output : 2.5 V             :         : 3         : N              
+Bout[1]                      : N1        : output : 2.5 V             :         : 2         : N              
+KOUT[6]                      : N2        : output : 2.5 V             :         : 2         : N              
+PI1[2]                       : N3        : input  : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
-WR_out[1]                    : N5        : output : 2.5 V             :         : 3         : N              
-KOUT[1]                      : N6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[6]                : N5        : output : 2.5 V             :         : 3         : N              
+WR_out[12]                   : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-PC_out[2]                    : N8        : output : 2.5 V             :         : 3         : N              
-PC_out[8]                    : N9        : output : 2.5 V             :         : 4         : N              
+OPCODE_out[14]               : N8        : output : 2.5 V             :         : 3         : N              
+MRout                        : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-OPCODE_out[10]               : N11       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[6]                : N12       : output : 2.5 V             :         : 4         : N              
+Bout[7]                      : N11       : output : 2.5 V             :         : 4         : N              
+Bout[8]                      : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
-APOSMUX[15]                  : N14       : output : 2.5 V             :         : 5         : N              
-WR_out[7]                    : N15       : output : 2.5 V             :         : 5         : N              
-COUT2                        : N16       : output : 2.5 V             :         : 5         : N              
-PI1[8]                       : P1        : input  : 2.5 V             :         : 2         : N              
-Bout[15]                     : P2        : output : 2.5 V             :         : 2         : N              
-PI1[7]                       : P3        : input  : 2.5 V             :         : 3         : N              
+Bout[4]                      : N14       : output : 2.5 V             :         : 5         : N              
+MWout                        : N15       : output : 2.5 V             :         : 5         : N              
+PC_out[0]                    : N16       : output : 2.5 V             :         : 5         : N              
+Bout[9]                      : P1        : output : 2.5 V             :         : 2         : N              
+KOUT[12]                     : P2        : output : 2.5 V             :         : 2         : N              
+KOUT[15]                     : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-WR_out[2]                    : P6        : output : 2.5 V             :         : 3         : N              
+PC_out[3]                    : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-PC_out[0]                    : P8        : output : 2.5 V             :         : 3         : N              
-WR_out[10]                   : P9        : output : 2.5 V             :         : 4         : N              
+OPCODE_out[13]               : P8        : output : 2.5 V             :         : 3         : N              
+WR_out[6]                    : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-PI1[13]                      : P11       : input  : 2.5 V             :         : 4         : N              
+WR_out[9]                    : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-clk_reg                      : P14       : output : 2.5 V             :         : 4         : N              
-APOSMUX[10]                  : P15       : output : 2.5 V             :         : 5         : N              
-PC_out[5]                    : P16       : output : 2.5 V             :         : 5         : N              
-KOUT[7]                      : R1        : output : 2.5 V             :         : 2         : N              
+COUT2                        : P14       : output : 2.5 V             :         : 4         : N              
+KOUT[8]                      : P15       : output : 2.5 V             :         : 5         : N              
+APOSMUX[9]                   : P16       : output : 2.5 V             :         : 5         : N              
+clk_reg                      : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-KOUT[0]                      : R3        : output : 2.5 V             :         : 3         : N              
+clk_rom                      : R3        : output : 2.5 V             :         : 3         : N              
 clk_pc                       : R4        : output : 2.5 V             :         : 3         : N              
-APOSMUX[11]                  : R5        : output : 2.5 V             :         : 3         : N              
-Bout[0]                      : R6        : output : 2.5 V             :         : 3         : N              
-WR_out[6]                    : R7        : output : 2.5 V             :         : 3         : N              
+z[2]                         : R5        : output : 2.5 V             :         : 3         : N              
+PC_out[6]                    : R6        : output : 2.5 V             :         : 3         : N              
+z[11]                        : R7        : output : 2.5 V             :         : 3         : N              
 GND+                         : R8        :        :                   :         : 3         :                
 GND+                         : R9        :        :                   :         : 4         :                
-OPCODE_out[13]               : R10       : output : 2.5 V             :         : 4         : N              
-PC_out[4]                    : R11       : output : 2.5 V             :         : 4         : N              
-WR_out[14]                   : R12       : output : 2.5 V             :         : 4         : N              
-PC_out[1]                    : R13       : output : 2.5 V             :         : 4         : N              
-WR_out[15]                   : R14       : output : 2.5 V             :         : 4         : N              
+WR_out[7]                    : R10       : output : 2.5 V             :         : 4         : N              
+OPCODE_out[11]               : R11       : output : 2.5 V             :         : 4         : N              
+WR_out[2]                    : R12       : output : 2.5 V             :         : 4         : N              
+WR_out[3]                    : R13       : output : 2.5 V             :         : 4         : N              
+Bout[5]                      : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-PI1[4]                       : R16       : input  : 2.5 V             :         : 5         : N              
+WR_out[4]                    : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-APOSMUX[0]                   : T2        : output : 2.5 V             :         : 3         : N              
-clk_ram                      : T3        : output : 2.5 V             :         : 3         : N              
-Bout[4]                      : T4        : output : 2.5 V             :         : 3         : N              
-WR_out[3]                    : T5        : output : 2.5 V             :         : 3         : N              
-APOSMUX[4]                   : T6        : output : 2.5 V             :         : 3         : N              
-Bout[8]                      : T7        : output : 2.5 V             :         : 3         : N              
+APOSMUX[14]                  : T2        : output : 2.5 V             :         : 3         : N              
+PI1[5]                       : T3        : input  : 2.5 V             :         : 3         : N              
+OPCODE_out[5]                : T4        : output : 2.5 V             :         : 3         : N              
+PC_out[1]                    : T5        : output : 2.5 V             :         : 3         : N              
+PC_out[10]                   : T6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[12]               : T7        : output : 2.5 V             :         : 3         : N              
 nRST                         : T8        : input  : 2.5 V             :         : 3         : N              
 GND+                         : T9        :        :                   :         : 4         :                
-PC_out[3]                    : T10       : output : 2.5 V             :         : 4         : N              
-Bout[11]                     : T11       : output : 2.5 V             :         : 4         : N              
-Bout[10]                     : T12       : output : 2.5 V             :         : 4         : N              
-PI1[10]                      : T13       : input  : 2.5 V             :         : 4         : N              
-WR_out[5]                    : T14       : output : 2.5 V             :         : 4         : N              
-WR_out[12]                   : T15       : output : 2.5 V             :         : 4         : N              
+OPCODE_out[8]                : T10       : output : 2.5 V             :         : 4         : N              
+WR_out[0]                    : T11       : output : 2.5 V             :         : 4         : N              
+APOSMUX[6]                   : T12       : output : 2.5 V             :         : 4         : N              
+WR_out[11]                   : T13       : output : 2.5 V             :         : 4         : N              
+WR_out[10]                   : T14       : output : 2.5 V             :         : 4         : N              
+WR_out[5]                    : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                
