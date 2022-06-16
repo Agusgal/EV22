@@ -1,0 +1,27 @@
+module UC2
+(
+input [4:0]A2,
+input [5:0]B2,
+input [8:0]T2,
+input [8:0]T3,
+input [5:0]C3,
+input [8:0]T4,
+input [5:0]C4,
+input [8:0]T5,
+input [5:0]C5,
+output reg HOLD
+ );
+
+ 
+ //Condiciones para Hold: 
+
+
+
+
+ 
+always @(*)begin
+
+
+end
+
+endmodule

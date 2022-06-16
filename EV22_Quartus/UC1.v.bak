@@ -1,0 +1,27 @@
+module UC1(
+input HOLD,
+input CK3,
+input [6:0] T_in,
+input [5:0] C_in,
+input MR_IN,
+input MW_IN,
+output reg [5:0] C_out,
+output reg [6:0] T_out,
+output reg MR_OUT,
+output reg MW_OUT
+);
+
+//TODO chequear funcionamiento de MR y MW en caso de hold
+always @(negedge NOT_CK3) begin
+	if(HOLD) begin
+	C_out<= 35;	
+	T_out<= 6'b0;
+	end
+	else begin
+	C_out <= C_in;
+	T_out <= T_in;
+	
+	end
+end
+
+endmodule

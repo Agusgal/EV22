@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Wed Jun 15 15:57:01 2022
+Thu Jun 16 16:23:55 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,20 +16,21 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. User-Specified and Inferred Latches
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated
- 14. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated
- 15. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: pll1:inst9|altpll:altpll_component
- 17. Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component
- 18. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. altpll Parameter Settings by Entity Instance
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for rom1:inst|altsyncram:altsyncram_component|altsyncram_mr91:auto_generated
+ 15. Source assignments for DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated
+ 16. Parameter Settings for User Entity Instance: rom1:inst|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: pll1:inst9|altpll:altpll_component
+ 18. Parameter Settings for User Entity Instance: mux2:inst3|lpm_mux:LPM_MUX_component
+ 19. Parameter Settings for User Entity Instance: DATA:inst12|altsyncram:altsyncram_component
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. altpll Parameter Settings by Entity Instance
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,16 +57,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 15 15:57:01 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 16 16:23:55 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 1,242                                       ;
 ;     Total combinational functions  ; 761                                         ;
-;     Dedicated logic registers      ; 568                                         ;
-; Total registers                    ; 568                                         ;
-; Total pins                         ; 138                                         ;
+;     Dedicated logic registers      ; 573                                         ;
+; Total registers                    ; 573                                         ;
+; Total pins                         ; 148                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 20,480                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -183,6 +184,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
+; UC2.v                            ; yes             ; User Verilog HDL File                 ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/UC2.v                       ;         ;
 ; uc1.bdf                          ; yes             ; User Block Diagram/Schematic File     ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/uc1.bdf                     ;         ;
 ; rom1.v                           ; yes             ; User Wizard-Generated File            ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/rom1.v                      ;         ;
 ; prog1.hex                        ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/prog1.hex                   ;         ;
@@ -199,6 +201,7 @@ https://fpgasoftware.intel.com/eula.
 ; DATA.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/DATA.hex                    ;         ;
 ; Block3.v                         ; yes             ; User Verilog HDL File                 ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/Block3.v                    ;         ;
 ; super_register_bank.v            ; yes             ; User Verilog HDL File                 ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/super_register_bank.v       ;         ;
+; mir.v                            ; yes             ; User Verilog HDL File                 ; C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/mir.v                       ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -240,11 +243,11 @@ https://fpgasoftware.intel.com/eula.
 ;     -- normal mode                          ; 678                                                                            ;
 ;     -- arithmetic mode                      ; 83                                                                             ;
 ;                                             ;                                                                                ;
-; Total registers                             ; 568                                                                            ;
-;     -- Dedicated logic registers            ; 568                                                                            ;
+; Total registers                             ; 573                                                                            ;
+;     -- Dedicated logic registers            ; 573                                                                            ;
 ;     -- I/O registers                        ; 0                                                                              ;
 ;                                             ;                                                                                ;
-; I/O pins                                    ; 138                                                                            ;
+; I/O pins                                    ; 148                                                                            ;
 ; Total memory bits                           ; 20480                                                                          ;
 ;                                             ;                                                                                ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                              ;
@@ -253,9 +256,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                              ;
 ;                                             ;                                                                                ;
 ; Maximum fan-out node                        ; pll1:inst9|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 618                                                                            ;
-; Total fan-out                               ; 5559                                                                           ;
-; Average fan-out                             ; 3.39                                                                           ;
+; Maximum fan-out                             ; 623                                                                            ;
+; Total fan-out                               ; 5589                                                                           ;
+; Average fan-out                             ; 3.36                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------+
 
 
@@ -264,12 +267,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
-; |uc1                                      ; 761 (0)             ; 568 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 138  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
+; |uc1                                      ; 761 (0)             ; 573 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 148  ; 0            ; |uc1                                                                            ; uc1                 ; work         ;
 ;    |ALU:inst5|                            ; 145 (145)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
 ;    |Block1:inst10|                        ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|Block1:inst10                                                              ; Block1              ; work         ;
 ;    |DATA:inst12|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12                                                                ; DATA                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_joi1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated ; altsyncram_joi1     ; work         ;
+;    |MIR:inst15|                           ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|MIR:inst15                                                                 ; MIR                 ; work         ;
 ;    |carry_block:inst8|                    ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block         ; work         ;
 ;    |constant_reg:inst6|                   ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg        ; work         ;
 ;    |decoder:inst1|                        ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|decoder:inst1                                                              ; decoder             ; work         ;
@@ -366,17 +370,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; MIR:inst15|MW_OUT                     ; Stuck at GND due to stuck port data_in ;
+; MIR:inst15|MR_OUT                     ; Stuck at GND due to stuck port data_in ;
+; MIR:inst15|SH_OUT[0,1]                ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 568   ;
+; Total registers                              ; 573   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 491   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 567   ;
+; Number of registers using Clock Enable       ; 572   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -980,17 +996,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 138                         ;
-; cycloneiii_ff         ; 568                         ;
-;     ENA               ; 76                          ;
+; boundary_port         ; 148                         ;
+; cycloneiii_ff         ; 573                         ;
+;     ENA               ; 81                          ;
 ;     ENA CLR           ; 491                         ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 761                         ;
+; cycloneiii_lcell_comb ; 762                         ;
 ;     arith             ; 83                          ;
 ;         2 data inputs ; 26                          ;
 ;         3 data inputs ; 57                          ;
-;     normal            ; 678                         ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 679                         ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 21                          ;
 ;         3 data inputs ; 143                         ;
@@ -999,7 +1015,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.40                       ;
-; Average LUT depth     ; 9.27                        ;
+; Average LUT depth     ; 9.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1018,10 +1034,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 15 15:56:42 2022
+    Info: Processing started: Thu Jun 16 16:23:40 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file uc2.v
+    Info (12023): Found entity 1: UC2 File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/UC2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file uc1.bdf
     Info (12023): Found entity 1: uc1
 Info (12021): Found 1 design units, including 1 entities, in source file rom1.v
@@ -1064,6 +1082,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file block3.
 Info (12021): Found 1 design units, including 1 entities, in source file super_register_bank.v
     Info (12023): Found entity 1: super_register_bank File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/super_register_bank.v Line: 1
 Warning (12019): Can't analyze file -- file stack.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file mir.v
+    Info (12023): Found entity 1: MIR File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/mir.v Line: 1
 Info (12127): Elaborating entity "uc1" for the top level hierarchy
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst1"
 Warning (10235): Verilog HDL Always Construct warning at decoder.v(24): variable "Rj" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/decoder.v Line: 24
@@ -1291,6 +1311,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_joi1 File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/db/altsyncram_joi1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_joi1" for hierarchy "DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "constant_reg" for hierarchy "constant_reg:inst6"
+Info (12128): Elaborating entity "MIR" for hierarchy "MIR:inst15"
+Info (12128): Elaborating entity "UC2" for hierarchy "UC2:inst11"
+Warning (10034): Output port "HOLD" at UC2.v(13) has no driver File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/UC2.v Line: 13
 Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst7"
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "super_register_bank:inst2|updateBlock3" is missing source, defaulting to GND File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/super_register_bank.v Line: 42
@@ -1378,21 +1401,26 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "fetch:inst4|PC[2]" is converted into an equivalent circuit using register "fetch:inst4|PC[2]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/fetch.v Line: 19
     Warning (13310): Register "fetch:inst4|PC[1]" is converted into an equivalent circuit using register "fetch:inst4|PC[1]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/fetch.v Line: 19
     Warning (13310): Register "fetch:inst4|PC[0]" is converted into an equivalent circuit using register "fetch:inst4|PC[0]~_emulated" and latch "fetch:inst4|PC[10]~1" File: C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/fetch.v Line: 19
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "MR_OUT" is stuck at GND
+    Warning (13410): Pin "MW_OUT" is stuck at GND
+    Warning (13410): Pin "SH_OUT[1]" is stuck at GND
+    Warning (13410): Pin "SH_OUT[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1440 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 120 output pins
-    Info (21061): Implemented 1269 logic cells
+Info (21057): Implemented 1455 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 129 output pins
+    Info (21061): Implemented 1274 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 119 warnings
     Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Wed Jun 15 15:57:01 2022
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Processing ended: Thu Jun 16 16:23:55 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

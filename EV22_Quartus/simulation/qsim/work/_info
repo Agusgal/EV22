@@ -79,46 +79,46 @@ R11
 R8
 R9
 vuc1
-!s110 1655320304
+Z12 !s110 1655407523
 !i10b 1
-!s100 IMWc>Fd:GGDi=jGkF;<O`1
+!s100 W[>PWz?fN`m77D[Nn6jSW1
 R0
-Icnc4RWDWK:65neVFYRYP`0
+I;OTTNobAUbOb5F[0TQI2N1
 R1
-Z12 dC:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim
-w1655320302
+Z13 dC:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim
+w1655407521
 R3
 R4
-!i122 1063
-L0 32 31247
+!i122 1067
+L0 32 31460
 R5
 r1
 !s85 0
 31
-Z13 !s108 1655320304.000000
+Z14 !s108 1655407523.000000
 R6
 R7
 !i113 1
 R8
 R9
 vuc1_vlg_vec_tst
-!s110 1655320305
-!i10b 1
-!s100 a]kid7R7:fKZ:3BPdKPS21
-R0
-IYD?j>8eLdC;QS]NOd@Q4U1
-R1
 R12
-w1655320301
+!i10b 1
+!s100 D5Ich_QI>gDTID9J:o<`=0
+R0
+I<2SoQ3;`4YCWWK;6Kei=M2
+R1
+R13
+w1655407520
 8Waveform5.vwf.vt
 FWaveform5.vwf.vt
-!i122 1064
-L0 30 150
+!i122 1068
+L0 30 168
 R5
 r1
 !s85 0
 31
-R13
+R14
 !s107 Waveform5.vwf.vt|
 !s90 -work|work|Waveform5.vwf.vt|
 !i113 1

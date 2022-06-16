@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/15/2022 16:11:40"
+// Generated on "06/16/2022 16:25:19"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -31,10 +31,12 @@ module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg de0_clk;
+reg HODL;
 reg nRST;
 reg [15:0] PI1;
 // wires                                               
 wire [3:0] ALUC;
+wire [3:0] ALUC_OUT;
 wire [15:0] APOSMUX;
 wire [15:0] Bout;
 wire clk_k;
@@ -44,11 +46,15 @@ wire clk_reg;
 wire clk_rom;
 wire COUT;
 wire COUT2;
+wire KMux_OUT;
 wire [15:0] KOUT;
+wire MR_OUT;
 wire MRout;
+wire MW_OUT;
 wire MWout;
 wire [15:0] OPCODE_out;
 wire [10:0] PC_out;
+wire [1:0] SH_OUT;
 wire [15:0] WR_out;
 wire [15:0] z;
 
@@ -56,6 +62,7 @@ wire [15:0] z;
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
 	.ALUC(ALUC),
+	.ALUC_OUT(ALUC_OUT),
 	.APOSMUX(APOSMUX),
 	.Bout(Bout),
 	.clk_k(clk_k),
@@ -66,13 +73,18 @@ uc1 i1 (
 	.COUT(COUT),
 	.COUT2(COUT2),
 	.de0_clk(de0_clk),
+	.HODL(HODL),
+	.KMux_OUT(KMux_OUT),
 	.KOUT(KOUT),
+	.MR_OUT(MR_OUT),
 	.MRout(MRout),
+	.MW_OUT(MW_OUT),
 	.MWout(MWout),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
 	.PC_out(PC_out),
 	.PI1(PI1),
+	.SH_OUT(SH_OUT),
 	.WR_out(WR_out),
 	.z(z)
 );
@@ -175,6 +187,12 @@ end
 initial
 begin
 	PI1[0] = 1'b0;
+end 
+
+// HODL
+initial
+begin
+	HODL = 1'b1;
 end 
 endmodule
 

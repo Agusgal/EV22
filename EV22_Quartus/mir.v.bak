@@ -1,0 +1,38 @@
+module MIR
+(
+input[3:0] ALUC_IN,
+input[1:0] SH_IN,
+input KMux_IN,
+input MR_IN,
+input MW_IN,
+input[4:0] SelA_IN,
+input[5:0] SelB_IN,
+input[5:0] SelC_IN,
+input[8:0] Type_IN,
+input[9:0] DAdd_IN,
+input EN,
+input CLK,
+output reg[3:0] ALUC_OUT,
+output reg[1:0] SH_OUT,
+output reg KMx_OUT,
+output reg MR_OUT,
+output reg MW_OUT,
+output reg[4:0] A_OUT,
+output reg[5:0] B_OUT,
+output reg[5:0] C_OUT,
+output reg[8:0] T_OUT,
+output reg[9:0] DAdd_OUT
+ );
+
+ 
+
+
+
+
+ 
+always @(*)begin
+
+
+end
+
+endmodule

@@ -36,6 +36,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "KMux_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUC_OUT[0]",
+					"strict" : false
+				},
+				{
 					"name" : "APOSMUX[15]",
 					"strict" : false
 				},
@@ -529,6 +549,10 @@
 				},
 				{
 					"name" : "nRST",
+					"strict" : false
+				},
+				{
+					"name" : "HODL",
 					"strict" : false
 				}
 			]
