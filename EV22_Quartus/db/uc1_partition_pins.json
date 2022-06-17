@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "MWout",
+					"name" : "COUT2",
 					"strict" : false
 				},
 				{
@@ -21,18 +21,6 @@
 				},
 				{
 					"name" : "ALUC[0]",
-					"strict" : false
-				},
-				{
-					"name" : "MRout",
-					"strict" : false
-				},
-				{
-					"name" : "COUT",
-					"strict" : false
-				},
-				{
-					"name" : "COUT2",
 					"strict" : false
 				},
 				{
@@ -97,134 +85,6 @@
 				},
 				{
 					"name" : "APOSMUX[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[14]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[13]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[8]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Bout[0]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[14]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[13]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[12]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[11]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[10]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[9]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[8]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[7]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[0]",
 					"strict" : false
 				},
 				{
@@ -464,7 +324,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[15]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[14]",
 					"strict" : false
 				},
 				{
@@ -472,7 +340,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[13]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[12]",
 					"strict" : false
 				},
 				{
@@ -480,7 +356,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[11]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[10]",
 					"strict" : false
 				},
 				{
@@ -488,7 +372,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[9]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[8]",
 					"strict" : false
 				},
 				{
@@ -496,7 +388,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[7]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[6]",
 					"strict" : false
 				},
 				{
@@ -504,7 +404,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[5]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[4]",
 					"strict" : false
 				},
 				{
@@ -512,7 +420,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[3]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[2]",
 					"strict" : false
 				},
 				{
@@ -520,7 +436,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "PI0[1]",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PI0[0]",
 					"strict" : false
 				},
 				{

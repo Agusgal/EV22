@@ -1,0 +1,252 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/17/2022 19:38:09"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          uc1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module uc1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg de0_clk;
+reg nRST;
+reg [15:0] PI0;
+reg [15:0] PI1;
+// wires                                               
+wire [3:0] ALUC;
+wire [15:0] APOSMUX;
+wire clk_k;
+wire clk_pc;
+wire clk_ram;
+wire clk_reg;
+wire clk_rom;
+wire COUT2;
+wire [15:0] OPCODE_out;
+wire [10:0] PC_out;
+wire [15:0] WR_out;
+wire [15:0] z;
+
+// assign statements (if any)                          
+uc1 i1 (
+// port map - connection between master ports and signals/registers   
+	.ALUC(ALUC),
+	.APOSMUX(APOSMUX),
+	.clk_k(clk_k),
+	.clk_pc(clk_pc),
+	.clk_ram(clk_ram),
+	.clk_reg(clk_reg),
+	.clk_rom(clk_rom),
+	.COUT2(COUT2),
+	.de0_clk(de0_clk),
+	.nRST(nRST),
+	.OPCODE_out(OPCODE_out),
+	.PC_out(PC_out),
+	.PI0(PI0),
+	.PI1(PI1),
+	.WR_out(WR_out),
+	.z(z)
+);
+initial 
+begin 
+#100000000 $finish;
+end 
+
+// de0_clk
+always
+begin
+	de0_clk = 1'b0;
+	de0_clk = #10000 1'b1;
+	#10000;
+end 
+
+// nRST
+initial
+begin
+	nRST = 1'b1;
+	nRST = #10000 1'b0;
+	nRST = #30000 1'b1;
+end 
+// PI0[ 15 ]
+initial
+begin
+	PI0[15] = 1'b0;
+end 
+// PI0[ 14 ]
+initial
+begin
+	PI0[14] = 1'b0;
+end 
+// PI0[ 13 ]
+initial
+begin
+	PI0[13] = 1'b0;
+end 
+// PI0[ 12 ]
+initial
+begin
+	PI0[12] = 1'b0;
+end 
+// PI0[ 11 ]
+initial
+begin
+	PI0[11] = 1'b0;
+end 
+// PI0[ 10 ]
+initial
+begin
+	PI0[10] = 1'b0;
+end 
+// PI0[ 9 ]
+initial
+begin
+	PI0[9] = 1'b0;
+end 
+// PI0[ 8 ]
+initial
+begin
+	PI0[8] = 1'b0;
+end 
+// PI0[ 7 ]
+initial
+begin
+	PI0[7] = 1'b0;
+end 
+// PI0[ 6 ]
+initial
+begin
+	PI0[6] = 1'b0;
+end 
+// PI0[ 5 ]
+initial
+begin
+	PI0[5] = 1'b0;
+end 
+// PI0[ 4 ]
+initial
+begin
+	PI0[4] = 1'b0;
+end 
+// PI0[ 3 ]
+initial
+begin
+	PI0[3] = 1'b0;
+end 
+// PI0[ 2 ]
+initial
+begin
+	PI0[2] = 1'b0;
+end 
+// PI0[ 1 ]
+initial
+begin
+	PI0[1] = 1'b0;
+end 
+// PI0[ 0 ]
+initial
+begin
+	PI0[0] = 1'b0;
+end 
+// PI1[ 15 ]
+initial
+begin
+	PI1[15] = 1'b0;
+end 
+// PI1[ 14 ]
+initial
+begin
+	PI1[14] = 1'b0;
+end 
+// PI1[ 13 ]
+initial
+begin
+	PI1[13] = 1'b0;
+end 
+// PI1[ 12 ]
+initial
+begin
+	PI1[12] = 1'b0;
+end 
+// PI1[ 11 ]
+initial
+begin
+	PI1[11] = 1'b0;
+end 
+// PI1[ 10 ]
+initial
+begin
+	PI1[10] = 1'b0;
+end 
+// PI1[ 9 ]
+initial
+begin
+	PI1[9] = 1'b0;
+end 
+// PI1[ 8 ]
+initial
+begin
+	PI1[8] = 1'b0;
+end 
+// PI1[ 7 ]
+initial
+begin
+	PI1[7] = 1'b0;
+end 
+// PI1[ 6 ]
+initial
+begin
+	PI1[6] = 1'b0;
+end 
+// PI1[ 5 ]
+initial
+begin
+	PI1[5] = 1'b0;
+end 
+// PI1[ 4 ]
+initial
+begin
+	PI1[4] = 1'b0;
+end 
+// PI1[ 3 ]
+initial
+begin
+	PI1[3] = 1'b0;
+end 
+// PI1[ 2 ]
+initial
+begin
+	PI1[2] = 1'b0;
+end 
+// PI1[ 1 ]
+initial
+begin
+	PI1[1] = 1'b0;
+end 
+// PI1[ 0 ]
+initial
+begin
+	PI1[0] = 1'b0;
+end 
+endmodule
+

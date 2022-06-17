@@ -1,6 +1,6 @@
 EDA Netlist Writer report for uc1
-Fri Jun 10 17:29:59 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Jun 17 19:38:11 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Jun 10 17:29:59 2022 ;
+; EDA Netlist Writer Status ; Successful - Fri Jun 17 19:38:11 2022 ;
 ; Revision Name             ; uc1                                   ;
 ; Top-level Entity Name     ; uc1                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -51,7 +51,8 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
+; Generate functional simulation netlist                                                            ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,13 +67,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                          ;
-+-------------------------------------------------------------------------------------+
-; Generated Files                                                                     ;
-+-------------------------------------------------------------------------------------+
-; C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/simulation/qsim//uc1.vo ;
-+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                   ;
++----------------------------------------------------------------------------------------------+
+; Generated Files                                                                              ;
++----------------------------------------------------------------------------------------------+
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_6_1200mv_85c_slow.vo     ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_6_1200mv_0c_slow.vo      ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_min_1200mv_0c_fast.vo    ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1.vo                       ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_6_1200mv_85c_v_slow.sdo  ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_6_1200mv_0c_v_slow.sdo   ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//uc1_v.sdo                    ;
++----------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -95,14 +103,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Jun 10 17:29:58 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
+    Info: Processing started: Fri Jun 17 19:38:09 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file uc1.vo in folder "C:/Users/frank/OneDrive/Documentos/GitHub/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_6_1200mv_85c_slow.vo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_6_1200mv_0c_slow.vo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_min_1200mv_0c_fast.vo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1.vo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_6_1200mv_85c_v_slow.sdo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_6_1200mv_0c_v_slow.sdo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uc1_v.sdo in folder "C:/Users/Matias/Source/repos/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Fri Jun 10 17:29:59 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Fri Jun 17 19:38:11 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
