@@ -10,7 +10,7 @@ input[5:0] SelB_IN,
 input[5:0] SelC_IN,
 input[6:0] Type_IN,
 input[9:0] DAdd_IN,
-input ENA,
+input nENABLE,
 input CLK,
 output reg[3:0] ALUC_OUT,
 output reg[1:0] SH_OUT,
@@ -27,7 +27,7 @@ output reg[9:0] DAdd_OUT
  
  always @(posedge CLK) begin
 
-	if(ENA) begin
+	if(!nENABLE) begin
 		ALUC_OUT <= ALUC_IN;
 		SH_OUT <= SH_IN;
 		KMux_OUT <= KMux_IN;

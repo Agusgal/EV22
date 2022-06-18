@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/07/2022 20:37:34"
+// Generated on "06/18/2022 18:04:23"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -30,79 +30,79 @@
 module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg clk_pc;
-reg clk_reg;
+reg de0_clk;
+reg HOLD;
 reg nRST;
-reg [15:0] PI0;
-reg [15:0] PI1;
 // wires                                               
-wire [15:0] Aposmux;
-wire [15:0] Boutput;
-wire kmuxk;
-wire [15:0] Koutput;
+wire [3:0] ALUC;
+wire [15:0] Bout;
+wire clk_k;
+wire clk_pc;
+wire clk_ram;
+wire clk_reg;
+wire clk_rom;
+wire KMux_MIR1;
+wire [15:0] KOUT;
 wire [15:0] OPCODE_out;
-wire opcodek;
-wire [10:0] ProgramOut;
-wire [4:0] Sel_A;
-wire [5:0] Sel_B;
-wire [5:0] Sel_C;
-wire [15:0] WR;
+wire [10:0] PC_out;
+wire [4:0] SelA_MIR1;
+wire [5:0] SelB_MIR1;
+wire [5:0] SelC_MIR1;
+wire [5:0] SelC_MIR2;
+wire [5:0] SelC_MIR3;
+wire [15:0] WR_out;
+wire [15:0] z;
 
 // assign statements (if any)                          
 uc1 i1 (
 // port map - connection between master ports and signals/registers   
-	.Aposmux(Aposmux),
-	.Boutput(Boutput),
+	.ALUC(ALUC),
+	.Bout(Bout),
+	.clk_k(clk_k),
 	.clk_pc(clk_pc),
+	.clk_ram(clk_ram),
 	.clk_reg(clk_reg),
-	.kmuxk(kmuxk),
-	.Koutput(Koutput),
+	.clk_rom(clk_rom),
+	.de0_clk(de0_clk),
+	.HOLD(HOLD),
+	.KMux_MIR1(KMux_MIR1),
+	.KOUT(KOUT),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
-	.opcodek(opcodek),
-	.PI0(PI0),
-	.PI1(PI1),
-	.ProgramOut(ProgramOut),
-	.Sel_A(Sel_A),
-	.Sel_B(Sel_B),
-	.Sel_C(Sel_C),
-	.WR(WR)
+	.PC_out(PC_out),
+	.SelA_MIR1(SelA_MIR1),
+	.SelB_MIR1(SelB_MIR1),
+	.SelC_MIR1(SelC_MIR1),
+	.SelC_MIR2(SelC_MIR2),
+	.SelC_MIR3(SelC_MIR3),
+	.WR_out(WR_out),
+	.z(z)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// clk_pc
-always
-begin
-	clk_pc = 1'b0;
-	clk_pc = #50000 1'b1;
-	#50000;
-end 
-
-// clk_reg
-initial
-begin
-	clk_reg = 1'b1;
-	clk_reg = #12500 1'b0;
-	# 12500;
-	repeat(38)
-	begin
-		clk_reg = 1'b1;
-		clk_reg = #12500 1'b0;
-		# 12500;
-	end
-	clk_reg = 1'b1;
-	clk_reg = #12500 1'b0;
-end 
-
 // nRST
 initial
 begin
 	nRST = 1'b1;
-	nRST = #20000 1'b0;
-	nRST = #60000 1'b1;
+	nRST = #10000 1'b0;
+	nRST = #120000 1'b1;
+end 
+
+// de0_clk
+always
+begin
+	de0_clk = 1'b0;
+	de0_clk = #10000 1'b1;
+	#10000;
+end 
+
+// HOLD
+initial
+begin
+	HOLD = 1'b0;
 end 
 endmodule
 

@@ -492,71 +492,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "HODL",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PI1[0]",
+					"name" : "HOLD",
 					"strict" : false
 				}
 			]

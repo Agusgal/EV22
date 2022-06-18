@@ -60,13 +60,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
-		(pt 0 112)
-		(input)
-		(text "CK3" (rect 0 0 18 12)(font "Arial" ))
-		(text "CK3" (rect 21 107 39 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 1))
-	)
-	(port
 		(pt 216 32)
 		(output)
 		(text "SelC_out[5..0]" (rect 0 0 56 12)(font "Arial" ))
