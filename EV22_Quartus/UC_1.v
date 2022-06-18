@@ -13,7 +13,7 @@ output reg MW_OUT
 
 //TODO chequear funcionamiento de MR y MW en caso de hold
 always @(negedge CK3) begin
-	if(HOLD) begin
+	if(!HOLD) begin
 	SelC_out<= 35;	
 	Type_out<= 6'b0;
 	end

@@ -13,12 +13,12 @@ module constant_reg ( input [7:0] k_in,
 	//always @ (clk) begin
 	always @ (posedge clk, posedge reset) begin
 		if(reset) begin
-			k_out = 0;
-		end else if(ena) begin
+			k_out <= 0;
+		end else if(1) begin
 			if(byte_select)
-				k_out = {k_in, k_out[7:0]};
+				k_out <= {k_in, k_out[7:0]};
 			else
-				k_out = {k_out[15:8], k_in};
+				k_out <= {k_out[15:8], k_in};
 		end
 	end
 	

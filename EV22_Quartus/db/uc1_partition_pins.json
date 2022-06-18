@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "MWout",
+					"name" : "KMux_MIR1",
 					"strict" : false
 				},
 				{
@@ -21,102 +21,6 @@
 				},
 				{
 					"name" : "ALUC[0]",
-					"strict" : false
-				},
-				{
-					"name" : "MRout",
-					"strict" : false
-				},
-				{
-					"name" : "COUT",
-					"strict" : false
-				},
-				{
-					"name" : "COUT2",
-					"strict" : false
-				},
-				{
-					"name" : "KMux_OUT",
-					"strict" : false
-				},
-				{
-					"name" : "ALUC_OUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUC_OUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUC_OUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUC_OUT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[15]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[14]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[13]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[12]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[11]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[10]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[9]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[8]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[7]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[6]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[5]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[4]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[3]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[2]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[1]",
-					"strict" : false
-				},
-				{
-					"name" : "APOSMUX[0]",
 					"strict" : false
 				},
 				{
@@ -356,6 +260,106 @@
 					"strict" : false
 				},
 				{
+					"name" : "SelA_MIR1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SelA_MIR1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SelA_MIR1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SelA_MIR1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelA_MIR1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SelB_MIR1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SelB_MIR1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_MIR3[0]",
+					"strict" : false
+				},
+				{
 					"name" : "WR_out[15]",
 					"strict" : false
 				},
@@ -484,6 +488,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "nRST",
+					"strict" : false
+				},
+				{
+					"name" : "HODL",
+					"strict" : false
+				},
+				{
 					"name" : "PI1[15]",
 					"strict" : false
 				},
@@ -545,14 +557,6 @@
 				},
 				{
 					"name" : "PI1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "nRST",
-					"strict" : false
-				},
-				{
-					"name" : "HODL",
 					"strict" : false
 				}
 			]

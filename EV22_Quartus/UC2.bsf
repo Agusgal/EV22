@@ -21,80 +21,123 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 176 224)
+	(rect 16 16 192 224)
 	(text "UC2" (rect 5 0 23 12)(font "Arial" ))
 	(text "inst" (rect 8 192 20 204)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "A2[4..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "A2[4..0]" (rect 21 27 55 39)(font "Arial" ))
+		(text "SelA2[4..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "SelA2[4..0]" (rect 21 27 67 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "B2[5..0]" (rect 0 0 30 12)(font "Arial" ))
-		(text "B2[5..0]" (rect 21 43 51 55)(font "Arial" ))
+		(text "SelB2[5..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "SelB2[5..0]" (rect 21 43 63 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "T2[8..0]" (rect 0 0 30 12)(font "Arial" ))
-		(text "T2[8..0]" (rect 21 59 51 71)(font "Arial" ))
+		(text "Type2[6..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "Type2[6..0]" (rect 21 59 67 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "T3[8..0]" (rect 0 0 30 12)(font "Arial" ))
-		(text "T3[8..0]" (rect 21 75 51 87)(font "Arial" ))
+		(text "Type3[6..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "Type3[6..0]" (rect 21 75 67 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "C3[5..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "C3[5..0]" (rect 21 91 52 103)(font "Arial" ))
+		(text "SelC3[5..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "SelC3[5..0]" (rect 21 91 64 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
 		(pt 0 112)
 		(input)
-		(text "T4[8..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "T4[8..0]" (rect 21 107 52 119)(font "Arial" ))
+		(text "Type4[6..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "Type4[6..0]" (rect 21 107 68 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "C4[5..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "C4[5..0]" (rect 21 123 54 135)(font "Arial" ))
+		(text "SelC4[5..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "SelC4[5..0]" (rect 21 123 65 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 3))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "T5[8..0]" (rect 0 0 30 12)(font "Arial" ))
-		(text "T5[8..0]" (rect 21 139 51 151)(font "Arial" ))
+		(text "Type5[6..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "Type5[6..0]" (rect 21 139 67 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 0 160)
 		(input)
-		(text "C5[5..0]" (rect 0 0 31 12)(font "Arial" ))
-		(text "C5[5..0]" (rect 21 155 52 167)(font "Arial" ))
+		(text "SelC5[5..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "SelC5[5..0]" (rect 21 155 64 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
-		(pt 160 32)
+		(pt 0 176)
+		(input)
+		(text "MR" (rect 0 0 16 12)(font "Arial" ))
+		(text "MR" (rect 21 171 37 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 176 32)
 		(output)
 		(text "HOLD" (rect 0 0 27 12)(font "Arial" ))
-		(text "HOLD" (rect 112 27 139 39)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32)(line_width 1))
+		(text "HOLD" (rect 128 27 155 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 1))
 	)
+	(parameter
+		"WR_read"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"WR_write"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"R_read"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"R_write"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"C_read"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"C_write"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Jump"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 144 192)(line_width 1))
+		(rectangle (rect 16 16 160 192)(line_width 1))
 	)
+	(annotation_block (parameter)(rect 192 -64 292 16))
 )
