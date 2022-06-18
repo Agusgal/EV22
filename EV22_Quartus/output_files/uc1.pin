@@ -70,106 +70,106 @@ CHIP  "uc1"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-KOUT[5]                      : A2        : output : 2.5 V             :         : 8         : N              
-KOUT[1]                      : A3        : output : 2.5 V             :         : 8         : N              
-WR_out[11]                   : A4        : output : 2.5 V             :         : 8         : N              
-PI1[14]                      : A5        : input  : 2.5 V             :         : 8         : N              
-SelC_MIR3[4]                 : A6        : output : 2.5 V             :         : 8         : N              
-WR_out[9]                    : A7        : output : 2.5 V             :         : 8         : N              
+WR_out[7]                    : A2        : output : 2.5 V             :         : 8         : N              
+KOUT[6]                      : A3        : output : 2.5 V             :         : 8         : N              
+KOUT[15]                     : A4        : output : 2.5 V             :         : 8         : N              
+SelB_MIR1[5]                 : A5        : output : 2.5 V             :         : 8         : N              
+z[13]                        : A6        : output : 2.5 V             :         : 8         : N              
+WR_out[8]                    : A7        : output : 2.5 V             :         : 8         : N              
 PI1[2]                       : A8        : input  : 2.5 V             :         : 8         : N              
 PI1[4]                       : A9        : input  : 2.5 V             :         : 7         : N              
-KOUT[8]                      : A10       : output : 2.5 V             :         : 7         : N              
-KOUT[6]                      : A11       : output : 2.5 V             :         : 7         : N              
-PI1[15]                      : A12       : input  : 2.5 V             :         : 7         : N              
-Bout[1]                      : A13       : output : 2.5 V             :         : 7         : N              
-Bout[9]                      : A14       : output : 2.5 V             :         : 7         : N              
-KOUT[14]                     : A15       : output : 2.5 V             :         : 7         : N              
+PI1[15]                      : A10       : input  : 2.5 V             :         : 7         : N              
+PI1[14]                      : A11       : input  : 2.5 V             :         : 7         : N              
+KOUT[7]                      : A12       : output : 2.5 V             :         : 7         : N              
+SelB_MIR1[3]                 : A13       : output : 2.5 V             :         : 7         : N              
+clk_k                        : A14       : output : 2.5 V             :         : 7         : N              
+WR_out[4]                    : A15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-SelB_MIR1[2]                 : B1        : output : 2.5 V             :         : 1         : N              
+KOUT[14]                     : B1        : output : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-clk_k                        : B3        : output : 2.5 V             :         : 8         : N              
-SelC_MIR3[2]                 : B4        : output : 2.5 V             :         : 8         : N              
-SelC_MIR3[5]                 : B5        : output : 2.5 V             :         : 8         : N              
-z[11]                        : B6        : output : 2.5 V             :         : 8         : N              
-z[10]                        : B7        : output : 2.5 V             :         : 8         : N              
+Bout[0]                      : B3        : output : 2.5 V             :         : 8         : N              
+Bout[10]                     : B4        : output : 2.5 V             :         : 8         : N              
+WR_out[6]                    : B5        : output : 2.5 V             :         : 8         : N              
+Bout[4]                      : B6        : output : 2.5 V             :         : 8         : N              
+Bout[7]                      : B7        : output : 2.5 V             :         : 8         : N              
 PI1[1]                       : B8        : input  : 2.5 V             :         : 8         : N              
 PI1[3]                       : B9        : input  : 2.5 V             :         : 7         : N              
-WR_out[10]                   : B10       : output : 2.5 V             :         : 7         : N              
+z[5]                         : B10       : output : 2.5 V             :         : 7         : N              
 PI1[13]                      : B11       : input  : 2.5 V             :         : 7         : N              
-SelC_MIR1[0]                 : B12       : output : 2.5 V             :         : 7         : N              
-clk_ram                      : B13       : output : 2.5 V             :         : 7         : N              
-Bout[2]                      : B14       : output : 2.5 V             :         : 7         : N              
+WR_out[10]                   : B12       : output : 2.5 V             :         : 7         : N              
+Bout[13]                     : B13       : output : 2.5 V             :         : 7         : N              
+SelB_MIR1[4]                 : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-SelA_MIR1[1]                 : B16       : output : 2.5 V             :         : 6         : N              
+Bout[9]                      : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-Bout[5]                      : C2        : output : 2.5 V             :         : 1         : N              
-SelB_MIR1[3]                 : C3        : output : 2.5 V             :         : 8         : N              
+ALUC[2]                      : C2        : output : 2.5 V             :         : 1         : N              
+SelC_MIR3[5]                 : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-z[15]                        : C6        : output : 2.5 V             :         : 8         : N              
+KOUT[5]                      : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-z[3]                         : C8        : output : 2.5 V             :         : 8         : N              
-z[0]                         : C9        : output : 2.5 V             :         : 7         : N              
+Bout[5]                      : C8        : output : 2.5 V             :         : 8         : N              
+KOUT[1]                      : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-SelA_MIR1[3]                 : C11       : output : 2.5 V             :         : 7         : N              
+SelA_MIR1[4]                 : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-Bout[10]                     : C14       : output : 2.5 V             :         : 7         : N              
-SelC_MIR2[2]                 : C15       : output : 2.5 V             :         : 6         : N              
-Bout[14]                     : C16       : output : 2.5 V             :         : 6         : N              
-z[1]                         : D1        : output : 2.5 V             :         : 1         : N              
+clk_reg                      : C14       : output : 2.5 V             :         : 7         : N              
+SelB_MIR1[0]                 : C15       : output : 2.5 V             :         : 6         : N              
+KOUT[4]                      : C16       : output : 2.5 V             :         : 6         : N              
+KOUT[10]                     : D1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-Bout[12]                     : D3        : output : 2.5 V             :         : 8         : N              
+Bout[8]                      : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-SelB_MIR1[0]                 : D5        : output : 2.5 V             :         : 8         : N              
-KOUT[4]                      : D6        : output : 2.5 V             :         : 8         : N              
+Bout[6]                      : D5        : output : 2.5 V             :         : 8         : N              
+WR_out[5]                    : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-SelC_MIR3[0]                 : D8        : output : 2.5 V             :         : 8         : N              
-z[7]                         : D9        : output : 2.5 V             :         : 7         : N              
+Bout[11]                     : D8        : output : 2.5 V             :         : 8         : N              
+WR_out[9]                    : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-Bout[11]                     : D11       : output : 2.5 V             :         : 7         : N              
-clk_reg                      : D12       : output : 2.5 V             :         : 7         : N              
+SelC_MIR1[0]                 : D11       : output : 2.5 V             :         : 7         : N              
+SelB_MIR1[2]                 : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-SelC_MIR2[0]                 : D14       : output : 2.5 V             :         : 7         : N              
-Bout[13]                     : D15       : output : 2.5 V             :         : 6         : N              
-SelB_MIR1[5]                 : D16       : output : 2.5 V             :         : 6         : N              
+clk_rom                      : D14       : output : 2.5 V             :         : 7         : N              
+clk_ram                      : D15       : output : 2.5 V             :         : 6         : N              
+WR_out[13]                   : D16       : output : 2.5 V             :         : 6         : N              
 de0_clk                      : E1        : input  : 2.5 V             :         : 1         : N              
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-KOUT[13]                     : E6        : output : 2.5 V             :         : 8         : N              
-SelC_MIR3[3]                 : E7        : output : 2.5 V             :         : 8         : N              
-WR_out[14]                   : E8        : output : 2.5 V             :         : 8         : N              
-KOUT[12]                     : E9        : output : 2.5 V             :         : 7         : N              
-KOUT[3]                      : E10       : output : 2.5 V             :         : 7         : N              
-KOUT[9]                      : E11       : output : 2.5 V             :         : 7         : N              
+Bout[3]                      : E6        : output : 2.5 V             :         : 8         : N              
+Bout[12]                     : E7        : output : 2.5 V             :         : 8         : N              
+WR_out[12]                   : E8        : output : 2.5 V             :         : 8         : N              
+KOUT[2]                      : E9        : output : 2.5 V             :         : 7         : N              
+KOUT[8]                      : E10       : output : 2.5 V             :         : 7         : N              
+SelC_MIR2[4]                 : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 PI1[5]                       : E15       : input  : 2.5 V             :         : 6         : N              
 PI1[6]                       : E16       : input  : 2.5 V             :         : 6         : N              
-z[8]                         : F1        : output : 2.5 V             :         : 1         : N              
-z[2]                         : F2        : output : 2.5 V             :         : 1         : N              
-WR_out[1]                    : F3        : output : 2.5 V             :         : 1         : N              
+KOUT[3]                      : F1        : output : 2.5 V             :         : 1         : N              
+KOUT[12]                     : F2        : output : 2.5 V             :         : 1         : N              
+KOUT[9]                      : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-z[6]                         : F8        : output : 2.5 V             :         : 8         : N              
-SelA_MIR1[0]                 : F9        : output : 2.5 V             :         : 7         : N              
+WR_out[11]                   : F8        : output : 2.5 V             :         : 8         : N              
+z[0]                         : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-z[4]                         : F13       : output : 2.5 V             :         : 6         : N              
-z[12]                        : F14       : output : 2.5 V             :         : 6         : N              
-WR_out[12]                   : F15       : output : 2.5 V             :         : 6         : N              
+WR_out[3]                    : F13       : output : 2.5 V             :         : 6         : N              
+Bout[1]                      : F14       : output : 2.5 V             :         : 6         : N              
+KOUT[11]                     : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-z[5]                         : G1        : output : 2.5 V             :         : 1         : N              
-SelC_MIR2[5]                 : G2        : output : 2.5 V             :         : 1         : N              
+ALUC[0]                      : G1        : output : 2.5 V             :         : 1         : N              
+SelB_MIR1[1]                 : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-KOUT[2]                      : G5        : output : 2.5 V             :         : 1         : N              
+Bout[2]                      : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -179,8 +179,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-z[9]                         : G15       : output : 2.5 V             :         : 6         : N              
-SelB_MIR1[1]                 : G16       : output : 2.5 V             :         : 6         : N              
+WR_out[1]                    : G15       : output : 2.5 V             :         : 6         : N              
+z[1]                         : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -197,8 +197,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-SelC_MIR3[1]                 : J1        : output : 2.5 V             :         : 2         : N              
-SelA_MIR1[4]                 : J2        : output : 2.5 V             :         : 2         : N              
+ALUC[1]                      : J1        : output : 2.5 V             :         : 2         : N              
+z[8]                         : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -209,15 +209,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-SelA_MIR1[2]                 : J13       : output : 2.5 V             :         : 5         : N              
-z[14]                        : J14       : output : 2.5 V             :         : 5         : N              
-Bout[4]                      : J15       : output : 2.5 V             :         : 5         : N              
-z[13]                        : J16       : output : 2.5 V             :         : 5         : N              
-HODL                         : K1        : input  : 2.5 V             :         : 2         : N              
-KOUT[11]                     : K2        : output : 2.5 V             :         : 2         : N              
+Bout[14]                     : J13       : output : 2.5 V             :         : 5         : N              
+z[15]                        : J14       : output : 2.5 V             :         : 5         : N              
+z[9]                         : J15       : output : 2.5 V             :         : 5         : N              
+z[4]                         : J16       : output : 2.5 V             :         : 5         : N              
+ALUC[3]                      : K1        : output : 2.5 V             :         : 2         : N              
+WR_out[14]                   : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-WR_out[8]                    : K5        : output : 2.5 V             :         : 2         : N              
+WR_out[15]                   : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -227,101 +227,101 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-SelC_MIR1[3]                 : K15       : output : 2.5 V             :         : 5         : N              
-WR_out[5]                    : K16       : output : 2.5 V             :         : 5         : N              
-PC_out[2]                    : L1        : output : 2.5 V             :         : 2         : N              
-ALUC[3]                      : L2        : output : 2.5 V             :         : 2         : N              
-PC_out[4]                    : L3        : output : 2.5 V             :         : 2         : N              
-WR_out[6]                    : L4        : output : 2.5 V             :         : 2         : N              
+z[3]                         : K15       : output : 2.5 V             :         : 5         : N              
+SelA_MIR1[3]                 : K16       : output : 2.5 V             :         : 5         : N              
+OPCODE_out[15]               : L1        : output : 2.5 V             :         : 2         : N              
+Bout[15]                     : L2        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[10]               : L3        : output : 2.5 V             :         : 2         : N              
+KOUT[13]                     : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-ALUC[0]                      : L7        : output : 2.5 V             :         : 3         : N              
-KMux_MIR1                    : L8        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[9]                : L7        : output : 2.5 V             :         : 3         : N              
+PC_out[0]                    : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-OPCODE_out[14]               : L13       : output : 2.5 V             :         : 5         : N              
-Bout[7]                      : L14       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[15]               : L15       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[1]                : L16       : output : 2.5 V             :         : 5         : N              
+SelC_MIR2[2]                 : L13       : output : 2.5 V             :         : 5         : N              
+z[7]                         : L14       : output : 2.5 V             :         : 5         : N              
+SelC_MIR3[1]                 : L15       : output : 2.5 V             :         : 5         : N              
+SelC_MIR3[0]                 : L16       : output : 2.5 V             :         : 5         : N              
 PI1[11]                      : M1        : input  : 2.5 V             :         : 2         : N              
 PI1[12]                      : M2        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-PC_out[8]                    : M6        : output : 2.5 V             :         : 3         : N              
-SelC_MIR2[3]                 : M7        : output : 2.5 V             :         : 3         : N              
-PC_out[5]                    : M8        : output : 2.5 V             :         : 3         : N              
+PC_out[2]                    : M6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[14]               : M7        : output : 2.5 V             :         : 3         : N              
+PC_out[7]                    : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-OPCODE_out[4]                : M10       : output : 2.5 V             :         : 4         : N              
+SelC_MIR3[4]                 : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 PI1[7]                       : M15       : input  : 2.5 V             :         : 5         : N              
 PI1[8]                       : M16       : input  : 2.5 V             :         : 5         : N              
-WR_out[3]                    : N1        : output : 2.5 V             :         : 2         : N              
-Bout[8]                      : N2        : output : 2.5 V             :         : 2         : N              
-KOUT[7]                      : N3        : output : 2.5 V             :         : 3         : N              
+KMux_MIR1                    : N1        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[11]               : N2        : output : 2.5 V             :         : 2         : N              
+SelC_MIR1[4]                 : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
-Bout[3]                      : N5        : output : 2.5 V             :         : 3         : N              
-WR_out[13]                   : N6        : output : 2.5 V             :         : 3         : N              
+PC_out[1]                    : N5        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[6]                : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-PC_out[9]                    : N8        : output : 2.5 V             :         : 3         : N              
-PC_out[0]                    : N9        : output : 2.5 V             :         : 4         : N              
+PC_out[4]                    : N8        : output : 2.5 V             :         : 3         : N              
+z[12]                        : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-OPCODE_out[2]                : N11       : output : 2.5 V             :         : 4         : N              
-Bout[6]                      : N12       : output : 2.5 V             :         : 4         : N              
+SelC_MIR2[3]                 : N11       : output : 2.5 V             :         : 4         : N              
+OPCODE_out[1]                : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
-SelC_MIR1[2]                 : N14       : output : 2.5 V             :         : 5         : N              
-PC_out[10]                   : N15       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[6]                : N16       : output : 2.5 V             :         : 5         : N              
-KOUT[10]                     : P1        : output : 2.5 V             :         : 2         : N              
-WR_out[15]                   : P2        : output : 2.5 V             :         : 2         : N              
+SelC_MIR1[3]                 : N14       : output : 2.5 V             :         : 5         : N              
+OPCODE_out[8]                : N15       : output : 2.5 V             :         : 5         : N              
+WR_out[0]                    : N16       : output : 2.5 V             :         : 5         : N              
+PC_out[9]                    : P1        : output : 2.5 V             :         : 2         : N              
+OPCODE_out[3]                : P2        : output : 2.5 V             :         : 2         : N              
 WR_out[2]                    : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-WR_out[4]                    : P6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[4]                : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-PC_out[3]                    : P8        : output : 2.5 V             :         : 3         : N              
-PC_out[7]                    : P9        : output : 2.5 V             :         : 4         : N              
+PC_out[10]                   : P8        : output : 2.5 V             :         : 3         : N              
+z[2]                         : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-PC_out[1]                    : P11       : output : 2.5 V             :         : 4         : N              
+z[10]                        : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-SelC_MIR2[4]                 : P14       : output : 2.5 V             :         : 4         : N              
-WR_out[0]                    : P15       : output : 2.5 V             :         : 5         : N              
-OPCODE_out[3]                : P16       : output : 2.5 V             :         : 5         : N              
-SelC_MIR1[5]                 : R1        : output : 2.5 V             :         : 2         : N              
+SelC_MIR1[5]                 : P14       : output : 2.5 V             :         : 4         : N              
+SelC_MIR1[1]                 : P15       : output : 2.5 V             :         : 5         : N              
+SelC_MIR1[2]                 : P16       : output : 2.5 V             :         : 5         : N              
+PC_out[8]                    : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-clk_rom                      : R3        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[5]                : R3        : output : 2.5 V             :         : 3         : N              
 clk_pc                       : R4        : output : 2.5 V             :         : 3         : N              
-Bout[0]                      : R5        : output : 2.5 V             :         : 3         : N              
-OPCODE_out[0]                : R6        : output : 2.5 V             :         : 3         : N              
-ALUC[2]                      : R7        : output : 2.5 V             :         : 3         : N              
+HODL                         : R5        : input  : 2.5 V             :         : 3         : N              
+PC_out[5]                    : R6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[12]               : R7        : output : 2.5 V             :         : 3         : N              
 PI1[0]                       : R8        : input  : 2.5 V             :         : 3         : N              
 PI1[10]                      : R9        : input  : 2.5 V             :         : 4         : N              
-OPCODE_out[13]               : R10       : output : 2.5 V             :         : 4         : N              
-PC_out[6]                    : R11       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[8]                : R12       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[10]               : R13       : output : 2.5 V             :         : 4         : N              
-SelC_MIR1[1]                 : R14       : output : 2.5 V             :         : 4         : N              
+z[11]                        : R10       : output : 2.5 V             :         : 4         : N              
+SelA_MIR1[0]                 : R11       : output : 2.5 V             :         : 4         : N              
+SelA_MIR1[1]                 : R12       : output : 2.5 V             :         : 4         : N              
+SelC_MIR2[5]                 : R13       : output : 2.5 V             :         : 4         : N              
+SelC_MIR3[3]                 : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-Bout[15]                     : R16       : output : 2.5 V             :         : 5         : N              
+SelC_MIR2[1]                 : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-KOUT[15]                     : T2        : output : 2.5 V             :         : 3         : N              
-SelB_MIR1[4]                 : T3        : output : 2.5 V             :         : 3         : N              
-KOUT[0]                      : T4        : output : 2.5 V             :         : 3         : N              
-SelC_MIR2[1]                 : T5        : output : 2.5 V             :         : 3         : N              
-WR_out[7]                    : T6        : output : 2.5 V             :         : 3         : N              
-ALUC[1]                      : T7        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[2]                : T2        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[0]                : T3        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[7]                : T4        : output : 2.5 V             :         : 3         : N              
+PC_out[6]                    : T5        : output : 2.5 V             :         : 3         : N              
+PC_out[3]                    : T6        : output : 2.5 V             :         : 3         : N              
+OPCODE_out[13]               : T7        : output : 2.5 V             :         : 3         : N              
 nRST                         : T8        : input  : 2.5 V             :         : 3         : N              
 PI1[9]                       : T9        : input  : 2.5 V             :         : 4         : N              
-OPCODE_out[11]               : T10       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[9]                : T11       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[12]               : T12       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[7]                : T13       : output : 2.5 V             :         : 4         : N              
-SelC_MIR1[4]                 : T14       : output : 2.5 V             :         : 4         : N              
-OPCODE_out[5]                : T15       : output : 2.5 V             :         : 4         : N              
+z[6]                         : T10       : output : 2.5 V             :         : 4         : N              
+SelA_MIR1[2]                 : T11       : output : 2.5 V             :         : 4         : N              
+z[14]                        : T12       : output : 2.5 V             :         : 4         : N              
+SelC_MIR2[0]                 : T13       : output : 2.5 V             :         : 4         : N              
+KOUT[0]                      : T14       : output : 2.5 V             :         : 4         : N              
+SelC_MIR3[2]                 : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

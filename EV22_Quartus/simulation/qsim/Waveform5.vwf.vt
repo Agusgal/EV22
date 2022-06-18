@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/18/2022 01:37:53"
+// Generated on "06/18/2022 03:00:48"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -86,17 +86,11 @@ begin
 end 
 
 // de0_clk
-initial
+always
 begin
-	repeat(49)
-	begin
-		de0_clk = 1'b0;
-		de0_clk = #10000 1'b1;
-		# 10000;
-	end
 	de0_clk = 1'b0;
 	de0_clk = #10000 1'b1;
-	de0_clk = #9000 1'b0;
+	#10000;
 end 
 
 // HODL
@@ -109,9 +103,8 @@ end
 initial
 begin
 	nRST = 1'b1;
-	nRST = #340000 1'b0;
-	nRST = #40000 1'b1;
-	nRST = #619000 1'b0;
+	nRST = #290000 1'b0;
+	nRST = #50000 1'b1;
 end 
 // PI1[ 15 ]
 initial
