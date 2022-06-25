@@ -312,7 +312,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1968 120 2144 136)
+	(rect 1984 112 2160 128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Type2Out[6..0]" (rect 90 0 164 12)(font "Arial" ))
 	(pt 0 8)
@@ -374,7 +374,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 832 -32 1048 176)
+	(rect 1064 -32 1280 176)
 	(text "decoder" (rect 5 0 43 12)(font "Arial" ))
 	(text "inst1" (rect 8 192 31 204)(font "Arial" ))
 	(port
@@ -1229,7 +1229,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 1928 320 2144 464)
+	(rect 1928 296 2144 440)
 	(text "UC_1" (rect 5 0 33 12)(font "Arial" ))
 	(text "UC1" (rect 8 128 30 140)(font "Arial" ))
 	(port
@@ -2249,31 +2249,13 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 1920 240)
-	(pt 1920 48)
-)
-(connector
-	(pt 1904 224)
-	(pt 1904 64)
-)
-(connector
 	(pt 1888 216)
 	(pt 1888 112)
 	(bus)
 )
 (connector
-	(pt 2192 16)
-	(pt 2192 232)
-	(bus)
-)
-(connector
 	(pt 2192 232)
 	(pt 2336 232)
-	(bus)
-)
-(connector
-	(pt 2208 0)
-	(pt 2208 216)
 	(bus)
 )
 (connector
@@ -2396,47 +2378,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 72 -16)
 )
 (connector
-	(text "OPCODE[15..0]" (rect 752 -16 820 1)(font "Intel Clear" (font_size 6)))
-	(pt 752 0)
-	(pt 832 0)
-	(bus)
-)
-(connector
-	(pt 1048 0)
-	(pt 2208 0)
-	(bus)
-)
-(connector
-	(pt 1048 16)
-	(pt 2192 16)
-	(bus)
-)
-(connector
-	(text "KMux" (rect 1786 16 1813 33)(font "Intel Clear" ))
-	(pt 1048 32)
-	(pt 1824 32)
-)
-(connector
-	(pt 1048 48)
-	(pt 1920 48)
-)
-(connector
-	(pt 1048 64)
-	(pt 1904 64)
-)
-(connector
-	(text "Sel_B[5..0]" (rect 1786 80 1837 97)(font "Intel Clear" ))
-	(pt 1048 96)
-	(pt 1944 96)
-	(bus)
-)
-(connector
-	(text "Dadd[9..0]" (rect 1786 128 1834 145)(font "Intel Clear" ))
-	(pt 1048 144)
-	(pt 1824 144)
-	(bus)
-)
-(connector
 	(pt 2576 328)
 	(pt 2648 328)
 	(bus)
@@ -2548,44 +2489,8 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2696 48)
 )
 (connector
-	(pt 1048 80)
-	(pt 1416 80)
-	(bus)
-)
-(connector
-	(text "Sel_A[4..0]" (rect 1794 64 1845 81)(font "Intel Clear" ))
-	(pt 1416 80)
-	(pt 1936 80)
-	(bus)
-)
-(connector
-	(pt 1048 112)
-	(pt 1432 112)
-	(bus)
-)
-(connector
-	(pt 1432 112)
-	(pt 1888 112)
-	(bus)
-)
-(connector
-	(pt 1048 128)
-	(pt 1448 128)
-	(bus)
-)
-(connector
-	(pt 2184 328)
-	(pt 2256 328)
-	(bus)
-)
-(connector
 	(pt 2256 328)
 	(pt 2336 328)
-	(bus)
-)
-(connector
-	(pt 2240 344)
-	(pt 2336 344)
 	(bus)
 )
 (connector
@@ -2789,21 +2694,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2968 248)
 )
 (connector
-	(pt 1872 128)
-	(pt 1872 200)
-	(bus)
-)
-(connector
-	(pt 1448 128)
-	(pt 1872 128)
-	(bus)
-)
-(connector
-	(pt 1872 128)
-	(pt 1968 128)
-	(bus)
-)
-(connector
 	(pt 2336 128)
 	(pt 2240 128)
 	(bus)
@@ -2819,79 +2709,8 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 1872 240)
-	(pt 1872 352)
-)
-(connector
-	(pt 1872 352)
-	(pt 1928 352)
-)
-(connector
-	(pt 1856 224)
-	(pt 1856 368)
-)
-(connector
-	(pt 1856 368)
-	(pt 1928 368)
-)
-(connector
-	(pt 1840 216)
-	(pt 1840 384)
-	(bus)
-)
-(connector
-	(pt 1840 384)
-	(pt 1928 384)
-	(bus)
-)
-(connector
-	(pt 1824 200)
-	(pt 1824 400)
-	(bus)
-)
-(connector
-	(pt 1824 400)
-	(pt 1928 400)
-	(bus)
-)
-(connector
-	(text "MR" (rect 2154 368 2170 385)(font "Intel Clear" ))
-	(pt 2144 384)
-	(pt 2168 384)
-)
-(connector
-	(text "MW" (rect 2154 384 2174 401)(font "Intel Clear" ))
-	(pt 2144 400)
-	(pt 2168 400)
-)
-(connector
-	(pt 2184 352)
-	(pt 2144 352)
-	(bus)
-)
-(connector
-	(pt 2240 368)
-	(pt 2144 368)
-	(bus)
-)
-(connector
-	(pt 2184 328)
-	(pt 2184 352)
-	(bus)
-)
-(connector
-	(pt 2184 352)
-	(pt 2184 432)
-	(bus)
-)
-(connector
 	(pt 2240 128)
 	(pt 2240 344)
-	(bus)
-)
-(connector
-	(pt 2240 344)
-	(pt 2240 368)
 	(bus)
 )
 (connector
@@ -2901,9 +2720,185 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "HOLD" (rect 1882 400 1910 417)(font "Intel Clear" ))
-	(pt 1928 416)
-	(pt 1872 416)
+	(pt 1920 240)
+	(pt 1920 48)
+)
+(connector
+	(pt 1904 224)
+	(pt 1904 64)
+)
+(connector
+	(pt 2192 232)
+	(pt 2192 16)
+	(bus)
+)
+(connector
+	(pt 2208 216)
+	(pt 2208 0)
+	(bus)
+)
+(connector
+	(pt 2208 0)
+	(pt 1280 0)
+	(bus)
+)
+(connector
+	(pt 2192 16)
+	(pt 1280 16)
+	(bus)
+)
+(connector
+	(text "KMux" (rect 2018 16 2045 33)(font "Intel Clear" ))
+	(pt 1280 32)
+	(pt 2056 32)
+)
+(connector
+	(pt 1920 48)
+	(pt 1280 48)
+)
+(connector
+	(pt 1904 64)
+	(pt 1280 64)
+)
+(connector
+	(text "Sel_B[5..0]" (rect 2018 80 2069 97)(font "Intel Clear" ))
+	(pt 1280 96)
+	(pt 2176 96)
+	(bus)
+)
+(connector
+	(text "Dadd[9..0]" (rect 2018 128 2066 145)(font "Intel Clear" ))
+	(pt 1280 144)
+	(pt 2056 144)
+	(bus)
+)
+(connector
+	(pt 1280 80)
+	(pt 1416 80)
+	(bus)
+)
+(connector
+	(text "Sel_A[4..0]" (rect 1794 64 1845 81)(font "Intel Clear" ))
+	(pt 1416 80)
+	(pt 1936 80)
+	(bus)
+)
+(connector
+	(pt 1280 112)
+	(pt 1432 112)
+	(bus)
+)
+(connector
+	(pt 1432 112)
+	(pt 1888 112)
+	(bus)
+)
+(connector
+	(pt 1280 128)
+	(pt 1448 128)
+	(bus)
+)
+(connector
+	(pt 1448 128)
+	(pt 1872 128)
+	(bus)
+)
+(connector
+	(text "OPCODE[15..0]" (rect 984 -16 1052 1)(font "Intel Clear" (font_size 6)))
+	(pt 984 0)
+	(pt 1064 0)
+	(bus)
+)
+(connector
+	(pt 1872 240)
+	(pt 1872 328)
+)
+(connector
+	(pt 1872 328)
+	(pt 1928 328)
+)
+(connector
+	(pt 1856 224)
+	(pt 1856 344)
+)
+(connector
+	(pt 1856 344)
+	(pt 1928 344)
+)
+(connector
+	(pt 1840 216)
+	(pt 1840 360)
+	(bus)
+)
+(connector
+	(pt 1840 360)
+	(pt 1928 360)
+	(bus)
+)
+(connector
+	(pt 1824 200)
+	(pt 1824 376)
+	(bus)
+)
+(connector
+	(pt 1824 376)
+	(pt 1928 376)
+	(bus)
+)
+(connector
+	(text "MR" (rect 2154 344 2170 361)(font "Intel Clear" ))
+	(pt 2144 360)
+	(pt 2168 360)
+)
+(connector
+	(text "MW" (rect 2154 360 2174 377)(font "Intel Clear" ))
+	(pt 2144 376)
+	(pt 2168 376)
+)
+(connector
+	(text "HOLD" (rect 1882 376 1910 393)(font "Intel Clear" ))
+	(pt 1928 392)
+	(pt 1872 392)
+)
+(connector
+	(pt 2184 328)
+	(pt 2184 432)
+	(bus)
+)
+(connector
+	(pt 2144 328)
+	(pt 2184 328)
+	(bus)
+)
+(connector
+	(pt 2184 328)
+	(pt 2256 328)
+	(bus)
+)
+(connector
+	(pt 2144 344)
+	(pt 2240 344)
+	(bus)
+)
+(connector
+	(pt 2240 344)
+	(pt 2336 344)
+	(bus)
+)
+(connector
+	(pt 1872 120)
+	(pt 1984 120)
+	(bus)
+)
+(connector
+	(pt 1872 120)
+	(pt 1872 128)
+	(bus)
+)
+(connector
+	(pt 1872 128)
+	(pt 1872 200)
+	(bus)
 )
 (junction (pt 1016 680))
 (junction (pt 1096 448))
@@ -2923,7 +2918,7 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 648 -152))
 (junction (pt 1872 128))
 (junction (pt 2240 128))
-(junction (pt 2184 352))
+(junction (pt 2184 328))
 (text "No sé si va clk_reg o clk_pc pero con pc no dan los timings y el programa no correría bien." (rect -96 688 432 707)(font "Intel Clear" (font_size 8)))
 (text "acá van output ports pero para debug no los puse por el límite de pines" (rect 1064 696 1487 715)(font "Intel Clear" (font_size 8)))
 (text "A[15..0]" (rect 968 632 1003 649)(font "Intel Clear" (font_size 6)))
@@ -2932,3 +2927,5 @@ https://fpgasoftware.intel.com/eula.
 (text "PC -> ROM -> RAM -> Bloque K -> Super Register Bank" (rect 40 120 365 139)(font "Intel Clear" (font_size 8)))
 (text "Hay un bug que no persiste la salida del cy_out al terminar Set_Cy" (rect 1360 520 1754 539)(font "Intel Clear" (font_size 8)))
 (text "Desconozco si pasa lo mismo con las operaciones de suma, así que usar salida del carry block que ese anda bien" (rect 1360 552 2021 571)(font "Intel Clear" (font_size 8)))
+(text "DECODE" (rect 984 -88 1155 -38)(font "Intel Clear" (color 0 0 0)(font_size 28)))
+(rectangle (rect 968 -88 1336 208)(color 0 0 0)(line_width 3))

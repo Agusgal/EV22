@@ -66,23 +66,23 @@ always @(*) begin
 	//if(Type1[Jump] && ((Type1(C_read) && (Type2(C_write) || Type4(C_write) || Type5(C_write))) || (Type1(WR_read) && (Type2(WR_write) || Type4(WR_write) || Type5(WR_write)))))
 	//	HOLD <= 1;
 	
-	HOLD = 1'b0;
+
 	if((Type2[Jump]) && (Type3 | Type4 | Type5))   //Saltos tiene Bug :ccccc
 		HOLD = 1'b1;
-	if( MR && (Type4[WR_write] || Type5[WR_write])) //Que no haya problemas leyendo en memoria, TODO: chequear timings
+	else if( MR && (Type4[WR_write] || Type5[WR_write])) //Que no haya problemas leyendo en memoria, TODO: chequear timings
 		HOLD = 1'b1;
-	if(Type2[WR_read] && (Type3[WR_write] || Type4[WR_write] || Type5[WR_write]))	//Que no se pisen las instrucciones de leer y escribir en el WR, dudoso en type5
+	else if(Type2[WR_read] && (Type3[WR_write] || Type4[WR_write] || Type5[WR_write]))	//Que no se pisen las instrucciones de leer y escribir en el WR, dudoso en type5
 		HOLD = 1'b1;
-	if(Type2[C_read] && (Type3[C_write] || Type4[C_write] || Type5[C_write]))	// Que el carry no se necesite usar.
+	else if(Type2[C_read] && (Type3[C_write] || Type4[C_write] || Type5[C_write]))	// Que el carry no se necesite usar.
 		HOLD = 1'b1;
-	if(Type2[R_read] && Type3[R_write] && SelA2 == SelC3[4:0])					// Conflictos de lectura-escritura en el registr
+	else if(Type2[R_read] && Type3[R_write] && SelA2 == SelC3[4:0])					// Conflictos de lectura-escritura en el registr
 		HOLD = 1'b1;
-	if(Type2[R_read] && Type4[R_write] && SelA2 == SelC4[4:0])
+	else if(Type2[R_read] && Type4[R_write] && SelA2 == SelC4[4:0])
 		HOLD = 1'b1;
-	if(Type2[R_read] && Type5[R_write] && SelA2 == SelC5[4:0])
+	else if(Type2[R_read] && Type5[R_write] && SelA2 == SelC5[4:0])
 		HOLD = 1'b1;
-	//else
-	//	HOLD = 1'b0;
+	else
+		HOLD = 1'b0;
 	
 	
 end

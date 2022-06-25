@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Jun 25 19:47:13 2022
+    Info: Processing started: Sat Jun 25 20:20:31 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uc1 -c uc1 --vector_source=C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/Waveform5.vwf --testbench_file=C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim/Waveform5.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -57,7 +57,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Jun 25 19:47:15 2022
+    Info: Processing started: Sat Jun 25 20:20:32 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim/ uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file uc1_6_1200mv_85c_slow.vo in folder "C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
@@ -69,9 +69,9 @@ Info (204019): Generated file uc1_6_1200mv_0c_v_slow.sdo in folder "C:/Users/Agu
 Info (204019): Generated file uc1_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file uc1_v.sdo in folder "C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4660 megabytes
-    Info: Processing ended: Sat Jun 25 19:47:17 2022
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Sat Jun 25 20:20:35 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 Completed successfully. 
@@ -94,9 +94,8 @@ Reading pref.tcl
 # do uc1.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:47:19 on Jun 25,2022
+# Start time: 20:20:36 on Jun 25,2022
 # vlog -work work uc1.vo 
 
 # -- Compiling module uc1
@@ -104,21 +103,22 @@ Reading pref.tcl
 # 
 # Top level modules:
 # 	uc1
-# End time: 19:47:19 on Jun 25,2022, Elapsed time: 0:00:00
+
+# End time: 20:20:37 on Jun 25,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:47:19 on Jun 25,2022
+# Start time: 20:20:37 on Jun 25,2022
 # vlog -work work Waveform5.vwf.vt 
 
 # -- Compiling module uc1_vlg_vec_tst
 # 
 # Top level modules:
 # 	uc1_vlg_vec_tst
-# End time: 19:47:20 on Jun 25,2022, Elapsed time: 0:00:01
+# End time: 20:20:37 on Jun 25,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst 
-# Start time: 19:47:20 on Jun 25,2022
+# Start time: 20:20:37 on Jun 25,2022
 # Loading work.uc1_vlg_vec_tst
 # Loading work.uc1
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -143,13 +143,15 @@ Reading pref.tcl
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /uc1_vlg_vec_tst File: Waveform5.vwf.vt
 # after#25
+
 #  Note : Cycloneive PLL locked to incoming clock
 # Time: 72391  Instance: uc1_vlg_vec_tst.i1.\inst9|altpll_component|auto_generated|pll1 
+# ** Error: $hold( posedge clk &&& nosloadsclr:190093 ps, d:190106 ps, 157 ps );
+#    Time: 190106 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[11] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
 # ** Note: $finish    : Waveform5.vwf.vt(79)
 #    Time: 1 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
-
-# End time: 19:47:21 on Jun 25,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 20:20:39 on Jun 25,2022, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
 
 Completed successfully. 
 
@@ -161,7 +163,7 @@ Reading C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim/uc1.msi
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim/uc1_20220625194721.sim.vwf
+Writing the resulting VWF to C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/simulation/qsim/uc1_20220625202039.sim.vwf
 
 Finished VCD to VWF conversion.
 
