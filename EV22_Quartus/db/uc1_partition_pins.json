@@ -280,14 +280,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SelB_MIR1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SelB_MIR1[1]",
-					"strict" : false
-				},
-				{
 					"name" : "SelC_MIR1[5]",
 					"strict" : false
 				},
@@ -357,6 +349,30 @@
 				},
 				{
 					"name" : "SelC_MIR3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SelC_outUC1[0]",
 					"strict" : false
 				},
 				{
@@ -488,11 +504,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "nRST",
+					"name" : "HOLD",
 					"strict" : false
 				},
 				{
-					"name" : "HOLD",
+					"name" : "nRST",
 					"strict" : false
 				}
 			]

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/18/2022 01:37:53"
+// Generated on "06/25/2022 00:19:26"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -31,9 +31,8 @@ module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg de0_clk;
-reg HODL;
+reg HOLD;
 reg nRST;
-reg [15:0] PI1;
 // wires                                               
 wire [3:0] ALUC;
 wire [15:0] Bout;
@@ -47,10 +46,10 @@ wire [15:0] KOUT;
 wire [15:0] OPCODE_out;
 wire [10:0] PC_out;
 wire [4:0] SelA_MIR1;
-wire [5:0] SelB_MIR1;
 wire [5:0] SelC_MIR1;
 wire [5:0] SelC_MIR2;
 wire [5:0] SelC_MIR3;
+wire [5:0] SelC_outUC1;
 wire [15:0] WR_out;
 wire [15:0] z;
 
@@ -65,18 +64,17 @@ uc1 i1 (
 	.clk_reg(clk_reg),
 	.clk_rom(clk_rom),
 	.de0_clk(de0_clk),
-	.HODL(HODL),
+	.HOLD(HOLD),
 	.KMux_MIR1(KMux_MIR1),
 	.KOUT(KOUT),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
 	.PC_out(PC_out),
-	.PI1(PI1),
 	.SelA_MIR1(SelA_MIR1),
-	.SelB_MIR1(SelB_MIR1),
 	.SelC_MIR1(SelC_MIR1),
 	.SelC_MIR2(SelC_MIR2),
 	.SelC_MIR3(SelC_MIR3),
+	.SelC_outUC1(SelC_outUC1),
 	.WR_out(WR_out),
 	.z(z)
 );
@@ -86,112 +84,27 @@ begin
 end 
 
 // de0_clk
-initial
+always
 begin
-	repeat(49)
-	begin
-		de0_clk = 1'b0;
-		de0_clk = #10000 1'b1;
-		# 10000;
-	end
 	de0_clk = 1'b0;
 	de0_clk = #10000 1'b1;
-	de0_clk = #9000 1'b0;
+	#10000;
 end 
 
-// HODL
+// HOLD
 initial
 begin
-	HODL = 1'b1;
+	HOLD = 1'b0;
+	HOLD = #200000 1'b1;
+	HOLD = #280000 1'b0;
 end 
 
 // nRST
 initial
 begin
 	nRST = 1'b1;
-	nRST = #340000 1'b0;
-	nRST = #40000 1'b1;
-	nRST = #619000 1'b0;
-end 
-// PI1[ 15 ]
-initial
-begin
-	PI1[15] = 1'b0;
-end 
-// PI1[ 14 ]
-initial
-begin
-	PI1[14] = 1'b0;
-end 
-// PI1[ 13 ]
-initial
-begin
-	PI1[13] = 1'b0;
-end 
-// PI1[ 12 ]
-initial
-begin
-	PI1[12] = 1'b0;
-end 
-// PI1[ 11 ]
-initial
-begin
-	PI1[11] = 1'b0;
-end 
-// PI1[ 10 ]
-initial
-begin
-	PI1[10] = 1'b0;
-end 
-// PI1[ 9 ]
-initial
-begin
-	PI1[9] = 1'b0;
-end 
-// PI1[ 8 ]
-initial
-begin
-	PI1[8] = 1'b0;
-end 
-// PI1[ 7 ]
-initial
-begin
-	PI1[7] = 1'b0;
-end 
-// PI1[ 6 ]
-initial
-begin
-	PI1[6] = 1'b0;
-end 
-// PI1[ 5 ]
-initial
-begin
-	PI1[5] = 1'b0;
-end 
-// PI1[ 4 ]
-initial
-begin
-	PI1[4] = 1'b0;
-end 
-// PI1[ 3 ]
-initial
-begin
-	PI1[3] = 1'b0;
-end 
-// PI1[ 2 ]
-initial
-begin
-	PI1[2] = 1'b0;
-end 
-// PI1[ 1 ]
-initial
-begin
-	PI1[1] = 1'b0;
-end 
-// PI1[ 0 ]
-initial
-begin
-	PI1[0] = 1'b0;
+	nRST = #160000 1'b0;
+	nRST = #20000 1'b1;
 end 
 endmodule
 

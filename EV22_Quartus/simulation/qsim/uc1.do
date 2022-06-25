@@ -1,8 +1,8 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work uc1.vo
-vlog -work work Waveform6.vwf.vt
-vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst
+vlog -work work Waveform5.vwf.vt
+vsim  -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst
 vcd file -direction uc1.msim.vcd
 vcd add -internal uc1_vlg_vec_tst/*
 vcd add -internal uc1_vlg_vec_tst/i1/*
