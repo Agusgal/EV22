@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/25/2022 00:19:26"
+// Generated on "06/25/2022 15:27:35"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          uc1
 // 
@@ -31,8 +31,8 @@ module uc1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg de0_clk;
-reg HOLD;
 reg nRST;
+reg pin_name1;
 // wires                                               
 wire [3:0] ALUC;
 wire [15:0] Bout;
@@ -64,12 +64,12 @@ uc1 i1 (
 	.clk_reg(clk_reg),
 	.clk_rom(clk_rom),
 	.de0_clk(de0_clk),
-	.HOLD(HOLD),
 	.KMux_MIR1(KMux_MIR1),
 	.KOUT(KOUT),
 	.nRST(nRST),
 	.OPCODE_out(OPCODE_out),
 	.PC_out(PC_out),
+	.pin_name1(pin_name1),
 	.SelA_MIR1(SelA_MIR1),
 	.SelC_MIR1(SelC_MIR1),
 	.SelC_MIR2(SelC_MIR2),
@@ -91,20 +91,18 @@ begin
 	#10000;
 end 
 
-// HOLD
-initial
-begin
-	HOLD = 1'b0;
-	HOLD = #200000 1'b1;
-	HOLD = #280000 1'b0;
-end 
-
 // nRST
 initial
 begin
 	nRST = 1'b1;
 	nRST = #160000 1'b0;
 	nRST = #20000 1'b1;
+end 
+
+// pin_name1
+initial
+begin
+	pin_name1 = 1'b0;
 end 
 endmodule
 

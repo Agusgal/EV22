@@ -4,6 +4,26 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "clk_pc",
+					"strict" : false
+				},
+				{
+					"name" : "clk_ram",
+					"strict" : false
+				},
+				{
+					"name" : "clk_k",
+					"strict" : false
+				},
+				{
+					"name" : "clk_reg",
+					"strict" : false
+				},
+				{
+					"name" : "clk_rom",
+					"strict" : false
+				},
+				{
 					"name" : "KMux_MIR1",
 					"strict" : false
 				},
@@ -504,7 +524,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "HOLD",
+					"name" : "pin_name1",
 					"strict" : false
 				},
 				{
