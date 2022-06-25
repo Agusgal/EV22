@@ -24,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "KMux_MIR1",
+					"name" : "Hold_outUC2",
 					"strict" : false
 				},
 				{
@@ -105,70 +105,6 @@
 				},
 				{
 					"name" : "Bout[0]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[14]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[13]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[12]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[11]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[10]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[9]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[8]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[7]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "KOUT[0]",
 					"strict" : false
 				},
 				{
@@ -280,98 +216,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "SelA_MIR1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SelA_MIR1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SelA_MIR1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SelA_MIR1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SelA_MIR1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SelC_MIR3[0]",
-					"strict" : false
-				},
-				{
 					"name" : "SelC_outUC1[5]",
 					"strict" : false
 				},
@@ -393,6 +237,118 @@
 				},
 				{
 					"name" : "SelC_outUC1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type2Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type3Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type4Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type5Out[0]",
 					"strict" : false
 				},
 				{
@@ -521,10 +477,6 @@
 				},
 				{
 					"name" : "z[0]",
-					"strict" : false
-				},
-				{
-					"name" : "pin_name1",
 					"strict" : false
 				},
 				{
