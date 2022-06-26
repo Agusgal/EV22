@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MyDesigns/vga/simulation/qsim
+vhard_block
+Z1 !s110 1656209132
+!i10b 1
+!s100 I;<L=j;XkX3n2c:HCS1Vz3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITD7@4HUN:1^W=B@FzD>gK2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1656209131
+Z5 8vga.vo
+Z6 Fvga.vo
+!i122 6
+L0 5217 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1656209132.000000
+Z9 !s107 vga.vo|
+Z10 !s90 -work|work|vga.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vvga
+R1
+!i10b 1
+!s100 ?3_7`zWFa9L@na_4m_oR=2
+R2
+I4GRn<YoDC4de;M6Ca8Afj3
+R3
+R0
+R4
+R5
+R6
+!i122 6
+L0 32 5184
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vvga_vlg_vec_tst
+R1
+!i10b 1
+!s100 gRi=dHTXLWBAPg^H:joN21
+R2
+I7BdTP9Se2a804o>T:;iko2
+R3
+R0
+w1656209130
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 7
+L0 30 81
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12

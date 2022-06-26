@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vga_hsync",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[15]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[14]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[13]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[12]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[11]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_vsync",
+					"strict" : false
+				},
+				{
+					"name" : "q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_rgb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vga_clk",
+					"strict" : false
+				},
+				{
+					"name" : "VCC",
+					"strict" : false
+				},
+				{
+					"name" : "print",
+					"strict" : false
+				},
+				{
+					"name" : "cpu_clk",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_rgb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_rgb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_rgb[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,111 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/25/2022 23:01:23"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          vga
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module vga_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg cpu_clk;
+reg [2:0] pixel_rgb;
+reg print;
+reg VCC;
+reg vga_clk;
+// wires                                               
+wire [15:0] pixel_address;
+wire [2:0] q;
+wire vga_hsync;
+wire [2:0] vga_rgb;
+wire vga_vsync;
+
+// assign statements (if any)                          
+vga i1 (
+// port map - connection between master ports and signals/registers   
+	.cpu_clk(cpu_clk),
+	.pixel_address(pixel_address),
+	.pixel_rgb(pixel_rgb),
+	.print(print),
+	.q(q),
+	.\VCC (VCC),
+	.vga_clk(vga_clk),
+	.vga_hsync(vga_hsync),
+	.vga_rgb(vga_rgb),
+	.vga_vsync(vga_vsync)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// cpu_clk
+always
+begin
+	cpu_clk = 1'b0;
+	cpu_clk = #10000 1'b1;
+	#10000;
+end 
+// pixel_rgb[ 2 ]
+initial
+begin
+	pixel_rgb[2] = 1'b0;
+end 
+// pixel_rgb[ 1 ]
+always
+begin
+	pixel_rgb[1] = 1'b0;
+	pixel_rgb[1] = #500000 1'b1;
+	#500000;
+end 
+// pixel_rgb[ 0 ]
+always
+begin
+	pixel_rgb[0] = 1'b0;
+	pixel_rgb[0] = #250000 1'b1;
+	#250000;
+end 
+
+// print
+initial
+begin
+	print = 1'b0;
+end 
+
+// VCC
+initial
+begin
+	VCC = 1'b1;
+end 
+
+// vga_clk
+always
+begin
+	vga_clk = 1'b0;
+	vga_clk = #100000 1'b1;
+	#100000;
+end 
+endmodule
+
