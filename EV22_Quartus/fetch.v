@@ -20,6 +20,8 @@ module fetch
 			if(!SR_IN) begin
 				if(B1_OUT)				
 					PC <= PC_VAL;
+				else
+					PC <= PC + 1;
 			end else begin
 				if(B1_OUT && tos != 3) begin	//BSR S
 					stack[tos] = PC;

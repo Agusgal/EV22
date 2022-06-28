@@ -13,10 +13,11 @@ module decoder
  output reg [5:0] Sel_B,
  output reg [5:0] Sel_C,
  output reg [6:0] Type,
- output reg [9:0] Dadd
+ output reg [9:0] Dadd,
+ output reg VGA
  );
-	 reg[4:0] Ri;
-	 reg[4:0] Rj;
+	reg[4:0] Ri;
+	reg[4:0] Rj;
 	 
 	always @ (OPCODE) //Si solo ponemos opcode[15:8], hay un bug cuando llamamos a dos instrucciones con mismo opcodes pero diferentes registros (como mandar registros al working register)
 	begin
@@ -24,6 +25,9 @@ module decoder
 		Sel_A = Rj;
 		Ri = OPCODE[9:5];
 		Rj = OPCODE[4:0];
+		
+		if((OPCODE[15:8] == 8'b01100000) || (OPCODE[15:8] == 8'b01110000)) VGA = 1;
+		else VGA = 0;
 		
 		casex (OPCODE[15:8])
 			//b00100xxx:	//JMP X: PC = X
@@ -105,6 +109,11 @@ module decoder
 			
 			//b00000000:	//NO OPERATION
 			8'b00000000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000000; end //NOP
+			
+			//b01100000:	//PIX RGB
+			8'b01100000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000000; end //PIX RGB
+			//b01110000:	//PIX W
+			8'b01110000:	begin ALUC=4'b0000; SH=0; KMux=0; MR=0; MW=0; Sel_B=0; Sel_C=35; Type=7'b0000000; end //PIX W
 			
 		endcase 
 	end

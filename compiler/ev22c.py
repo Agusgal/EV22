@@ -83,6 +83,10 @@ def getBinOpcode(opcode):
         return '0100000100000000'
     elif keyword == 'NOP':
         return '0000000000000000'
+    elif keyword == 'PIX RGB':
+        return '0110000000000' + str_hex2bin(opcode[2], 3)
+    elif keyword == 'PIX W':
+        return '0111000000000000'
     else:
         raise ValueError('Invalid Opcode') 
 

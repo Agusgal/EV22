@@ -14,7 +14,7 @@ module ALU ( input [15:0] b,
 			4'b0010 : z = ~a;
 			4'b0011 : z = ~b;
 			4'b0100 : {cy_out, z} = a + b; 
-			4'b0101 : {cy_out, z} = a + b + cy_in;
+			4'b0101 : {cy_out, z} = a + b;// + cy_in; //Temporally disabled
 			4'b0110 : z = a | b;
 			4'b0111 : z = a & b; 
 			4'b1000 : z = 0; 

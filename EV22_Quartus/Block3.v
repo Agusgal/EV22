@@ -52,6 +52,8 @@ module Block3(
 				27: 		mux_a = r27;
 				28: 		mux_a = r28; //PI0
 				29: 		mux_a = r29; //PI1
+				32: 		mux_a = r32;
+				33: 		mux_a = r33;
 		endcase
 	endfunction
 
@@ -93,6 +95,9 @@ module Block3(
 				27: 		mux_b = r27;
 				28: 		mux_b = r28; //PI0
 				29: 		mux_b = r29; //PI1
+				
+				32: 		mux_b = r32;
+				33: 		mux_b = r33;
 				
 				34: 		mux_b = Working_Register;
 		endcase

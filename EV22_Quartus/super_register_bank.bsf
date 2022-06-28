@@ -136,6 +136,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "PO1[15..0]" (rect 211 91 251 103)(font "Arial" ))
 		(line (pt 272 96)(pt 256 96)(line_width 3))
 	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "vga_address[14..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "vga_address[14..0]" (rect 174 107 251 119)(font "Arial" ))
+		(line (pt 272 112)(pt 256 112)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 256 224)(line_width 1))
 	)

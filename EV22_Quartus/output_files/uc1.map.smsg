@@ -1,3 +1,5 @@
 Warning (10268): Verilog HDL information at fetch.v(15): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/fetch.v Line: 15
 Warning (10268): Verilog HDL information at register_bank.v(30): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/register_bank.v Line: 30
-Warning (10268): Verilog HDL information at super_register_bank.v(53): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/super_register_bank.v Line: 53
+Warning (10268): Verilog HDL information at super_register_bank.v(51): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/super_register_bank.v Line: 51
+Warning (10268): Verilog HDL information at vga_module.v(59): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/vga_module.v Line: 59
+Warning (10268): Verilog HDL information at vga_module.v(109): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/EV22_Quartus/vga_module.v Line: 109

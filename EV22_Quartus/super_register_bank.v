@@ -14,7 +14,8 @@ module super_register_bank(
 									output[15:0] Data_B,
 									output reg[15:0] Working_register,
 									output reg[15:0] PO0,
-									output reg[15:0] PO1
+									output reg[15:0] PO1,
+									output [14:0] vga_address
 									);
 									
 
@@ -33,6 +34,8 @@ module super_register_bank(
 	assign Data_A = Data_A_net;
 	assign Data_B = Data_B_net; 
 	
+	assign vga_address = r26*160 + r27;
+	
 	reg[15:0] r0; reg[15:0] r1; reg[15:0] r2; reg[15:0] r3; reg[15:0] r4; reg[15:0] r5; reg[15:0] r6; reg[15:0] r7;
 	reg[15:0] r8; reg[15:0] r9; reg[15:0] r10; reg[15:0] r11; reg[15:0] r12; reg[15:0] r13; reg[15:0] r14; reg[15:0] r15;
 	reg[15:0] r16; reg[15:0] r17; reg[15:0] r18; reg[15:0] r19; reg[15:0] r20; reg[15:0] r21; reg[15:0] r22; reg[15:0] r23;
@@ -44,12 +47,7 @@ module super_register_bank(
 //	Block2 block2(.clk(clk), .W_IN(Working_register), .W_MEM_IN(W_MEM_IN), .MR(MR), .MW(MW), .Data_C(Data_C), .Sel_C(Sel_C), .DATA(DATA), .SEL_REG(SEL_REG), .updateFlag(updateFlag_net));
 	Block3 block3(.updateBlock(updateBlock3), .Sel_A(Sel_A), .Sel_B(Sel_B), .Working_Register(Working_register), .r0(r0), .r1(r1),  .r2(r2),  .r3(r3),  .r4(r4),  .r5(r5),  .r6(r6),  .r7(r7),  .r8(r8),  .r9(r9),  .r10(r10),  .r11(r11),  .r12(r12),  .r13(r13),   .r14(r14), .r15(r15), .r16(r16), .r17(r17), .r18(r18), .r19(r19), .r20(r20), .r21(r21), .r22(r22), .r23(r23), .r24(r24), .r25(r25), .r26(r26), .r27(r27), .r28(PI0),  .r29(PI1),  .r32(r32),  .r33(r33), .Data_A(Data_A_net), .Data_B(Data_B_net));
 
-	always @  (Data_A_net, Data_B_net) begin
-
 	
-	
-	end
-
 	always @ ( posedge clk, posedge reset) begin
 	
 	if (reset) begin
@@ -92,6 +90,8 @@ module super_register_bank(
 				//29: No es posible escribir sobre un puerto de entrada
 				30: 		PO0 <= Data_C; //Output 0
 				31: 		PO1 <= Data_C; //Output 1
+				32: 		r32 = Data_C;
+				33: 		r33 = Data_C;
 				34: 		begin if(MR) begin Working_register = W_MEM_IN; end else begin Working_register = Data_C; end end
 			endcase
 		end
