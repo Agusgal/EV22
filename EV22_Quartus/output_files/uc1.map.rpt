@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Tue Jun 28 06:09:33 2022
+Tue Jun 28 15:11:44 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 28 06:09:33 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 28 15:11:44 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
@@ -179,13 +179,11 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processors 7-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1567,7 +1565,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1577,7 +1575,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 28 06:09:21 2022
+    Info: Processing started: Tue Jun 28 15:11:22 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -2071,10 +2069,10 @@ Info (21057): Implemented 1551 device resources after synthesis - the final reso
     Info (21064): Implemented 41 RAM segments
     Info (21065): Implemented 2 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 119 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Tue Jun 28 06:09:33 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Tue Jun 28 15:11:44 2022
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:50
 
 
 +------------------------------------------+

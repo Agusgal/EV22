@@ -1,25 +1,25 @@
 # do uc1.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:54:24 on Jun 28,2022
+# Start time: 15:10:04 on Jun 28,2022
 # vlog -work work uc1.vo 
 # -- Compiling module uc1
 # 
 # Top level modules:
 # 	uc1
-# End time: 05:54:24 on Jun 28,2022, Elapsed time: 0:00:00
+# End time: 15:10:05 on Jun 28,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:54:24 on Jun 28,2022
+# Start time: 15:10:05 on Jun 28,2022
 # vlog -work work Waveform_Mati.vwf.vt 
 # -- Compiling module uc1_vlg_vec_tst
 # 
 # Top level modules:
 # 	uc1_vlg_vec_tst
-# End time: 05:54:25 on Jun 28,2022, Elapsed time: 0:00:01
+# End time: 15:10:05 on Jun 28,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.uc1_vlg_vec_tst 
-# Start time: 05:54:25 on Jun 28,2022
+# Start time: 15:10:05 on Jun 28,2022
 # Loading work.uc1_vlg_vec_tst
 # Loading work.uc1
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -28,209 +28,20 @@
 # Loading cycloneive_ver.cycloneive_m_cntr
 # Loading cycloneive_ver.cycloneive_n_cntr
 # Loading cycloneive_ver.cycloneive_scale_cntr
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
-# SDF 2020.1 Compiler 2020.02 Feb 28 2020
-# 
-# Loading instances from uc1_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from uc1_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /uc1_vlg_vec_tst File: Waveform_Mati.vwf.vt
 # after#25
 #  Note : Cycloneive PLL was reset
-# Time: 14068  Instance: uc1_vlg_vec_tst.i1.\inst9|altpll_component|auto_generated|pll1 
+# Time: 10000  Instance: uc1_vlg_vec_tst.i1.\inst9|altpll_component|auto_generated|pll1 
 #  Note : Cycloneive PLL locked to incoming clock
-# Time: 132392  Instance: uc1_vlg_vec_tst.i1.\inst9|altpll_component|auto_generated|pll1 
+# Time: 130000  Instance: uc1_vlg_vec_tst.i1.\inst9|altpll_component|auto_generated|pll1 
 #  Note : Cycloneive PLL locked to incoming clock
-# Time: 412848  Instance: uc1_vlg_vec_tst.i1.\inst13|altpll_component|auto_generated|pll1 
-# ** Error: $hold( posedge clk &&& nosloadsclr:527822 ps, d:527854 ps, 157 ps );
-#    Time: 527854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:527822 ps, d:527906 ps, 157 ps );
-#    Time: 527906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:967822 ps, d:967854 ps, 157 ps );
-#    Time: 967854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:967822 ps, d:967906 ps, 157 ps );
-#    Time: 967906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:1407822 ps, d:1407854 ps, 157 ps );
-#    Time: 1407854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:1407822 ps, d:1407906 ps, 157 ps );
-#    Time: 1407906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:1847822 ps, d:1847854 ps, 157 ps );
-#    Time: 1847854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:1847822 ps, d:1847906 ps, 157 ps );
-#    Time: 1847906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:2287822 ps, d:2287854 ps, 157 ps );
-#    Time: 2287854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:2287822 ps, d:2287906 ps, 157 ps );
-#    Time: 2287906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:2727822 ps, d:2727854 ps, 157 ps );
-#    Time: 2727854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:2727822 ps, d:2727906 ps, 157 ps );
-#    Time: 2727906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:3167822 ps, d:3167854 ps, 157 ps );
-#    Time: 3167854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:3167822 ps, d:3167906 ps, 157 ps );
-#    Time: 3167906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:3607822 ps, d:3607854 ps, 157 ps );
-#    Time: 3607854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:3607822 ps, d:3607906 ps, 157 ps );
-#    Time: 3607906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4047822 ps, d:4047854 ps, 157 ps );
-#    Time: 4047854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4047822 ps, d:4047906 ps, 157 ps );
-#    Time: 4047906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4487822 ps, d:4487854 ps, 157 ps );
-#    Time: 4487854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4487822 ps, d:4487906 ps, 157 ps );
-#    Time: 4487906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4927822 ps, d:4927854 ps, 157 ps );
-#    Time: 4927854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:4927822 ps, d:4927906 ps, 157 ps );
-#    Time: 4927906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:5367822 ps, d:5367854 ps, 157 ps );
-#    Time: 5367854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:5367822 ps, d:5367906 ps, 157 ps );
-#    Time: 5367906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:5807822 ps, d:5807854 ps, 157 ps );
-#    Time: 5807854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:5807822 ps, d:5807906 ps, 157 ps );
-#    Time: 5807906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:6247822 ps, d:6247854 ps, 157 ps );
-#    Time: 6247854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:6247822 ps, d:6247906 ps, 157 ps );
-#    Time: 6247906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:6687822 ps, d:6687854 ps, 157 ps );
-#    Time: 6687854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:6687822 ps, d:6687906 ps, 157 ps );
-#    Time: 6687906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:7127822 ps, d:7127854 ps, 157 ps );
-#    Time: 7127854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:7127822 ps, d:7127906 ps, 157 ps );
-#    Time: 7127906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:7567822 ps, d:7567854 ps, 157 ps );
-#    Time: 7567854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:7567822 ps, d:7567906 ps, 157 ps );
-#    Time: 7567906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8007822 ps, d:8007854 ps, 157 ps );
-#    Time: 8007854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8007822 ps, d:8007906 ps, 157 ps );
-#    Time: 8007906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8447822 ps, d:8447854 ps, 157 ps );
-#    Time: 8447854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8447822 ps, d:8447906 ps, 157 ps );
-#    Time: 8447906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8887822 ps, d:8887854 ps, 157 ps );
-#    Time: 8887854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:8887822 ps, d:8887906 ps, 157 ps );
-#    Time: 8887906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:9327822 ps, d:9327854 ps, 157 ps );
-#    Time: 9327854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:9327822 ps, d:9327906 ps, 157 ps );
-#    Time: 9327906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:9767822 ps, d:9767854 ps, 157 ps );
-#    Time: 9767854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:9767822 ps, d:9767906 ps, 157 ps );
-#    Time: 9767906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:10207822 ps, d:10207854 ps, 157 ps );
-#    Time: 10207854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:10207822 ps, d:10207906 ps, 157 ps );
-#    Time: 10207906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:10647822 ps, d:10647854 ps, 157 ps );
-#    Time: 10647854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:10647822 ps, d:10647906 ps, 157 ps );
-#    Time: 10647906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11087822 ps, d:11087854 ps, 157 ps );
-#    Time: 11087854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11087822 ps, d:11087906 ps, 157 ps );
-#    Time: 11087906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11527822 ps, d:11527854 ps, 157 ps );
-#    Time: 11527854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11527822 ps, d:11527906 ps, 157 ps );
-#    Time: 11527906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11967822 ps, d:11967854 ps, 157 ps );
-#    Time: 11967854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:11967822 ps, d:11967906 ps, 157 ps );
-#    Time: 11967906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:12407822 ps, d:12407854 ps, 157 ps );
-#    Time: 12407854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:12407822 ps, d:12407906 ps, 157 ps );
-#    Time: 12407906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:12847822 ps, d:12847854 ps, 157 ps );
-#    Time: 12847854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:12847822 ps, d:12847906 ps, 157 ps );
-#    Time: 12847906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:13287822 ps, d:13287854 ps, 157 ps );
-#    Time: 13287854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:13287822 ps, d:13287906 ps, 157 ps );
-#    Time: 13287906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:13727822 ps, d:13727854 ps, 157 ps );
-#    Time: 13727854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:13727822 ps, d:13727906 ps, 157 ps );
-#    Time: 13727906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:14167822 ps, d:14167854 ps, 157 ps );
-#    Time: 14167854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:14167822 ps, d:14167906 ps, 157 ps );
-#    Time: 14167906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:14607822 ps, d:14607854 ps, 157 ps );
-#    Time: 14607854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:14607822 ps, d:14607906 ps, 157 ps );
-#    Time: 14607906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15047822 ps, d:15047854 ps, 157 ps );
-#    Time: 15047854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15047822 ps, d:15047906 ps, 157 ps );
-#    Time: 15047906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15487822 ps, d:15487854 ps, 157 ps );
-#    Time: 15487854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15487822 ps, d:15487906 ps, 157 ps );
-#    Time: 15487906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15927822 ps, d:15927854 ps, 157 ps );
-#    Time: 15927854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:15927822 ps, d:15927906 ps, 157 ps );
-#    Time: 15927906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:16367822 ps, d:16367854 ps, 157 ps );
-#    Time: 16367854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:16367822 ps, d:16367906 ps, 157 ps );
-#    Time: 16367906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:16807822 ps, d:16807854 ps, 157 ps );
-#    Time: 16807854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:16807822 ps, d:16807906 ps, 157 ps );
-#    Time: 16807906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:17247822 ps, d:17247854 ps, 157 ps );
-#    Time: 17247854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:17247822 ps, d:17247906 ps, 157 ps );
-#    Time: 17247906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:17687822 ps, d:17687854 ps, 157 ps );
-#    Time: 17687854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:17687822 ps, d:17687906 ps, 157 ps );
-#    Time: 17687906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:18127822 ps, d:18127854 ps, 157 ps );
-#    Time: 18127854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:18127822 ps, d:18127906 ps, 157 ps );
-#    Time: 18127906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:18567822 ps, d:18567854 ps, 157 ps );
-#    Time: 18567854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:18567822 ps, d:18567906 ps, 157 ps );
-#    Time: 18567906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19007822 ps, d:19007854 ps, 157 ps );
-#    Time: 19007854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19007822 ps, d:19007906 ps, 157 ps );
-#    Time: 19007906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19447822 ps, d:19447854 ps, 157 ps );
-#    Time: 19447854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19447822 ps, d:19447906 ps, 157 ps );
-#    Time: 19447906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19887822 ps, d:19887854 ps, 157 ps );
-#    Time: 19887854 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[13] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
-# ** Error: $hold( posedge clk &&& nosloadsclr:19887822 ps, d:19887906 ps, 157 ps );
-#    Time: 19887906 ps  Iteration: 0  Process: /uc1_vlg_vec_tst/i1/\inst2|Working_register[15] /#Setuphold# File: $MODEL_TECH/../altera/verilog/src/altera_primitives.v Line: 291
+# Time: 410000  Instance: uc1_vlg_vec_tst.i1.\inst13|altpll_component|auto_generated|pll1 
 # ** Note: $finish    : Waveform_Mati.vwf.vt(79)
-#    Time: 20 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
-# End time: 05:54:27 on Jun 28,2022, Elapsed time: 0:00:02
-# Errors: 90, Warnings: 0
+#    Time: 1 us  Iteration: 0  Instance: /uc1_vlg_vec_tst
+# End time: 15:10:08 on Jun 28,2022, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

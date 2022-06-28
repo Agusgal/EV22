@@ -1,5 +1,5 @@
 Timing Analyzer report for uc1
-Tue Jun 28 06:10:13 2022
+Tue Jun 28 15:13:04 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -167,15 +167,15 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.23        ;
+; Average used               ; 1.29        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.4%      ;
-;     Processor 3            ;   1.5%      ;
-;     Processor 4            ;   1.4%      ;
-;     Processors 5-16        ;   1.4%      ;
+;     Processor 2            ;   3.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.8%      ;
+;     Processors 5-16        ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -7002,7 +7002,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 28 06:10:09 2022
+    Info: Processing started: Tue Jun 28 15:12:56 2022
 Info: Command: quartus_sta uc1 -c uc1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -7215,9 +7215,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4946 megabytes
-    Info: Processing ended: Tue Jun 28 06:10:13 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4951 megabytes
+    Info: Processing ended: Tue Jun 28 15:13:04 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
