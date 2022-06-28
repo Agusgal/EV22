@@ -1,0 +1,5 @@
+module address_3to12(input [18:0] address_3, output reg [15:0] address_12)
+	
+	assign address_12 = address_3 >> 2;
+	
+endmodule

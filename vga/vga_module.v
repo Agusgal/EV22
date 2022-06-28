@@ -1,4 +1,4 @@
-module vga_controller(         
+module vga_module(         
 	// Inputs
 	pixel_rgb,					// RGB del píxel a escribir (lo lee de la memoria RAM con la imagen)
 	reset,						// Reset - Active low
@@ -7,7 +7,7 @@ module vga_controller(
 	vga_hsync,					// VGA hsync 
 	vga_vsync,					// VGA vsync
 	vga_rgb,						// VGA RGB (datos del pixel a escribir en pantalla)
-	pixel_address,				// Dirección del píxel a escribir en la memoria (left to right, top to bottom)
+	pixel_address				// Dirección del píxel a escribir en la memoria (left to right, top to bottom)
 );
 	
 	/* Parámetros*/
@@ -106,7 +106,7 @@ module vga_controller(
 	always @* begin
 	
 		if (active) begin
-			pixel_address <= next_v_count * hactive + next_h_count; //Busco la dirección del siguiente píxel a escribir en pantalla
+			pixel_address <= (next_v_count>>2) * 160 + (next_h_count>>2); //Busco la dirección del siguiente píxel a escribir en pantalla
 			vga_rgb = pixel_rgb; //Mando el píxel actual a pantalla
 		end else begin
 			pixel_address = 0; //Si no estoy en la zona activa, no busco el siguiente píxel (no tendría sentido) y mando color negro

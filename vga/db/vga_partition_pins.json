@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "vga_vsync",
+					"strict" : false
+				},
+				{
 					"name" : "pixel_address[15]",
 					"strict" : false
 				},
@@ -72,22 +76,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "vga_vsync",
-					"strict" : false
-				},
-				{
-					"name" : "q[2]",
-					"strict" : false
-				},
-				{
-					"name" : "q[1]",
-					"strict" : false
-				},
-				{
-					"name" : "q[0]",
-					"strict" : false
-				},
-				{
 					"name" : "vga_rgb[2]",
 					"strict" : false
 				},
@@ -100,31 +88,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "vga_clk",
-					"strict" : false
-				},
-				{
 					"name" : "VCC",
 					"strict" : false
 				},
 				{
 					"name" : "print",
-					"strict" : false
-				},
-				{
-					"name" : "cpu_clk",
-					"strict" : false
-				},
-				{
-					"name" : "pixel_rgb[2]",
-					"strict" : false
-				},
-				{
-					"name" : "pixel_rgb[1]",
-					"strict" : false
-				},
-				{
-					"name" : "pixel_rgb[0]",
 					"strict" : false
 				}
 			]

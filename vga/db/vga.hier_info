@@ -1,40 +1,32 @@
 |vga
-vga_hsync <= vga_controller:inst.vga_hsync
-VCC => vga_controller:inst.reset
+vga_hsync <= vga_module:inst.vga_hsync
+VCC => vga_module:inst.reset
 VCC => vga_ram:inst2.rden
-vga_clk => vga_controller:inst.clock
-vga_clk => vga_ram:inst2.rdclock
+cpu_clk => pll:inst1.inclk0
 print => vga_ram:inst2.wren
-cpu_clk => vga_ram:inst2.wrclock
-pixel_rgb[0] => vga_ram:inst2.data[0]
-pixel_rgb[1] => vga_ram:inst2.data[1]
-pixel_rgb[2] => vga_ram:inst2.data[2]
-pixel_address[0] <= vga_controller:inst.pixel_address[0]
-pixel_address[1] <= vga_controller:inst.pixel_address[1]
-pixel_address[2] <= vga_controller:inst.pixel_address[2]
-pixel_address[3] <= vga_controller:inst.pixel_address[3]
-pixel_address[4] <= vga_controller:inst.pixel_address[4]
-pixel_address[5] <= vga_controller:inst.pixel_address[5]
-pixel_address[6] <= vga_controller:inst.pixel_address[6]
-pixel_address[7] <= vga_controller:inst.pixel_address[7]
-pixel_address[8] <= vga_controller:inst.pixel_address[8]
-pixel_address[9] <= vga_controller:inst.pixel_address[9]
-pixel_address[10] <= vga_controller:inst.pixel_address[10]
-pixel_address[11] <= vga_controller:inst.pixel_address[11]
-pixel_address[12] <= vga_controller:inst.pixel_address[12]
-pixel_address[13] <= vga_controller:inst.pixel_address[13]
-pixel_address[14] <= vga_controller:inst.pixel_address[14]
-pixel_address[15] <= vga_controller:inst.pixel_address[15]
-vga_vsync <= vga_controller:inst.vga_vsync
-q[0] <= vga_ram:inst2.q[0]
-q[1] <= vga_ram:inst2.q[1]
-q[2] <= vga_ram:inst2.q[2]
-vga_rgb[0] <= vga_controller:inst.vga_rgb[0]
-vga_rgb[1] <= vga_controller:inst.vga_rgb[1]
-vga_rgb[2] <= vga_controller:inst.vga_rgb[2]
+vga_vsync <= vga_module:inst.vga_vsync
+pixel_address[0] <= vga_module:inst.pixel_address[0]
+pixel_address[1] <= vga_module:inst.pixel_address[1]
+pixel_address[2] <= vga_module:inst.pixel_address[2]
+pixel_address[3] <= vga_module:inst.pixel_address[3]
+pixel_address[4] <= vga_module:inst.pixel_address[4]
+pixel_address[5] <= vga_module:inst.pixel_address[5]
+pixel_address[6] <= vga_module:inst.pixel_address[6]
+pixel_address[7] <= vga_module:inst.pixel_address[7]
+pixel_address[8] <= vga_module:inst.pixel_address[8]
+pixel_address[9] <= vga_module:inst.pixel_address[9]
+pixel_address[10] <= vga_module:inst.pixel_address[10]
+pixel_address[11] <= vga_module:inst.pixel_address[11]
+pixel_address[12] <= vga_module:inst.pixel_address[12]
+pixel_address[13] <= vga_module:inst.pixel_address[13]
+pixel_address[14] <= vga_module:inst.pixel_address[14]
+pixel_address[15] <= vga_module:inst.pixel_address[15]
+vga_rgb[0] <= vga_module:inst.vga_rgb[0]
+vga_rgb[1] <= vga_module:inst.vga_rgb[1]
+vga_rgb[2] <= vga_module:inst.vga_rgb[2]
 
 
-|vga|vga_controller:inst
+|vga|vga_module:inst
 pixel_rgb[0] => vga_rgb.DATAB
 pixel_rgb[1] => vga_rgb.DATAB
 pixel_rgb[2] => vga_rgb.DATAB
@@ -141,7 +133,83 @@ pixel_address[14] <= pixel_address.DB_MAX_OUTPUT_PORT_TYPE
 pixel_address[15] <= pixel_address.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|vga|pll:inst1
+inclk0 => sub_wire1[0].IN1
+c0 <= altpll:altpll_component.clk
+
+
+|vga|pll:inst1|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|vga|pll:inst1|altpll:altpll_component|pll_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
 |vga|vga_ram:inst2
+clock => clock.IN1
 data[0] => data[0].IN1
 data[1] => data[1].IN1
 data[2] => data[2].IN1
@@ -161,7 +229,6 @@ rdaddress[12] => rdaddress[12].IN1
 rdaddress[13] => rdaddress[13].IN1
 rdaddress[14] => rdaddress[14].IN1
 rdaddress[15] => rdaddress[15].IN1
-rdclock => rdclock.IN1
 rden => rden.IN1
 wraddress[0] => wraddress[0].IN1
 wraddress[1] => wraddress[1].IN1
@@ -179,7 +246,6 @@ wraddress[12] => wraddress[12].IN1
 wraddress[13] => wraddress[13].IN1
 wraddress[14] => wraddress[14].IN1
 wraddress[15] => wraddress[15].IN1
-wrclock => wrclock.IN1
 wren => wren.IN1
 q[0] <= altsyncram:altsyncram_component.q_b
 q[1] <= altsyncram:altsyncram_component.q_b
@@ -187,52 +253,52 @@ q[2] <= altsyncram:altsyncram_component.q_b
 
 
 |vga|vga_ram:inst2|altsyncram:altsyncram_component
-wren_a => altsyncram_bkr1:auto_generated.wren_a
+wren_a => altsyncram_u2v1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
-rden_b => altsyncram_bkr1:auto_generated.rden_b
-data_a[0] => altsyncram_bkr1:auto_generated.data_a[0]
-data_a[1] => altsyncram_bkr1:auto_generated.data_a[1]
-data_a[2] => altsyncram_bkr1:auto_generated.data_a[2]
+rden_b => altsyncram_u2v1:auto_generated.rden_b
+data_a[0] => altsyncram_u2v1:auto_generated.data_a[0]
+data_a[1] => altsyncram_u2v1:auto_generated.data_a[1]
+data_a[2] => altsyncram_u2v1:auto_generated.data_a[2]
 data_b[0] => ~NO_FANOUT~
 data_b[1] => ~NO_FANOUT~
 data_b[2] => ~NO_FANOUT~
-address_a[0] => altsyncram_bkr1:auto_generated.address_a[0]
-address_a[1] => altsyncram_bkr1:auto_generated.address_a[1]
-address_a[2] => altsyncram_bkr1:auto_generated.address_a[2]
-address_a[3] => altsyncram_bkr1:auto_generated.address_a[3]
-address_a[4] => altsyncram_bkr1:auto_generated.address_a[4]
-address_a[5] => altsyncram_bkr1:auto_generated.address_a[5]
-address_a[6] => altsyncram_bkr1:auto_generated.address_a[6]
-address_a[7] => altsyncram_bkr1:auto_generated.address_a[7]
-address_a[8] => altsyncram_bkr1:auto_generated.address_a[8]
-address_a[9] => altsyncram_bkr1:auto_generated.address_a[9]
-address_a[10] => altsyncram_bkr1:auto_generated.address_a[10]
-address_a[11] => altsyncram_bkr1:auto_generated.address_a[11]
-address_a[12] => altsyncram_bkr1:auto_generated.address_a[12]
-address_a[13] => altsyncram_bkr1:auto_generated.address_a[13]
-address_a[14] => altsyncram_bkr1:auto_generated.address_a[14]
-address_a[15] => altsyncram_bkr1:auto_generated.address_a[15]
-address_b[0] => altsyncram_bkr1:auto_generated.address_b[0]
-address_b[1] => altsyncram_bkr1:auto_generated.address_b[1]
-address_b[2] => altsyncram_bkr1:auto_generated.address_b[2]
-address_b[3] => altsyncram_bkr1:auto_generated.address_b[3]
-address_b[4] => altsyncram_bkr1:auto_generated.address_b[4]
-address_b[5] => altsyncram_bkr1:auto_generated.address_b[5]
-address_b[6] => altsyncram_bkr1:auto_generated.address_b[6]
-address_b[7] => altsyncram_bkr1:auto_generated.address_b[7]
-address_b[8] => altsyncram_bkr1:auto_generated.address_b[8]
-address_b[9] => altsyncram_bkr1:auto_generated.address_b[9]
-address_b[10] => altsyncram_bkr1:auto_generated.address_b[10]
-address_b[11] => altsyncram_bkr1:auto_generated.address_b[11]
-address_b[12] => altsyncram_bkr1:auto_generated.address_b[12]
-address_b[13] => altsyncram_bkr1:auto_generated.address_b[13]
-address_b[14] => altsyncram_bkr1:auto_generated.address_b[14]
-address_b[15] => altsyncram_bkr1:auto_generated.address_b[15]
+address_a[0] => altsyncram_u2v1:auto_generated.address_a[0]
+address_a[1] => altsyncram_u2v1:auto_generated.address_a[1]
+address_a[2] => altsyncram_u2v1:auto_generated.address_a[2]
+address_a[3] => altsyncram_u2v1:auto_generated.address_a[3]
+address_a[4] => altsyncram_u2v1:auto_generated.address_a[4]
+address_a[5] => altsyncram_u2v1:auto_generated.address_a[5]
+address_a[6] => altsyncram_u2v1:auto_generated.address_a[6]
+address_a[7] => altsyncram_u2v1:auto_generated.address_a[7]
+address_a[8] => altsyncram_u2v1:auto_generated.address_a[8]
+address_a[9] => altsyncram_u2v1:auto_generated.address_a[9]
+address_a[10] => altsyncram_u2v1:auto_generated.address_a[10]
+address_a[11] => altsyncram_u2v1:auto_generated.address_a[11]
+address_a[12] => altsyncram_u2v1:auto_generated.address_a[12]
+address_a[13] => altsyncram_u2v1:auto_generated.address_a[13]
+address_a[14] => altsyncram_u2v1:auto_generated.address_a[14]
+address_a[15] => altsyncram_u2v1:auto_generated.address_a[15]
+address_b[0] => altsyncram_u2v1:auto_generated.address_b[0]
+address_b[1] => altsyncram_u2v1:auto_generated.address_b[1]
+address_b[2] => altsyncram_u2v1:auto_generated.address_b[2]
+address_b[3] => altsyncram_u2v1:auto_generated.address_b[3]
+address_b[4] => altsyncram_u2v1:auto_generated.address_b[4]
+address_b[5] => altsyncram_u2v1:auto_generated.address_b[5]
+address_b[6] => altsyncram_u2v1:auto_generated.address_b[6]
+address_b[7] => altsyncram_u2v1:auto_generated.address_b[7]
+address_b[8] => altsyncram_u2v1:auto_generated.address_b[8]
+address_b[9] => altsyncram_u2v1:auto_generated.address_b[9]
+address_b[10] => altsyncram_u2v1:auto_generated.address_b[10]
+address_b[11] => altsyncram_u2v1:auto_generated.address_b[11]
+address_b[12] => altsyncram_u2v1:auto_generated.address_b[12]
+address_b[13] => altsyncram_u2v1:auto_generated.address_b[13]
+address_b[14] => altsyncram_u2v1:auto_generated.address_b[14]
+address_b[15] => altsyncram_u2v1:auto_generated.address_b[15]
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_bkr1:auto_generated.clock0
-clock1 => altsyncram_bkr1:auto_generated.clock1
+clock0 => altsyncram_u2v1:auto_generated.clock0
+clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
@@ -244,15 +310,15 @@ byteena_b[0] => ~NO_FANOUT~
 q_a[0] <= <GND>
 q_a[1] <= <GND>
 q_a[2] <= <GND>
-q_b[0] <= altsyncram_bkr1:auto_generated.q_b[0]
-q_b[1] <= altsyncram_bkr1:auto_generated.q_b[1]
-q_b[2] <= altsyncram_bkr1:auto_generated.q_b[2]
+q_b[0] <= altsyncram_u2v1:auto_generated.q_b[0]
+q_b[1] <= altsyncram_u2v1:auto_generated.q_b[1]
+q_b[2] <= altsyncram_u2v1:auto_generated.q_b[2]
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_bkr1:auto_generated
+|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_u2v1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -890,60 +956,60 @@ address_b[14] => decode_rsa:rden_decode_b.data[1]
 address_b[15] => address_reg_b[2].DATAIN
 address_b[15] => decode_rsa:rden_decode_b.data[2]
 clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a0.CLK1
 clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a1.CLK1
 clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a2.CLK1
 clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a3.CLK1
 clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a4.CLK1
 clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a5.CLK1
 clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a6.CLK1
 clock0 => ram_block1a7.CLK0
+clock0 => ram_block1a7.CLK1
 clock0 => ram_block1a8.CLK0
+clock0 => ram_block1a8.CLK1
 clock0 => ram_block1a9.CLK0
+clock0 => ram_block1a9.CLK1
 clock0 => ram_block1a10.CLK0
+clock0 => ram_block1a10.CLK1
 clock0 => ram_block1a11.CLK0
+clock0 => ram_block1a11.CLK1
 clock0 => ram_block1a12.CLK0
+clock0 => ram_block1a12.CLK1
 clock0 => ram_block1a13.CLK0
+clock0 => ram_block1a13.CLK1
 clock0 => ram_block1a14.CLK0
+clock0 => ram_block1a14.CLK1
 clock0 => ram_block1a15.CLK0
+clock0 => ram_block1a15.CLK1
 clock0 => ram_block1a16.CLK0
+clock0 => ram_block1a16.CLK1
 clock0 => ram_block1a17.CLK0
+clock0 => ram_block1a17.CLK1
 clock0 => ram_block1a18.CLK0
+clock0 => ram_block1a18.CLK1
 clock0 => ram_block1a19.CLK0
+clock0 => ram_block1a19.CLK1
 clock0 => ram_block1a20.CLK0
+clock0 => ram_block1a20.CLK1
 clock0 => ram_block1a21.CLK0
+clock0 => ram_block1a21.CLK1
 clock0 => ram_block1a22.CLK0
+clock0 => ram_block1a22.CLK1
 clock0 => ram_block1a23.CLK0
-clock1 => ram_block1a0.CLK1
-clock1 => ram_block1a1.CLK1
-clock1 => ram_block1a2.CLK1
-clock1 => ram_block1a3.CLK1
-clock1 => ram_block1a4.CLK1
-clock1 => ram_block1a5.CLK1
-clock1 => ram_block1a6.CLK1
-clock1 => ram_block1a7.CLK1
-clock1 => ram_block1a8.CLK1
-clock1 => ram_block1a9.CLK1
-clock1 => ram_block1a10.CLK1
-clock1 => ram_block1a11.CLK1
-clock1 => ram_block1a12.CLK1
-clock1 => ram_block1a13.CLK1
-clock1 => ram_block1a14.CLK1
-clock1 => ram_block1a15.CLK1
-clock1 => ram_block1a16.CLK1
-clock1 => ram_block1a17.CLK1
-clock1 => ram_block1a18.CLK1
-clock1 => ram_block1a19.CLK1
-clock1 => ram_block1a20.CLK1
-clock1 => ram_block1a21.CLK1
-clock1 => ram_block1a22.CLK1
-clock1 => ram_block1a23.CLK1
-clock1 => address_reg_b[2].CLK
-clock1 => address_reg_b[1].CLK
-clock1 => address_reg_b[0].CLK
-clock1 => out_address_reg_b[2].CLK
-clock1 => out_address_reg_b[1].CLK
-clock1 => out_address_reg_b[0].CLK
-clock1 => rden_b_store.CLK
+clock0 => ram_block1a23.CLK1
+clock0 => address_reg_b[2].CLK
+clock0 => address_reg_b[1].CLK
+clock0 => address_reg_b[0].CLK
+clock0 => out_address_reg_b[2].CLK
+clock0 => out_address_reg_b[1].CLK
+clock0 => out_address_reg_b[0].CLK
+clock0 => rden_b_store.CLK
 data_a[0] => ram_block1a0.PORTADATAIN
 data_a[0] => ram_block1a3.PORTADATAIN
 data_a[0] => ram_block1a6.PORTADATAIN
@@ -1004,7 +1070,7 @@ wren_a => decode_rsa:decode2.enable
 wren_a => decode_rsa:wren_decode_a.enable
 
 
-|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_bkr1:auto_generated|decode_rsa:decode2
+|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_u2v1:auto_generated|decode_rsa:decode2
 data[0] => w_anode254w[1].IN0
 data[0] => w_anode271w[1].IN1
 data[0] => w_anode281w[1].IN0
@@ -1047,7 +1113,7 @@ eq[6] <= w_anode321w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode331w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_bkr1:auto_generated|decode_rsa:rden_decode_b
+|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_u2v1:auto_generated|decode_rsa:rden_decode_b
 data[0] => w_anode254w[1].IN0
 data[0] => w_anode271w[1].IN1
 data[0] => w_anode281w[1].IN0
@@ -1090,7 +1156,7 @@ eq[6] <= w_anode321w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode331w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_bkr1:auto_generated|decode_rsa:wren_decode_a
+|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_u2v1:auto_generated|decode_rsa:wren_decode_a
 data[0] => w_anode254w[1].IN0
 data[0] => w_anode271w[1].IN1
 data[0] => w_anode281w[1].IN0
@@ -1133,7 +1199,7 @@ eq[6] <= w_anode321w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode331w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_bkr1:auto_generated|mux_6nb:mux3
+|vga|vga_ram:inst2|altsyncram:altsyncram_component|altsyncram_u2v1:auto_generated|mux_6nb:mux3
 data[0] => _.IN0
 data[0] => _.IN0
 data[1] => _.IN0

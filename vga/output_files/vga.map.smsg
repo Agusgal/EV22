@@ -1,2 +1,2 @@
-Warning (10268): Verilog HDL information at vga_module.v(58): always construct contains both blocking and non-blocking assignments File: C:/MyDesigns/vga/vga_module.v Line: 58
-Warning (10268): Verilog HDL information at vga_module.v(108): always construct contains both blocking and non-blocking assignments File: C:/MyDesigns/vga/vga_module.v Line: 108
+Warning (10268): Verilog HDL information at vga_module.v(58): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/vga/vga_module.v Line: 58
+Warning (10268): Verilog HDL information at vga_module.v(108): always construct contains both blocking and non-blocking assignments File: C:/Users/Matias/Source/repos/EV22/vga/vga_module.v Line: 108
