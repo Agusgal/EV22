@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uc1
-Sat Jun 25 20:22:13 2022
+Thu Jun 30 14:46:50 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -59,13 +59,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 25 20:22:13 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 30 14:46:50 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; uc1                                         ;
 ; Top-level Entity Name              ; uc1                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,323                                       ;
-;     Total combinational functions  ; 829                                         ;
+; Total logic elements               ; 1,322                                       ;
+;     Total combinational functions  ; 828                                         ;
 ;     Dedicated logic registers      ; 598                                         ;
 ; Total registers                    ; 598                                         ;
 ; Total pins                         ; 121                                         ;
@@ -234,16 +234,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 1,323      ;
+; Estimated Total logic elements              ; 1,322      ;
 ;                                             ;            ;
-; Total combinational functions               ; 829        ;
+; Total combinational functions               ; 828        ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 539        ;
-;     -- 3 input functions                    ; 214        ;
-;     -- <=2 input functions                  ; 76         ;
+;     -- 3 input functions                    ; 225        ;
+;     -- <=2 input functions                  ; 64         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 746        ;
+;     -- normal mode                          ; 745        ;
 ;     -- arithmetic mode                      ; 83         ;
 ;                                             ;            ;
 ; Total registers                             ; 598        ;
@@ -260,8 +260,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; nRST~input ;
 ; Maximum fan-out                             ; 505        ;
-; Total fan-out                               ; 5802       ;
-; Average fan-out                             ; 3.41       ;
+; Total fan-out                               ; 5811       ;
+; Average fan-out                             ; 3.42       ;
 +---------------------------------------------+------------+
 
 
@@ -270,15 +270,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
-; |uc1                                      ; 829 (7)             ; 598 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 121  ; 0            ; |uc1                                                                            ; UC_1                ; work         ;
-;    |ALU:inst5|                            ; 150 (150)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
+; |uc1                                      ; 828 (7)             ; 598 (0)                   ; 20480       ; 0            ; 0       ; 0         ; 121  ; 0            ; |uc1                                                                            ; UC_1                ; work         ;
+;    |ALU:inst5|                            ; 152 (152)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|ALU:inst5                                                                  ; ALU                 ; work         ;
 ;    |Block1:inst10|                        ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|Block1:inst10                                                              ; Block1              ; work         ;
 ;    |DATA:inst12|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12                                                                ; DATA                ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_joi1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|DATA:inst12|altsyncram:altsyncram_component|altsyncram_joi1:auto_generated ; altsyncram_joi1     ; work         ;
 ;    |MIR:MIR2|                             ; 0 (0)               ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|MIR:MIR2                                                                   ; MIR                 ; work         ;
 ;    |MIR:MIR3|                             ; 0 (0)               ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|MIR:MIR3                                                                   ; MIR                 ; work         ;
-;    |UC2:UC2|                              ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|UC2:UC2                                                                    ; UC2                 ; work         ;
+;    |UC2:UC2|                              ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|UC2:UC2                                                                    ; UC2                 ; work         ;
 ;    |UC_1:UC1|                             ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|UC_1:UC1                                                                   ; UC_1                ; work         ;
 ;    |carry_block:inst8|                    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|carry_block:inst8                                                          ; carry_block         ; work         ;
 ;    |constant_reg:inst6|                   ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uc1|constant_reg:inst6                                                         ; constant_reg        ; work         ;
@@ -423,10 +423,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |uc1|fetch:inst4|tos[0]                                                          ;
-; 6:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |uc1|fetch:inst4|PC[2]                                                           ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux31                               ;
-; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux15                                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |uc1|fetch:inst4|tos[23]                                                         ;
+; 6:1                ; 11 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |uc1|fetch:inst4|PC[1]                                                           ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |uc1|super_register_bank:inst2|Block3:block3|Mux21                               ;
+; 14:1               ; 16 bits   ; 144 LEs       ; 128 LEs              ; 16 LEs                 ; No         ; |uc1|ALU:inst5|Mux6                                                              ;
 ; 33:1               ; 16 bits   ; 352 LEs       ; 304 LEs              ; 48 LEs                 ; No         ; |uc1|mux2:inst3|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated|result_node[15] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
 
@@ -1038,21 +1038,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 76                          ;
 ;     ENA CLR           ; 491                         ;
 ;     plain             ; 31                          ;
-; cycloneiii_lcell_comb ; 829                         ;
+; cycloneiii_lcell_comb ; 828                         ;
 ;     arith             ; 83                          ;
 ;         2 data inputs ; 26                          ;
 ;         3 data inputs ; 57                          ;
-;     normal            ; 746                         ;
+;     normal            ; 745                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 46                          ;
-;         3 data inputs ; 157                         ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 168                         ;
 ;         4 data inputs ; 539                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.50                       ;
-; Average LUT depth     ; 8.56                        ;
+; Average LUT depth     ; 8.55                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1061,7 +1061,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1071,7 +1071,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Jun 25 20:21:56 2022
+    Info: Processing started: Thu Jun 30 14:46:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uc1 -c uc1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1458,16 +1458,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Agus/Documents/Github/EV22/EV22_Quartus/output_files/uc1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1521 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1520 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 119 output pins
-    Info (21061): Implemented 1367 logic cells
+    Info (21061): Implemented 1366 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 127 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Sat Jun 25 20:22:13 2022
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Thu Jun 30 14:46:50 2022
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:28
 
 

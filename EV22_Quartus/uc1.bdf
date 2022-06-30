@@ -2499,12 +2499,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "Type[6..0]" (rect 2674 632 2721 649)(font "Intel Clear" ))
-	(pt 2664 648)
-	(pt 2752 648)
-	(bus)
-)
-(connector
 	(pt 2576 632)
 	(pt 2680 632)
 	(bus)
@@ -2876,11 +2870,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 2144 344)
-	(pt 2240 344)
-	(bus)
-)
-(connector
 	(pt 2240 344)
 	(pt 2336 344)
 	(bus)
@@ -2898,6 +2887,17 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1872 128)
 	(pt 1872 200)
+	(bus)
+)
+(connector
+	(pt 2664 648)
+	(pt 2752 648)
+	(bus)
+)
+(connector
+	(text "Type[6..0]" (rect 2154 328 2201 345)(font "Intel Clear" ))
+	(pt 2144 344)
+	(pt 2240 344)
 	(bus)
 )
 (junction (pt 1016 680))

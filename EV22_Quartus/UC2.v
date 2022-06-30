@@ -67,7 +67,7 @@ always @(*) begin
 	//	HOLD <= 1;
 	
 
-	if((Type2[Jump]) && (Type3 | Type4 | Type5))   //Saltos tiene Bug :ccccc
+	if((Type2[Jump]) && (Type4 | Type5))   //Saltos tiene Bug :ccccc
 		HOLD = 1'b1;
 	else if( MR && (Type4[WR_write] || Type5[WR_write])) //Que no haya problemas leyendo en memoria, TODO: chequear timings
 		HOLD = 1'b1;
